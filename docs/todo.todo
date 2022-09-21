@@ -1,0 +1,37 @@
+mermaid graphs using endent?
+
+push to gh pages
+
+document div with background instead of img
+
+document vite importing assets
+importing an image
+
+dynamic imports?
+loop over to import the images from json file?
+
+fix link to homepage (loading into new tab)
+doc this
+
+div with background css
+
+watchEffect(() => {
+    if (mermaidGraph.value != null) {
+      mermaid.render(
+        'test',
+        "flowchart LR; Wood((<div class='wood-icon'><span>1</span></div>))-->Icon((<div class='timber-icon'>1</div>)); classDef mermaid-height height:50px; class Wood mermaid-height",
+        (svgCode: string) => {
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          mermaidGraph.value!.innerHTML = svgCode;
+        }
+      );
+    } else {
+      console.log('null value');
+    }
+  });
+
+  .timber-icon {
+    background: no-repeat center/100% url('../assets/annoIcons/Timber.webp');
+    width: 40px;
+    height: 40px;
+  }
