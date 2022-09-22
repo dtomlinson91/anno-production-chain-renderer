@@ -1,5 +1,5 @@
 <template>
-  <q-page class="row items-center justify-evenly full-height">
+  <q-page>
     <diagram-renderer />
   </q-page>
 </template>
