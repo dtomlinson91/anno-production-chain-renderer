@@ -31,7 +31,7 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <router-view class="bg-grey-2" />
     </q-page-container>
   </q-layout>
 </template>

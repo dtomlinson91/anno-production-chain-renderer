@@ -1,8 +1,18 @@
 <template>
   <div>
-    <div ref="timber"></div>
-    <div ref="steelBeams"></div>
-    <div ref="highWheeler"></div>
+    <q-card flat bordered>
+      <q-card-section>
+        <div class="text-subtitle1 text-uppercase text-center">
+          Farmers | Workers
+        </div>
+      </q-card-section>
+
+      <q-separator inset class="q-mb-sm" />
+
+      <div ref="timber"></div>
+      <div ref="steelBeams"></div>
+      <div ref="highWheeler"></div>
+    </q-card>
   </div>
 </template>
 

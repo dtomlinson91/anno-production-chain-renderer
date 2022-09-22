@@ -13,7 +13,9 @@ loop over to import the images from json file?
 fix link to homepage (loading into new tab)
 doc this
 
-div with background css
+doc div with background css
+
+apply anno wiki theme
 
 watchEffect(() => {
     if (mermaidGraph.value != null) {
