@@ -12,7 +12,7 @@
         />
 
         <!-- TODO: add link to git -->
-        <q-toolbar-title> Anno 1800 Production Chain Renderer </q-toolbar-title>
+        <q-toolbar-title> Anno 1800 Production Chains </q-toolbar-title>
 
         <q-icon name="lab la-github" color="black" size="2.2rem"></q-icon>
       </q-toolbar>
@@ -50,6 +50,6 @@ function toggleLeftDrawer() {
 
 <style lang="scss">
 .border-black-bottom-med {
-  border-bottom: 0.15rem solid black;
+  border-bottom: 0.15rem solid #2e3f4e;
 }
 </style>
