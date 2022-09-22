@@ -1,18 +1,14 @@
-mermaid graphs using endent?
+ToDo:
+  ☐ push to gh pages
+  ☐ document div with background instead of img
+  ☐ document vite importing assets
+    ☐ importing an image
+  ☐ fix link to homepage (loading into new tab)
+    ☐ doc this
+  ☐ create interface under models.ts for production-chains.ts
+  ☐ use v-for to loop over object
 
-push to gh pages
-
-document div with background instead of img
-
-document vite importing assets
-importing an image
-
-dynamic imports?
-loop over to import the images from json file?
-
-fix link to homepage (loading into new tab)
-doc this
-
+Notes:
 
 watchEffect(() => {
     if (mermaidGraph.value != null) {
