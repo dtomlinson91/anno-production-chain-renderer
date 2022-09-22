@@ -83,11 +83,25 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue';
+import mermaid from 'mermaid';
+
+// Production Chain Data
 import { productionChains } from './production-chains';
 
 // Components
 import ChainTiers from 'components/ChainTiers.vue';
 import ProductionChain from 'components/ProductionChain.vue';
+
+onMounted(() => {
+  mermaid.initialize({
+    startOnLoad: false,
+    logLevel: 'fatal',
+    securityLevel: 'loose',
+    theme: 'neutral',
+    flowchart: { htmlLabels: true }
+  });
+});
 </script>
 
 <style lang="scss"></style>

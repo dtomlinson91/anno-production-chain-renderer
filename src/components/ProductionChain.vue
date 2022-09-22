@@ -3,8 +3,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref, watchEffect } from 'vue';
 import mermaid from 'mermaid';
-import { onMounted, ref, watchEffect } from 'vue';
 
 // HTML Refs
 const diagram = ref<HTMLInputElement | null>(null);
@@ -14,17 +14,6 @@ const props = defineProps<{
   productionChain: string;
   mermaidDefinition: string;
 }>();
-
-// Mermaid
-onMounted(() => {
-  mermaid.initialize({
-    startOnLoad: false,
-    logLevel: 'fatal',
-    securityLevel: 'loose',
-    theme: 'neutral',
-    flowchart: { htmlLabels: true }
-  });
-});
 
 watchEffect(() => {
   if (diagram.value != null) {
