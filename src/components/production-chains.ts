@@ -55,6 +55,11 @@ import brassIcon from '../assets/annoIcons/Brass.webp';
 import glassesIcon from '../assets/annoIcons/Glasses.webp';
 import caoutchoucIcon from '../assets/annoIcons/Caoutchouc.webp';
 import highWheelerIcon from '../assets/annoIcons/High_wheeler.webp';
+import goldOreIcon from '../assets/annoIcons/Gold_Ore.webp';
+import goldIcon from '../assets/annoIcons/Gold.webp';
+import pocketWatchesIcon from '../assets/annoIcons/Pocket_watch.webp';
+import filamentIcon from '../assets/annoIcons/Carbon_filament.webp';
+import lightBulbIcon from '../assets/annoIcons/Light_bulb.webp';
 
 // Jornaleros
 import cottonIcon from '../assets/annoIcons/Cotton.webp';
@@ -82,6 +87,9 @@ import weaponsIcon from '../assets/annoIcons/Weapons.webp';
 import saltpeterIcon from '../assets/annoIcons/Saltpeter.webp';
 import dynamiteIcon from '../assets/annoIcons/Dynamite.webp';
 import heavyWeaponsIcon from '../assets/annoIcons/Advanced_weapons.webp';
+
+// Machinery
+import steamMotorsIcon from '../assets/annoIcons/Steam_motors.webp';
 
 // Production Chains
 export const productionChains: TieredProductionChain[] = [
@@ -208,6 +216,14 @@ export const productionChains: TieredProductionChain[] = [
       {
         productionChain: 'glasses',
         mermaidDefinition: `flowchart LR; Copper(<img src='${copperIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Zinc(<img src='${zincIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Brass(<img src='${brassIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Glasses(<img src='${glassesIcon}' class='icon-size' /><span class='ratio-count'>3</span>); Sand(<img src='${sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Glass(<img src='${glassMakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Glasses`
+      },
+      {
+        productionChain: 'pocketWatches',
+        mermaidDefinition: `flowchart LR; GoldOre(<img src='${goldOreIcon}' class='icon-size' /><span class='ratio-count'>10</span>) & Coal(<img src='${coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Gold(<img src='${goldIcon}' class='icon-size' /><span class='ratio-count'>4</span>) --> PocketWatches(<span class='icon-flex-row'><img src='${pocketWatchesIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${lightningIcon}' class='electricity-icon' /></span><span class='ratio-count'>3</span></span></span>); Sand(<img src='${sandIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Glass(<img src='${glassMakersIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> PocketWatches`
+      },
+      {
+        productionChain: 'lightBulb',
+        mermaidDefinition: `flowchart LR; Charcoal(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Filament(<img src='${filamentIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> LightBulb(<img src='${lightBulbIcon}' class='icon-size' /><span class='ratio-count'>2</span>); Sand(<img src='${sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> GlassMakers(<img src='${glassMakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> LightBulb`
       }
     ]
   },
@@ -236,6 +252,16 @@ export const productionChains: TieredProductionChain[] = [
       {
         productionChain: 'newWorldSails',
         mermaidDefinition: `flowchart LR; Cotton(<img src='${cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> CottonMill(<img src='${cottonMillIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Sailmakers(<img src='${sailmakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      }
+    ]
+  },
+  {
+    tierName: 'Machinery',
+    width: 2,
+    productionChains: [
+      {
+        productionChain: 'steamMotors',
+        mermaidDefinition: `flowchart LR; Coal(<img src='${coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<img src='${ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Steel(<img src='${steelIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> SteamMotors(<span class='icon-flex-row'><img src='${steamMotorsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${lightningIcon}' class='electricity-icon' /></span><span class='ratio-count'>3</span></span></span>); Copper(<img src='${copperIcon}' class='icon-size' /><span class='ratio-count'>2</span>) & Zinc(<img src='${zincIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Brass(<img src='${brassIcon}' class='icon-size' /><span class='ratio-count'>4</span>) --> SteamMotors`
       }
     ]
   }
