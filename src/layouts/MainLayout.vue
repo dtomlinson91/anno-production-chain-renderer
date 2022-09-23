@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf" class="custom-width">
     <q-header>
       <q-toolbar class="border-black-bottom-med bg-white text-black">
         <q-btn
@@ -61,5 +61,9 @@ function toggleLeftDrawer() {
 
 .no-link-border {
   text-decoration: none;
+}
+
+.custom-width {
+  width: 5000px;
 }
 </style>

@@ -3,10 +3,10 @@
     flat
     bordered
     square
-    :class="[getColWidth, 'bg-grey-3', 'q-ma-sm', 'border']"
+    :class="[getColWidth, 'bg-grey-3', '', 'border']"
   >
     <q-card-section>
-      <div class="text-subtitle1 text-uppercase text-center">
+      <div class="text-subtitle1 text-uppercase text-center big-font">
         {{ title }}
       </div>
     </q-card-section>
@@ -33,5 +33,9 @@ const getColWidth = computed(() => {
 <style lang="scss">
 .border {
   border: 0.1rem solid $off-black;
+}
+
+.big-font {
+  font-size: 1.5rem;
 }
 </style>

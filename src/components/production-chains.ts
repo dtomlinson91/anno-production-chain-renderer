@@ -95,7 +95,7 @@ import steamMotorsIcon from '../assets/annoIcons/Steam_motors.webp';
 export const productionChains: TieredProductionChain[] = [
   {
     tierName: 'Building Materials',
-    width: 2,
+    width: 1,
     productionChains: [
       {
         productionChain: 'timber',
@@ -121,7 +121,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Farmers | Workers',
-    width: 2,
+    width: 1,
     productionChains: [
       {
         productionChain: 'workClothes',
@@ -151,7 +151,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Artisans',
-    width: 3,
+    width: 1,
     productionChains: [
       {
         productionChain: 'cannedFood',
@@ -173,7 +173,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Jornaleros | Obreros',
-    width: 2,
+    width: 1,
     productionChains: [
       {
         productionChain: 'plantains',
@@ -207,7 +207,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Engineers',
-    width: 2,
+    width: 1,
     productionChains: [
       {
         productionChain: 'highWheeler',
@@ -229,7 +229,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Weapons',
-    width: 3,
+    width: 2,
     productionChains: [
       {
         productionChain: 'weapons',
@@ -243,7 +243,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Sails',
-    width: 2,
+    width: 1,
     productionChains: [
       {
         productionChain: 'oldWorldSails',
@@ -257,7 +257,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Machinery',
-    width: 2,
+    width: 1,
     productionChains: [
       {
         productionChain: 'steamMotors',

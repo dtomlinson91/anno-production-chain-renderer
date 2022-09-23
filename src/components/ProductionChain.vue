@@ -31,17 +31,19 @@ watchEffect(() => {
 
 <style lang="scss">
 .icon-size {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
 }
 
 .ratio-count {
   font-weight: bold;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .efficiency-perc {
   font-weight: bold;
+  font-size: 1.5rem;
   color: $green-9 !important;
 }
 
