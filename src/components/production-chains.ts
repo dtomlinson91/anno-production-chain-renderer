@@ -53,6 +53,23 @@ import highWheelerIcon from '../assets/annoIcons/High_wheeler.webp';
 // Jornaleros
 import cottonIcon from '../assets/annoIcons/Cotton.webp';
 import cottonMillIcon from '../assets/annoIcons/Cotton_fabric.webp';
+import plantainPlantationIcon from '../assets/annoIcons/Plantains.webp';
+import fishOilIcon from '../assets/annoIcons/Fish_Oil.webp';
+import friedPlantainsIcon from '../assets/annoIcons/Fried_plantains.webp';
+import alpacaWoolIcon from '../assets/annoIcons/Alpaca_wool.webp';
+import ponchosIcon from '../assets/annoIcons/Poncho.webp';
+import cornIcon from '../assets/annoIcons/Corn.webp';
+import tortillasIcon from '../assets/annoIcons/Tortilla.webp';
+import coffeeBeansIcon from '../assets/annoIcons/Coffee_beans.webp';
+import coffeeIcon from '../assets/annoIcons/Coffee.webp';
+import feltIcon from '../assets/annoIcons/Felt.webp';
+import bowlerHatsIcon from '../assets/annoIcons/Bowler_hats.webp';
+import woodVeneersIcon from '../assets/annoIcons/Wood_veneers.webp';
+import tobaccoIcon from '../assets/annoIcons/Tobacco.webp';
+import cigarIcon from '../assets/annoIcons/Cigars.webp';
+import sugarIcon from '../assets/annoIcons/Sugar.webp';
+import cocoaIcon from '../assets/annoIcons/Cocoa.webp';
+import chocolateIcon from '../assets/annoIcons/Chocolate.webp';
 
 // Weapons
 import weaponsIcon from '../assets/annoIcons/Weapons.webp';
@@ -132,7 +149,36 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Jornaleros | Obreros',
-    productionChains: []
+    productionChains: [
+      {
+        productionChain: 'plantains',
+        mermaidDefinition: `flowchart LR; PlantainPlantation(<img src='${plantainPlantationIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & FishOil(<img src='${fishOilIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> FriedPlantains(<img src='${friedPlantainsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      },
+      {
+        productionChain: 'ponchos',
+        mermaidDefinition: `flowchart LR; AlpacaWool(<img src='${alpacaWoolIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Ponchos(<img src='${ponchosIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      },
+      {
+        productionChain: 'tortillas',
+        mermaidDefinition: `flowchart LR; Beef(<img src='${beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>) & Corn(<img src='${cornIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Tortillas(<img src='${tortillasIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      },
+      {
+        productionChain: 'coffee',
+        mermaidDefinition: `flowchart LR; CoffeeBeans(<img src='${coffeeBeansIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Coffee(<img src='${coffeeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      },
+      {
+        productionChain: 'bowlerHats',
+        mermaidDefinition: `flowchart LR; Cotton(<img src='${cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> CottonMill(<img src='${cottonMillIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> BowlerHats(<img src='${bowlerHatsIcon}' class='icon-size' /><span class='ratio-count'>1</span>); AlpacaWool(<img src='${alpacaWoolIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Felt(<img src='${feltIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> BowlerHats`
+      },
+      {
+        productionChain: 'cigars',
+        mermaidDefinition: `flowchart LR; Wood(<span class='icon-flex-row'><img src='${woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> WoodVeneers(<img src='${woodVeneersIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Cigars(<img src='${cigarIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Tobacco(<img src='${tobaccoIcon}' class='icon-size' /><span class='ratio-count'>4</span>) --> Cigars`
+      },
+      {
+        productionChain: 'chocolate',
+        mermaidDefinition: `flowchart LR; SugarCane(<img src='${sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Sugar(<img src='${sugarIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Chocolate(<img src='${chocolateIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Cocoa(<img src='${cocoaIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Chocolate`
+      }
+    ]
   },
   {
     tierName: 'Engineers',
