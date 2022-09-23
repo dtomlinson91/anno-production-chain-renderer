@@ -8,13 +8,19 @@
           round
           icon="menu"
           aria-label="Menu"
+          color="off-black"
           @click="toggleLeftDrawer"
         />
 
-        <!-- TODO: add link to git -->
-        <q-toolbar-title> Anno 1800 Production Chains </q-toolbar-title>
+        <q-toolbar-title class="text-off-black">
+          Anno 1800 Production Chains
+        </q-toolbar-title>
 
-        <q-icon name="lab la-github" color="black" size="2.2rem"></q-icon>
+        <a
+          href="https://github.com/dtomlinson91/anno-production-chain-renderer"
+          class="no-link-border"
+          ><q-icon name="lab la-github" color="off-black" size="2.2rem"></q-icon
+        ></a>
       </q-toolbar>
     </q-header>
 
@@ -50,6 +56,10 @@ function toggleLeftDrawer() {
 
 <style lang="scss">
 .border-black-bottom-med {
-  border-bottom: 0.15rem solid #2e3f4e;
+  border-bottom: 0.15rem solid $off-black;
+}
+
+.no-link-border {
+  text-decoration: none;
 }
 </style>

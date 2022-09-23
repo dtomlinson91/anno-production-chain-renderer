@@ -6,7 +6,7 @@
 import { ref, watchEffect } from 'vue';
 import mermaid from 'mermaid';
 
-// HTML Refs
+// DOM Refs
 const diagram = ref<HTMLInputElement | null>(null);
 
 // Props

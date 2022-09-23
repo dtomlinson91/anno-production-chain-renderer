@@ -20,6 +20,6 @@ defineProps<{
 
 <style lang="scss">
 .border {
-  border: 0.1rem solid #2e3f4e;
+  border: 0.1rem solid $off-black;
 }
 </style>

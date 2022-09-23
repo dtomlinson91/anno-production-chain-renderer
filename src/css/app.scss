@@ -7,5 +7,14 @@
 
 .font-soleil {
   font-family: Soleil;
-  color: #2d3e4f;
+  color: $off-black;
+}
+
+// https://quasar.dev/style/color-palette#adding-your-own-colors
+.text-off-black {
+  color: $off-black !important;
+}
+
+.bg-off-black {
+  background: $off-black !important;
 }
