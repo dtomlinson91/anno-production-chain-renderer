@@ -1,5 +1,10 @@
 <template>
-  <q-card flat bordered square class="col-2 bg-grey-3 q-ma-sm border">
+  <q-card
+    flat
+    bordered
+    square
+    :class="[getColWidth, 'bg-grey-3', 'q-ma-sm', 'border']"
+  >
     <q-card-section>
       <div class="text-subtitle1 text-uppercase text-center">
         {{ title }}
@@ -13,9 +18,16 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+import { computed } from 'vue';
+
+const props = defineProps<{
   title: string;
+  colWidth: number;
 }>();
+
+const getColWidth = computed(() => {
+  return `col-${props.colWidth}`;
+});
 </script>
 
 <style lang="scss">

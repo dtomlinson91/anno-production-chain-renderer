@@ -4,6 +4,7 @@
       v-for="tier in productionChains"
       :key="tier.tierName"
       :title="tier.tierName"
+      :col-width="tier.width"
     >
       <ProductionChain
         v-for="chain in tier.productionChains"

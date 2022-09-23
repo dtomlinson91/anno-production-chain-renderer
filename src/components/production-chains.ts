@@ -16,6 +16,8 @@ import steelBeamsIcon from '../assets/annoIcons/Steel_beams.webp';
 import sandIcon from '../assets/annoIcons/Quartz_sand.webp';
 import glassMakersIcon from '../assets/annoIcons/Glass.webp';
 import windowMakersIcon from '../assets/annoIcons/Windows.webp';
+import cementIcon from '../assets/annoIcons/Cement.webp';
+import concreteFactory from '../assets/annoIcons/Reinforced_concrete.webp';
 
 // Farmers & Workers
 import potatoIcon from '../assets/annoIcons/Potato.webp';
@@ -47,6 +49,10 @@ import sugarCaneIcon from '../assets/annoIcons/Sugar_cane.webp';
 import rumIcon from '../assets/annoIcons/Rum.webp';
 
 // Engineers
+import copperIcon from '../assets/annoIcons/Copper.webp';
+import zincIcon from '../assets/annoIcons/Zinc.webp';
+import brassIcon from '../assets/annoIcons/Brass.webp';
+import glassesIcon from '../assets/annoIcons/Glasses.webp';
 import caoutchoucIcon from '../assets/annoIcons/Caoutchouc.webp';
 import highWheelerIcon from '../assets/annoIcons/High_wheeler.webp';
 
@@ -73,11 +79,15 @@ import chocolateIcon from '../assets/annoIcons/Chocolate.webp';
 
 // Weapons
 import weaponsIcon from '../assets/annoIcons/Weapons.webp';
+import saltpeterIcon from '../assets/annoIcons/Saltpeter.webp';
+import dynamiteIcon from '../assets/annoIcons/Dynamite.webp';
+import heavyWeaponsIcon from '../assets/annoIcons/Advanced_weapons.webp';
 
 // Production Chains
 export const productionChains: TieredProductionChain[] = [
   {
     tierName: 'Building Materials',
+    width: 2,
     productionChains: [
       {
         productionChain: 'timber',
@@ -89,16 +99,21 @@ export const productionChains: TieredProductionChain[] = [
       },
       {
         productionChain: 'steelBeams',
-        mermaidDefinition: `flowchart LR; CharcoalKiln(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<img src='${ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Steel(<span class='icon-flex-row'><img src='${steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>) --> SteelBeams(<img src='${steelBeamsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+        mermaidDefinition: `flowchart LR; CharcoalKiln(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<span class='icon-flex-row'><img src='${ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Steel(<span class='icon-flex-row'><img src='${steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>) --> SteelBeams(<img src='${steelBeamsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       },
       {
         productionChain: 'windows',
-        mermaidDefinition: `flowchart LR; Sand(<img src='${sandIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> NAME(<img src='${glassMakersIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> WindowMakers(<img src='${windowMakersIcon}' class='icon-size' /><span class='ratio-count'>4</span>); Wood(<img src='${woodIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> WindowMakers`
+        mermaidDefinition: `flowchart LR; Sand(<img src='${sandIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> GlassMakers(<img src='${glassMakersIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> WindowMakers(<img src='${windowMakersIcon}' class='icon-size' /><span class='ratio-count'>4</span>); Wood(<span class='icon-flex-row'><img src='${woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> WindowMakers`
+      },
+      {
+        productionChain: 'concrete',
+        mermaidDefinition: `flowchart LR; Charcoal(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<span class='icon-flex-row'><img src='${ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Steel(<img src='${steelIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Concrete(<img src='${concreteFactory}' class='icon-size' /><span class='ratio-count'>2</span>); Cement(<img src='${cementIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Concrete`
       }
     ]
   },
   {
     tierName: 'Farmers | Workers',
+    width: 2,
     productionChains: [
       {
         productionChain: 'workClothes',
@@ -128,6 +143,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Artisans',
+    width: 3,
     productionChains: [
       {
         productionChain: 'cannedFood',
@@ -149,6 +165,7 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Jornaleros | Obreros',
+    width: 2,
     productionChains: [
       {
         productionChain: 'plantains',
@@ -182,24 +199,35 @@ export const productionChains: TieredProductionChain[] = [
   },
   {
     tierName: 'Engineers',
+    width: 2,
     productionChains: [
       {
         productionChain: 'highWheeler',
         mermaidDefinition: `flowchart LR; Coal(<img src='${coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<img src='${ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Steel(<img src='${steelIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> HighWheeler(<span class='icon-flex-row'><img src='${highWheelerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${lightningIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>); Caoutchouc(<img src='${caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>4</span>) --> HighWheeler`
+      },
+      {
+        productionChain: 'glasses',
+        mermaidDefinition: `flowchart LR; Copper(<img src='${copperIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Zinc(<img src='${zincIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Brass(<img src='${brassIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Glasses(<img src='${glassesIcon}' class='icon-size' /><span class='ratio-count'>3</span>); Sand(<img src='${sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Glass(<img src='${glassMakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Glasses`
       }
     ]
   },
   {
     tierName: 'Weapons',
+    width: 3,
     productionChains: [
       {
         productionChain: 'weapons',
         mermaidDefinition: `flowchart LR; charcoalKiln(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<span class='icon-flex-row'><img src='${ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Steel(<span class='icon-flex-row'><img src='${steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Weapons(<img src='${weaponsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      },
+      {
+        productionChain: 'heavyWeapons',
+        mermaidDefinition: `flowchart LR; Saltpeter(<img src='${saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Dynamite(<img src='${dynamiteIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> HeavyWeapons(<span class='icon-flex-row'><img src='${heavyWeaponsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${lightningIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>); Pig(<img src='${pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Tallow(<img src='${tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Dynamite; Charcoal(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<span class='icon-flex-row'><img src='${ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Steel(<span class='icon-flex-row'><img src='${steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> HeavyWeapons`
       }
     ]
   },
   {
     tierName: 'Sails',
+    width: 2,
     productionChains: [
       {
         productionChain: 'oldWorldSails',

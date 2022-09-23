@@ -1,5 +1,6 @@
 export interface TieredProductionChain {
   tierName: string;
+  width: number;
   productionChains: ProductionChain[];
 }
 
