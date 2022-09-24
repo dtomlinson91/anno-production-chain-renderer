@@ -1,5 +1,6 @@
 <template>
   <div ref="diagram"></div>
+  <q-separator inset class="q-mb-sm" />
 </template>
 
 <script setup lang="ts">
@@ -31,8 +32,8 @@ watchEffect(() => {
 
 <style lang="scss">
 .icon-size {
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 100px;
 }
 
 .ratio-count {
@@ -52,7 +53,7 @@ watchEffect(() => {
 }
 
 .electricity-icon {
-  width: 22px;
+  width: 30px;
   margin-bottom: -5px;
 }
 

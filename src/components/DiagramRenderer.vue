@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-gutter-sm q-mt-sm">
+  <div class="row">
     <ChainTiers
       v-for="tier in productionChains"
       :key="tier.tierName"
