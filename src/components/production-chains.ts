@@ -18,6 +18,8 @@ import glassMakersIcon from '../assets/annoIcons/Glass.webp';
 import windowMakersIcon from '../assets/annoIcons/Windows.webp';
 import cementIcon from '../assets/annoIcons/Cement.webp';
 import concreteFactory from '../assets/annoIcons/Reinforced_concrete.webp';
+import teffIcon from '../assets/annoIcons/Icon_teff_grass_0.webp';
+import mudBricksIcon from '../assets/annoIcons/Icon_mud_bricks_0.webp';
 
 // Farmers & Workers
 import potatoIcon from '../assets/annoIcons/Potato.webp';
@@ -150,6 +152,10 @@ export const productionChains: TieredProductionChain[] = [
       {
         productionChain: 'concrete',
         mermaidDefinition: `flowchart LR; Charcoal(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<span class='icon-flex-row'><img src='${ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Steel(<img src='${steelIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Concrete(<img src='${concreteFactory}' class='icon-size' /><span class='ratio-count'>2</span>); Cement(<img src='${cementIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Concrete`
+      },
+      {
+        productionChain: 'mudBricks',
+        mermaidDefinition: `flowchart LR; Clay(<span class='icon-flex-row'><img src='${clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>) & Teff(<img src='${teffIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> MudBricks(<img src='${mudBricksIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       }
     ]
   },

@@ -3,7 +3,7 @@
     flat
     bordered
     square
-    :class="['bg-grey-3', 'q-ma-sm', 'border', 'text-center']"
+    :class="['card-background', 'q-ma-sm', 'border', 'text-center']"
   >
     <q-card-section>
       <div class="text-subtitle1 text-uppercase text-center big-font q-pa-md">

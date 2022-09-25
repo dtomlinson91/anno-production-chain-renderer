@@ -1,25 +1,24 @@
 <template>
   <q-layout view="lHh Lpr lFf" class="custom-width">
-    <q-header>
-      <q-toolbar class="border-black-bottom-med bg-white text-black">
+    <q-header :reveal="true" :reveal-offset="0">
+      <q-toolbar class="border-black-bottom-med toolbar-background text-white">
         <q-btn
           flat
           dense
           round
           icon="menu"
           aria-label="Menu"
-          color="off-black"
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title class="text-off-black">
+        <q-toolbar-title class="">
           Anno 1800 Production Chains
         </q-toolbar-title>
 
         <a
           href="https://github.com/dtomlinson91/anno-production-chain-renderer"
           class="no-link-border"
-          ><q-icon name="lab la-github" color="off-black" size="2.2rem"></q-icon
+          ><q-icon name="lab la-github" color="white" size="2.2rem"></q-icon
         ></a>
       </q-toolbar>
     </q-header>
@@ -37,7 +36,8 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view class="bg-grey-2" />
+      <router-view class="page-background text-burnt" />
+      <!--<router-view class="bg-grey-2" />-->
     </q-page-container>
   </q-layout>
 </template>

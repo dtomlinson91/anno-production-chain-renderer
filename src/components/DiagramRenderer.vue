@@ -70,4 +70,12 @@ $x: 5;
     padding: 1px;
   }
 }
+
+.top-padding {
+  padding-top: 100px;
+}
+
+rect.label-container {
+  fill: $burnt !important;
+}
 </style>
