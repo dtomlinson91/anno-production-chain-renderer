@@ -1,4 +1,5 @@
 // app global css in SCSS form
+@import 'src/css/rubik-font.scss';
 
 @font-face {
   font-family: Soleil;
@@ -24,13 +25,13 @@
 }
 
 .toolbar-background {
-  background-color: #8f6c40;
+  background-color: $burnt-dark;
 }
 
 .page-background {
-  background-color: #fff1d1;
+  background-color: $burnt;
 }
 
 .card-background {
-  background-color: #fbf1dc;
+  background-color: $burnt-light;
 }

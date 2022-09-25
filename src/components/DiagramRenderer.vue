@@ -50,6 +50,7 @@ onMounted(() => {
   flex: 1 0 100% !important;
   width: 0 !important;
 }
+
 $x: 5;
 
 @for $i from 1 through ($x - 1) {

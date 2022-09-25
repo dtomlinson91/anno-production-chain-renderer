@@ -1,132 +1,132 @@
 import { TieredProductionChain } from './models';
 
 // Icons
-import lightningIcon from '../assets/annoIcons/Lightning.png';
+import lightningIcon from 'assets/annoIcons/Lightning.png';
 
 // Building Materials
-import woodIcon from '../assets/annoIcons/Wood.webp';
-import timberIcon from '../assets/annoIcons/Timber.webp';
-import clayIcon from '../assets/annoIcons/Clay.webp';
-import bricksIcon from '../assets/annoIcons/Bricks.webp';
-import charcoalKilnIcon from '../assets/annoIcons/Charcoal_kiln.webp';
-import coalIcon from '../assets/annoIcons/Coal.webp';
-import ironIcon from '../assets/annoIcons/Iron.webp';
-import steelIcon from '../assets/annoIcons/Steel.webp';
-import steelBeamsIcon from '../assets/annoIcons/Steel_beams.webp';
-import sandIcon from '../assets/annoIcons/Quartz_sand.webp';
-import glassMakersIcon from '../assets/annoIcons/Glass.webp';
-import windowMakersIcon from '../assets/annoIcons/Windows.webp';
-import cementIcon from '../assets/annoIcons/Cement.webp';
-import concreteFactory from '../assets/annoIcons/Reinforced_concrete.webp';
-import teffIcon from '../assets/annoIcons/Icon_teff_grass_0.webp';
-import mudBricksIcon from '../assets/annoIcons/Icon_mud_bricks_0.webp';
+import woodIcon from 'assets/annoIcons/Wood.webp';
+import timberIcon from 'assets/annoIcons/Timber.webp';
+import clayIcon from 'assets/annoIcons/Clay.webp';
+import bricksIcon from 'assets/annoIcons/Bricks.webp';
+import charcoalKilnIcon from 'assets/annoIcons/Charcoal_kiln.webp';
+import coalIcon from 'assets/annoIcons/Coal.webp';
+import ironIcon from 'assets/annoIcons/Iron.webp';
+import steelIcon from 'assets/annoIcons/Steel.webp';
+import steelBeamsIcon from 'assets/annoIcons/Steel_beams.webp';
+import sandIcon from 'assets/annoIcons/Quartz_sand.webp';
+import glassMakersIcon from 'assets/annoIcons/Glass.webp';
+import windowMakersIcon from 'assets/annoIcons/Windows.webp';
+import cementIcon from 'assets/annoIcons/Cement.webp';
+import concreteFactory from 'assets/annoIcons/Reinforced_concrete.webp';
+import teffIcon from 'assets/annoIcons/Icon_teff_grass_0.webp';
+import mudBricksIcon from 'assets/annoIcons/Icon_mud_bricks_0.webp';
 
 // Farmers & Workers
-import potatoIcon from '../assets/annoIcons/Potato.webp';
-import schnappsIcon from '../assets/annoIcons/Schnapps.webp';
-import woolIcon from '../assets/annoIcons/Wool.webp';
-import workClothesIcon from '../assets/annoIcons/Work_clothes.webp';
-import pigIcon from '../assets/annoIcons/Pigs.webp';
-import sausageIcon from '../assets/annoIcons/Sausages.webp';
-import grainIcon from '../assets/annoIcons/Grain.webp';
-import flourIcon from '../assets/annoIcons/Flour.webp';
-import breadIcon from '../assets/annoIcons/Bread.webp';
-import pigsIcon from '../assets/annoIcons/Pigs.webp';
-import tallowIcon from '../assets/annoIcons/Tallow.webp';
-import soapIcon from '../assets/annoIcons/Soap.webp';
-import breweryIcon from '../assets/annoIcons/Beer.webp';
-import malthouseIcon from '../assets/annoIcons/Malt.webp';
-import hopFarmIcon from '../assets/annoIcons/Hops.webp';
-import sailmakersIcon from '../assets/annoIcons/Sails.webp';
+import potatoIcon from 'assets/annoIcons/Potato.webp';
+import schnappsIcon from 'assets/annoIcons/Schnapps.webp';
+import woolIcon from 'assets/annoIcons/Wool.webp';
+import workClothesIcon from 'assets/annoIcons/Work_clothes.webp';
+import pigIcon from 'assets/annoIcons/Pigs.webp';
+import sausageIcon from 'assets/annoIcons/Sausages.webp';
+import grainIcon from 'assets/annoIcons/Grain.webp';
+import flourIcon from 'assets/annoIcons/Flour.webp';
+import breadIcon from 'assets/annoIcons/Bread.webp';
+import pigsIcon from 'assets/annoIcons/Pigs.webp';
+import tallowIcon from 'assets/annoIcons/Tallow.webp';
+import soapIcon from 'assets/annoIcons/Soap.webp';
+import breweryIcon from 'assets/annoIcons/Beer.webp';
+import malthouseIcon from 'assets/annoIcons/Malt.webp';
+import hopFarmIcon from 'assets/annoIcons/Hops.webp';
+import sailmakersIcon from 'assets/annoIcons/Sails.webp';
 
 // Artisans
-import beefIcon from '../assets/annoIcons/Beef.webp';
-import redPeppersIcon from '../assets/annoIcons/Red_peppers.webp';
-import artisnalKitchenIcon from '../assets/annoIcons/Goulash.webp';
-import cannedFoodIcon from '../assets/annoIcons/Canned_food.webp';
-import sewingMachinesIcon from '../assets/annoIcons/Sewing_machines.webp';
-import fursIcon from '../assets/annoIcons/Furs.webp';
-import furCoatsIcon from '../assets/annoIcons/Fur_Coats.webp';
-import sugarCaneIcon from '../assets/annoIcons/Sugar_cane.webp';
-import rumIcon from '../assets/annoIcons/Rum.webp';
+import beefIcon from 'assets/annoIcons/Beef.webp';
+import redPeppersIcon from 'assets/annoIcons/Red_peppers.webp';
+import artisnalKitchenIcon from 'assets/annoIcons/Goulash.webp';
+import cannedFoodIcon from 'assets/annoIcons/Canned_food.webp';
+import sewingMachinesIcon from 'assets/annoIcons/Sewing_machines.webp';
+import fursIcon from 'assets/annoIcons/Furs.webp';
+import furCoatsIcon from 'assets/annoIcons/Fur_Coats.webp';
+import sugarCaneIcon from 'assets/annoIcons/Sugar_cane.webp';
+import rumIcon from 'assets/annoIcons/Rum.webp';
 
 // Engineers
-import copperIcon from '../assets/annoIcons/Copper.webp';
-import zincIcon from '../assets/annoIcons/Zinc.webp';
-import brassIcon from '../assets/annoIcons/Brass.webp';
-import glassesIcon from '../assets/annoIcons/Glasses.webp';
-import caoutchoucIcon from '../assets/annoIcons/Caoutchouc.webp';
-import highWheelerIcon from '../assets/annoIcons/High_wheeler.webp';
-import goldOreIcon from '../assets/annoIcons/Gold_Ore.webp';
-import goldIcon from '../assets/annoIcons/Gold.webp';
-import pocketWatchesIcon from '../assets/annoIcons/Pocket_watch.webp';
-import filamentIcon from '../assets/annoIcons/Carbon_filament.webp';
-import lightBulbIcon from '../assets/annoIcons/Light_bulb.webp';
+import copperIcon from 'assets/annoIcons/Copper.webp';
+import zincIcon from 'assets/annoIcons/Zinc.webp';
+import brassIcon from 'assets/annoIcons/Brass.webp';
+import glassesIcon from 'assets/annoIcons/Glasses.webp';
+import caoutchoucIcon from 'assets/annoIcons/Caoutchouc.webp';
+import highWheelerIcon from 'assets/annoIcons/High_wheeler.webp';
+import goldOreIcon from 'assets/annoIcons/Gold_Ore.webp';
+import goldIcon from 'assets/annoIcons/Gold.webp';
+import pocketWatchesIcon from 'assets/annoIcons/Pocket_watch.webp';
+import filamentIcon from 'assets/annoIcons/Carbon_filament.webp';
+import lightBulbIcon from 'assets/annoIcons/Light_bulb.webp';
 
 // Investors
-import grapesIcon from '../assets/annoIcons/Grapes.webp';
-import champagneIcon from '../assets/annoIcons/Champagne.webp';
-import pearlsIcon from '../assets/annoIcons/Pearls.webp';
-import jewelryIcon from '../assets/annoIcons/Jewelry.webp';
-import gramophoneIcon from '../assets/annoIcons/Gramophone.webp';
+import grapesIcon from 'assets/annoIcons/Grapes.webp';
+import champagneIcon from 'assets/annoIcons/Champagne.webp';
+import pearlsIcon from 'assets/annoIcons/Pearls.webp';
+import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
+import gramophoneIcon from 'assets/annoIcons/Gramophone.webp';
 
 // Jornaleros & Obreros
-import cottonIcon from '../assets/annoIcons/Cotton.webp';
-import cottonMillIcon from '../assets/annoIcons/Cotton_fabric.webp';
-import plantainPlantationIcon from '../assets/annoIcons/Plantains.webp';
-import fishOilIcon from '../assets/annoIcons/Fish_Oil.webp';
-import friedPlantainsIcon from '../assets/annoIcons/Fried_plantains.webp';
-import alpacaWoolIcon from '../assets/annoIcons/Alpaca_wool.webp';
-import ponchosIcon from '../assets/annoIcons/Poncho.webp';
-import cornIcon from '../assets/annoIcons/Corn.webp';
-import tortillasIcon from '../assets/annoIcons/Tortilla.webp';
-import coffeeBeansIcon from '../assets/annoIcons/Coffee_beans.webp';
-import coffeeIcon from '../assets/annoIcons/Coffee.webp';
-import feltIcon from '../assets/annoIcons/Felt.webp';
-import bowlerHatsIcon from '../assets/annoIcons/Bowler_hats.webp';
-import woodVeneersIcon from '../assets/annoIcons/Wood_veneers.webp';
-import tobaccoIcon from '../assets/annoIcons/Tobacco.webp';
-import cigarIcon from '../assets/annoIcons/Cigars.webp';
-import sugarIcon from '../assets/annoIcons/Sugar.webp';
-import cocoaIcon from '../assets/annoIcons/Cocoa.webp';
-import chocolateIcon from '../assets/annoIcons/Chocolate.webp';
+import cottonIcon from 'assets/annoIcons/Cotton.webp';
+import cottonMillIcon from 'assets/annoIcons/Cotton_fabric.webp';
+import plantainPlantationIcon from 'assets/annoIcons/Plantains.webp';
+import fishOilIcon from 'assets/annoIcons/Fish_Oil.webp';
+import friedPlantainsIcon from 'assets/annoIcons/Fried_plantains.webp';
+import alpacaWoolIcon from 'assets/annoIcons/Alpaca_wool.webp';
+import ponchosIcon from 'assets/annoIcons/Poncho.webp';
+import cornIcon from 'assets/annoIcons/Corn.webp';
+import tortillasIcon from 'assets/annoIcons/Tortilla.webp';
+import coffeeBeansIcon from 'assets/annoIcons/Coffee_beans.webp';
+import coffeeIcon from 'assets/annoIcons/Coffee.webp';
+import feltIcon from 'assets/annoIcons/Felt.webp';
+import bowlerHatsIcon from 'assets/annoIcons/Bowler_hats.webp';
+import woodVeneersIcon from 'assets/annoIcons/Wood_veneers.webp';
+import tobaccoIcon from 'assets/annoIcons/Tobacco.webp';
+import cigarIcon from 'assets/annoIcons/Cigars.webp';
+import sugarIcon from 'assets/annoIcons/Sugar.webp';
+import cocoaIcon from 'assets/annoIcons/Cocoa.webp';
+import chocolateIcon from 'assets/annoIcons/Chocolate.webp';
 
 // Explorers
-import whalingIcon from '../assets/annoIcons/Whaling_Station.webp';
-import caribouIcon from '../assets/annoIcons/Caribou_Hunting_Cabin.webp';
-import pemmicanIcon from '../assets/annoIcons/Pemmican_Cookhouse.webp';
-import sealIcon from '../assets/annoIcons/Seal_Hunting_Docks.webp';
-import gooseIcon from '../assets/annoIcons/Goose_Farm.webp';
-import sleepingBagIcon from '../assets/annoIcons/Sleeping_Bag_Factory.webp';
-import oilLampIcon from '../assets/annoIcons/Oil_Lamp_Factory.webp';
+import whalingIcon from 'assets/annoIcons/Whaling_Station.webp';
+import caribouIcon from 'assets/annoIcons/Caribou_Hunting_Cabin.webp';
+import pemmicanIcon from 'assets/annoIcons/Pemmican_Cookhouse.webp';
+import sealIcon from 'assets/annoIcons/Seal_Hunting_Docks.webp';
+import gooseIcon from 'assets/annoIcons/Goose_Farm.webp';
+import sleepingBagIcon from 'assets/annoIcons/Sleeping_Bag_Factory.webp';
+import oilLampIcon from 'assets/annoIcons/Oil_Lamp_Factory.webp';
 
 // Technicians
-import bearIcon from '../assets/annoIcons/Bear_Hunting_Cabin.webp';
-import parkasIcon from '../assets/annoIcons/Parka_Factory.webp';
-import sledFrameIcon from '../assets/annoIcons/Sled_Frame_Factory.webp';
-import huskyIcon from '../assets/annoIcons/Husky_Farm.webp';
-import huskySledIcon from '../assets/annoIcons/Husky_Sled_Factory.webp';
+import bearIcon from 'assets/annoIcons/Bear_Hunting_Cabin.webp';
+import parkasIcon from 'assets/annoIcons/Parka_Factory.webp';
+import sledFrameIcon from 'assets/annoIcons/Sled_Frame_Factory.webp';
+import huskyIcon from 'assets/annoIcons/Husky_Farm.webp';
+import huskySledIcon from 'assets/annoIcons/Husky_Sled_Factory.webp';
 
 // Shepherds
-import linseedIcon from '../assets/annoIcons/Icon_linen_farm_0.webp';
-import linenIcon from '../assets/annoIcons/Icon_linen_fabric_0.webp';
-import embroidererIcon from '../assets/annoIcons/Icon_traditional_clothing_0.webp';
-import saltIcon from '../assets/annoIcons/Salt.webp';
-import sangaIcon from '../assets/annoIcons/Icon_watusi_0.webp';
-import dryHouseIcon from '../assets/annoIcons/Icon_dried_meat_0.webp';
-import hibiscusFarmIcon from '../assets/annoIcons/Icon_hibiscus_farm_0.webp';
-import hibiscusTeaIcon from '../assets/annoIcons/Icon_hibiscus_tea_0.webp';
+import linseedIcon from 'assets/annoIcons/Icon_linen_farm_0.webp';
+import linenIcon from 'assets/annoIcons/Icon_linen_fabric_0.webp';
+import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
+import saltIcon from 'assets/annoIcons/Salt.webp';
+import sangaIcon from 'assets/annoIcons/Icon_watusi_0.webp';
+import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
+import hibiscusFarmIcon from 'assets/annoIcons/Icon_hibiscus_farm_0.webp';
+import hibiscusTeaIcon from 'assets/annoIcons/Icon_hibiscus_tea_0.webp';
 
 // Weapons
-import weaponsIcon from '../assets/annoIcons/Weapons.webp';
-import saltpeterIcon from '../assets/annoIcons/Saltpeter.webp';
-import dynamiteIcon from '../assets/annoIcons/Dynamite.webp';
-import heavyWeaponsIcon from '../assets/annoIcons/Advanced_weapons.webp';
+import weaponsIcon from 'assets/annoIcons/Weapons.webp';
+import saltpeterIcon from 'assets/annoIcons/Saltpeter.webp';
+import dynamiteIcon from 'assets/annoIcons/Dynamite.webp';
+import heavyWeaponsIcon from 'assets/annoIcons/Advanced_weapons.webp';
 
 // Machinery
-import steamMotorsIcon from '../assets/annoIcons/Steam_motors.webp';
-import coachMakersIcon from '../assets/annoIcons/Chassis.webp';
-import steamCarriagesIcon from '../assets/annoIcons/Steam_carriages.webp';
+import steamMotorsIcon from 'assets/annoIcons/Steam_motors.webp';
+import coachMakersIcon from 'assets/annoIcons/Chassis.webp';
+import steamCarriagesIcon from 'assets/annoIcons/Steam_carriages.webp';
 
 // Production Chains
 export const productionChains: TieredProductionChain[] = [

@@ -1,5 +1,5 @@
 <template>
-  <router-view class="font-soleil" />
+  <router-view class="" />
 </template>
 
 <script setup lang="ts"></script>

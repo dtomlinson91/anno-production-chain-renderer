@@ -23,9 +23,12 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" bordered>
+    <q-drawer v-model="leftDrawerOpen" bordered class="page-background">
       <q-list>
-        <q-item-label header> Navigation </q-item-label>
+        <q-item-label header class="text-off-black text-subtitle1">
+          Navigation
+        </q-item-label>
+        <q-separator inset class="q-mb-sm" />
 
         <EssentialLink
           v-for="link in linksList"
@@ -37,7 +40,6 @@
 
     <q-page-container>
       <router-view class="page-background text-burnt" />
-      <!--<router-view class="bg-grey-2" />-->
     </q-page-container>
   </q-layout>
 </template>

@@ -1,32 +1,13 @@
-ToDo:
-  ☐ push to gh pages
-  ☐ document div with background instead of img
-  ☐ document vite importing assets
-    ☐ importing an image
-  ☐ fix link to homepage (loading into new tab)
-    ☐ doc this
-  ☐ create interface under models.ts for production-chains.ts
-  ☐ use v-for to loop over object
 
-Notes:
-
-watchEffect(() => {
-    if (mermaidGraph.value != null) {
-      mermaid.render(
-        'test',
-        "flowchart LR; Wood((<div class='wood-icon'><span>1</span></div>))-->Icon((<div class='timber-icon'>1</div>)); classDef mermaid-height height:50px; class Wood mermaid-height",
-        (svgCode: string) => {
-          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-          mermaidGraph.value!.innerHTML = svgCode;
-        }
-      );
-    } else {
-      console.log('null value');
-    }
-  });
-
-  .timber-icon {
-    background: no-repeat center/100% url('../assets/annoIcons/Timber.webp');
-    width: 40px;
-    height: 40px;
-  }
+Archive:
+✘ push to gh pages @cancelled(22-09-25 22:01) @project(ToDo)
+✔ document div with background instead of img @done(22-09-25 21:08) @project(ToDo)
+✔ document vite importing assets @done(22-09-25 21:04) @project(ToDo)
+✔ importing an image @done(22-09-25 21:04) @project(ToDo)
+✔ fix link to homepage (loading into new tab) @done(22-09-25 22:01) @project(ToDo)
+✘ doc this @cancelled(22-09-25 22:01) @project(ToDo)
+✔ create interface under models.ts for production-chains.ts @done(22-09-25 20:36) @project(ToDo)
+✔ use v-for to loop over object @done(22-09-25 20:36) @project(ToDo)
+✔ aliases for vite @done(22-09-25 20:58) @project(ToDo)
+✔ filename cases @done(22-09-25 20:59) @project(ToDo)
+✔ custom fonts (google font) @done(22-09-25 21:04) @project(ToDo)
