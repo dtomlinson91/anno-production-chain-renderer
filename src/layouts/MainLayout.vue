@@ -64,6 +64,6 @@ function toggleLeftDrawer() {
 }
 
 .custom-width {
-  width: 5000px;
+  width: 5100px;
 }
 </style>

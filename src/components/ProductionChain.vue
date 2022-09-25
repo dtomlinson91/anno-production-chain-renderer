@@ -38,13 +38,13 @@ watchEffect(() => {
 
 .ratio-count {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   text-align: center;
 }
 
 .efficiency-perc {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: $green-9 !important;
 }
 
@@ -53,7 +53,7 @@ watchEffect(() => {
 }
 
 .electricity-icon {
-  width: 30px;
+  width: 40px;
   margin-bottom: -5px;
 }
 

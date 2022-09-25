@@ -3,7 +3,7 @@
     flat
     bordered
     square
-    :class="['bg-grey-3', 'q-ma-sm', 'border', 'col-2', 'text-center']"
+    :class="['bg-grey-3', 'q-ma-sm', 'border', 'text-center']"
   >
     <q-card-section>
       <div class="text-subtitle1 text-uppercase text-center big-font q-pa-md">
@@ -18,16 +18,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-
-const props = defineProps<{
+defineProps<{
   title: string;
-  colWidth: number;
 }>();
-
-const getColWidth = computed(() => {
-  return `col-${props.colWidth}`;
-});
 </script>
 
 <style lang="scss">

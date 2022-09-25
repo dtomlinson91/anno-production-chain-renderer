@@ -1,10 +1,16 @@
 <template>
-  <div class="row">
+  <div class="column masonry-container">
+    <div class="flex-break hidden item"></div>
+    <div class="flex-break item"></div>
+    <div class="flex-break item"></div>
+    <div class="flex-break item"></div>
+    <div class="flex-break item"></div>
+
     <ChainTiers
       v-for="tier in productionChains"
       :key="tier.tierName"
       :title="tier.tierName"
-      :col-width="tier.width"
+      class="masonry-col item"
     >
       <ProductionChain
         v-for="chain in tier.productionChains"
@@ -38,4 +44,30 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+// Masonry Layout
+.flex-break {
+  flex: 1 0 100% !important;
+  width: 0 !important;
+}
+$x: 5;
+
+@for $i from 1 through ($x - 1) {
+  .masonry-container > .item:nth-child(#{$x}n + #{$i}) {
+    order: #{$i};
+  }
+}
+
+.masonry-container > .item:nth-child(#{$x}n) {
+  order: #{$x};
+}
+
+.masonry-container {
+  height: 10000px;
+
+  .masonry-col {
+    width: 1000px;
+    padding: 1px;
+  }
+}
+</style>
