@@ -1,6 +1,7 @@
 export interface TieredProductionChain {
+  colBreak: boolean;
   tierName: string;
-  productionChains: ProductionChain[];
+  productionChains?: ProductionChain[];
 }
 
 export interface ProductionChain {

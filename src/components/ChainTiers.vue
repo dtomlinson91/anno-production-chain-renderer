@@ -3,10 +3,16 @@
     flat
     bordered
     square
-    :class="['card-background', 'q-ma-sm', 'border', 'text-center']"
+    :class="[
+      'card-background',
+      'q-ma-sm',
+      'border',
+      'text-center',
+      calculateColBreak()
+    ]"
   >
     <q-card-section>
-      <div class="text-subtitle1 text-uppercase text-center big-font q-pa-md">
+      <div class="text-subtitle1 text-uppercase text-center title-font q-pa-md">
         {{ title }}
       </div>
     </q-card-section>
@@ -18,9 +24,12 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title: string;
+  colBreak: boolean;
 }>();
+
+const calculateColBreak = () => (props.colBreak ? 'hide-item' : '');
 </script>
 
 <style lang="scss">
@@ -28,7 +37,13 @@ defineProps<{
   border: 0.1rem solid $off-black;
 }
 
-.big-font {
-  font-size: 2.2rem;
+.title-font {
+  font-size: 3rem;
+}
+
+.hide-item {
+  height: 0px;
+  border: none;
+  margin-bottom: -9.2px;
 }
 </style>
