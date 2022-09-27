@@ -33,3 +33,9 @@ Name(<img src='${heavyWeaponsIcon}' class='icon-size' /><span class='ratio-count
 ```
 NAME(<span class='icon-flex-row'><img src='${steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>); style Name stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
 ```
+
+## chain with world icon
+
+```
+NAME(<span class='icon-flex-row'><img src='${highWheelerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${lightningIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+```

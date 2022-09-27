@@ -11,13 +11,17 @@
       calculateColBreak()
     ]"
   >
-    <q-card-section>
-      <div class="text-subtitle1 text-uppercase text-center title-font q-pa-md">
-        {{ title }}
-      </div>
-    </q-card-section>
+    <div v-if="!colBreak">
+      <q-card-section>
+        <div
+          class="text-subtitle1 text-uppercase text-center title-font q-pa-md"
+        >
+          {{ title }}
+        </div>
+      </q-card-section>
 
-    <q-separator inset class="q-mb-sm" />
+      <q-separator inset class="q-mb-sm" />
+    </div>
 
     <slot></slot>
   </q-card>
