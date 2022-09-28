@@ -2,10 +2,10 @@ import { TieredProductionChain } from './models';
 
 // Icons
 // Regions
-import oldWorldIcon from 'assets/annoIcons/Icon_session_moderate_0.webp';
-import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.webp';
-import newWorldIcon from 'assets/annoIcons/Icon_session_southamerica_0.webp';
-import arcticIcon from 'assets/annoIcons/Icon_session_passage_0.webp';
+import oldWorldIcon from 'assets/annoIcons/Icon_session_moderate_0.png';
+import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
+import newWorldIcon from 'assets/annoIcons/Icon_session_southamerica_0.png';
+import arcticIcon from 'assets/annoIcons/Icon_session_passage_0.png';
 
 // Building Materials
 import woodIcon from 'assets/annoIcons/Wood.webp';
@@ -171,7 +171,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'goldRatio',
-        mermaidDefinition: `flowchart LR; ArcticGold(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>) --> NewWorldGold(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${newWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>2.5</span></span></span>)`
+        mermaidDefinition: `flowchart LR; ArcticFur(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>) --> OldWorldFur(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${newWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>4</span></span></span>)`
       },
       {
         productionChain: 'furRatio',

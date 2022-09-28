@@ -10,7 +10,7 @@
         ><span
           >Furs use Old World
           <q-img
-            src="~assets/annoIcons/Icon_session_moderate_0.webp"
+            src="~assets/annoIcons/Icon_session_moderate_0.png"
             class="info-small-icon"
           ></q-img>
           production rates.
@@ -27,7 +27,7 @@
         ><span
           >Clay uses Old World
           <q-img
-            src="~assets/annoIcons/Icon_session_moderate_0.webp"
+            src="~assets/annoIcons/Icon_session_moderate_0.png"
             class="info-small-icon"
           ></q-img>
           production rates.
@@ -44,7 +44,7 @@
         ><span
           >Gold mines use New World
           <q-img
-            src="~assets/annoIcons/Icon_session_southamerica_0.webp"
+            src="~assets/annoIcons/Icon_session_southamerica_0.png"
             class="info-small-icon"
           ></q-img>
           production rates.</span
