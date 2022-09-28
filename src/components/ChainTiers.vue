@@ -38,7 +38,7 @@ const calculateColBreak = () => (props.colBreak ? 'hide-item' : '');
 
 <style lang="scss">
 .border {
-  border: 0.1rem solid $off-black;
+  border: 0.1rem solid $burnt-dark;
 }
 
 .title-font {

@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf" class="custom-width">
     <q-header :reveal="true" :reveal-offset="0">
-      <q-toolbar class="border-black-bottom-med toolbar-background text-white">
+      <q-toolbar class="toolbar-background text-white">
         <q-btn
           flat
           dense

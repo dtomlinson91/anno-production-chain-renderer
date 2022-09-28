@@ -21,7 +21,7 @@ NAME(<span class='icon-flex-row'><img src='${steelIcon}' class='icon-size' /><sp
 ## chain with electricity
 
 ```
-NAME(<span class='icon-flex-row'><img src='${highWheelerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${lightningIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+NAME(<span class='icon-flex-row'><img src='${highWheelerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${electricityIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
 ```
 
 ```

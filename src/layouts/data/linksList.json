@@ -1,8 +1,14 @@
 [
   {
-    "title": "Home",
-    "caption": "Homepage",
-    "icon": "las la-home",
+    "title": "Base",
+    "caption": "Base Game up to S4",
+    "icon": "las la-atlas",
     "link": "/"
+  },
+  {
+    "title": "Expansions",
+    "caption": "Expansions from S4",
+    "icon": "las la-atlas",
+    "link": "/expansions"
   }
 ]
