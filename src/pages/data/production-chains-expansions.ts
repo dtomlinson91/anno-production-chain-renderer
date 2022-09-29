@@ -31,6 +31,13 @@ import sandIcon from 'assets/annoIcons/Quartz_sand.webp';
 import glassIcon from 'assets/annoIcons/Glass.webp';
 import cottonIcon from 'assets/annoIcons/Cotton.webp';
 
+// Restaurant
+import potatoIcon from 'assets/annoIcons/Potato.webp';
+import archdukeSchnitzel from '../../assets/annoIcons/Archdukes_Schnitzel.webp';
+import beefIcon from 'assets/annoIcons/Beef.webp';
+import redPeppersIcon from 'assets/annoIcons/Red_peppers.webp';
+import stroggofGoulashIcon from '../../assets/annoIcons/Stroggof_Goulash.webp';
+
 export const productionChainsExpansions: TieredProductionChain[] = [
   {
     colBreak: false,
@@ -75,6 +82,20 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       {
         productionChain: 'souvenirs',
         mermaidDefinition: `flowchart LR; CamphorWax(<img src='${camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Souvenirs(<img src='${souvenirsIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Sand(<img src='${sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Glass(<img src='${glassIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Souvenirs; Cotton(<img src='${cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Souvenirs`
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Restaurants',
+    productionChains: [
+      {
+        productionChain: 'archdukeSchnitzel',
+        mermaidDefinition: `flowchart LR; Pigs0(<img src='${pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Schnitzel(<img src='${archdukeSchnitzel}' class='icon-size' /><span class='ratio-count'>1</span>); Potato(<span class='icon-flex-row'><img src='${potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Schnitzel; Pigs1(<img src='${pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Tallow(<img src='${tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Schnitzel`
+      },
+      {
+        productionChain: 'stroggofGoulash',
+        mermaidDefinition: `flowchart LR; Beef(<img src='${beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>) & RedPeppers(<img src='${redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>) & Corn(<img src='${cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> StroggofGoulash(<img src='${stroggofGoulashIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       }
     ]
   }
