@@ -17,26 +17,34 @@ import siloIcon from 'assets/annoIcons/Silo.webp';
 // Tourists
 import tallowIcon from 'assets/annoIcons/Tallow.webp';
 import soapIcon from 'assets/annoIcons/Soap.webp';
-import coconutOilIcon from '../../assets/annoIcons/Coconut_Oil.webp';
-import cinnamonIcon from '../../assets/annoIcons/Cinnamon.webp';
-import shampooIcon from '../../assets/annoIcons/Shampoo.webp';
-import citrusIcon from '../../assets/annoIcons/Citrus.webp';
-import lemonadeIcon from '../../assets/annoIcons/Lemonade.webp';
+import coconutOilIcon from 'assets/annoIcons/Coconut_Oil.webp';
+import cinnamonIcon from 'assets/annoIcons/Cinnamon.webp';
+import shampooIcon from 'assets/annoIcons/Shampoo.webp';
+import citrusIcon from 'assets/annoIcons/Citrus.webp';
+import lemonadeIcon from 'assets/annoIcons/Lemonade.webp';
 import sugarCaneIcon from 'assets/annoIcons/Sugar_cane.webp';
 import sugarIcon from 'assets/annoIcons/Sugar.webp';
 import saltpeterIcon from 'assets/annoIcons/Saltpeter.webp';
-import camphorWaxIcon from '../../assets/annoIcons/Camphor_Wax.webp';
-import souvenirsIcon from '../../assets/annoIcons/Souvenirs.webp';
+import camphorWaxIcon from 'assets/annoIcons/Camphor_Wax.webp';
+import souvenirsIcon from 'assets/annoIcons/Souvenirs.webp';
 import sandIcon from 'assets/annoIcons/Quartz_sand.webp';
 import glassIcon from 'assets/annoIcons/Glass.webp';
 import cottonIcon from 'assets/annoIcons/Cotton.webp';
 
 // Restaurant
 import potatoIcon from 'assets/annoIcons/Potato.webp';
-import archdukeSchnitzel from '../../assets/annoIcons/Archdukes_Schnitzel.webp';
+import archdukeSchnitzel from 'assets/annoIcons/Archdukes_Schnitzel.webp';
 import beefIcon from 'assets/annoIcons/Beef.webp';
 import redPeppersIcon from 'assets/annoIcons/Red_peppers.webp';
-import stroggofGoulashIcon from '../../assets/annoIcons/Stroggof_Goulash.webp';
+import stroggofGoulashIcon from 'assets/annoIcons/Stroggof_Goulash.webp';
+import fishIcon from 'assets/annoIcons/Fish.webp';
+import fishFritesIcon from 'assets/annoIcons/Fish_and_Frites.webp';
+import caribouIcon from 'assets/annoIcons/Caribou_Hunting_Cabin.webp';
+import flourIcon from 'assets/annoIcons/Flour.webp';
+import venisonEnCrouteIcon from 'assets/annoIcons/Venison_en_Croute.webp';
+import lobstersIcon from 'assets/annoIcons/Icon_seafood_0.webp';
+import tobaccoIcon from 'assets/annoIcons/Tobacco.webp';
+import lobsterChemineeIcon from 'assets/annoIcons/Lobster_Cheminee.webp';
 
 export const productionChainsExpansions: TieredProductionChain[] = [
   {
@@ -96,6 +104,18 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       {
         productionChain: 'stroggofGoulash',
         mermaidDefinition: `flowchart LR; Beef(<img src='${beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>) & RedPeppers(<img src='${redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>) & Corn(<img src='${cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> StroggofGoulash(<img src='${stroggofGoulashIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      },
+      {
+        productionChain: 'fishFrites',
+        mermaidDefinition: `flowchart LR; Fish(<span class='icon-flex-row'><img src='${fishIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Potato(<span class='icon-flex-row'><img src='${potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Citrus(<span class='icon-flex-row'><img src='${citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> FishFrites(<img src='${fishFritesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+      },
+      {
+        productionChain: 'venisonEnCroute',
+        mermaidDefinition: `flowchart LR; Grain(<img src='${grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Flour(<span class='icon-flex-row'><img src='${flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> VenisonEnCroute(<img src='${venisonEnCrouteIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Potato(<span class='icon-flex-row'><img src='${potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Caribou(<img src='${caribouIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> VenisonEnCroute`
+      },
+      {
+        productionChain: 'lobsterCheminee',
+        mermaidDefinition: `flowchart LR; Lobster(<img src='${lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Ctirus(<span class='icon-flex-row'><img src='${citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Tobacco(<img src='${tobaccoIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> LobsterCheminee(<img src='${lobsterChemineeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       }
     ]
   }
