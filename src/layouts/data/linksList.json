@@ -1,13 +1,13 @@
 [
   {
-    "title": "Base",
-    "caption": "Base Game up to S4",
+    "title": "Season 1 - Season 4",
+    "caption": "Base Game up to Season 4",
     "icon": "las la-atlas",
     "link": "/"
   },
   {
-    "title": "Expansions",
-    "caption": "Expansions from S4",
+    "title": "Season 4+",
+    "caption": "Expansions from Season 4",
     "icon": "las la-atlas",
     "link": "/expansions"
   }
