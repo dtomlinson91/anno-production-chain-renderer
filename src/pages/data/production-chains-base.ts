@@ -1,4 +1,5 @@
 import { TieredProductionChain } from './models';
+import endent from 'endent';
 
 // Icons
 // Regions
@@ -167,19 +168,39 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'coalRatio',
-        mermaidDefinition: `flowchart LR; Coal(<img src='${coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Charcoal(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>2</span>)`
+        mermaidDefinition: endent`
+        flowchart LR
+        Coal(<img src='${coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Charcoal(<img src='${charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Coal --> Charcoal
+        `
       },
       {
         productionChain: 'goldRatio',
-        mermaidDefinition: `flowchart LR; ArcticFur(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>) --> OldWorldFur(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${newWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>4</span></span></span>)`
+        mermaidDefinition: endent`
+        flowchart LR
+        ArcticGold(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        NewWorldGold(<span class='icon-flex-row'><img src='${goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${newWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>4</span></span></span>)
+        ArcticGold --> NewWorldGold
+        `
       },
       {
         productionChain: 'furRatio',
-        mermaidDefinition: `flowchart LR; ArcticFur(<span class='icon-flex-row'><img src='${fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>) --> OldWorldFur(<span class='icon-flex-row'><img src='${fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>4</span></span></span>)`
+        mermaidDefinition: `
+        flowchart LR
+        ArcticFur(<span class='icon-flex-row'><img src='${fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        OldWorldFur(<span class='icon-flex-row'><img src='${fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>4</span></span></span>)
+        ArcticFur --> OldWorldFur
+        `
       },
       {
         productionChain: 'clayRatio',
-        mermaidDefinition: `flowchart LR; EnbesaClay(<span class='icon-flex-row'><img src='${clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${enbesaIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>) --> OldWorldClay(<span class='icon-flex-row'><img src='${clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>2</span></span></span>)`
+        mermaidDefinition: `
+        flowchart LR
+        EnbesaClay(<span class='icon-flex-row'><img src='${clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${enbesaIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        OldWorldClay(<span class='icon-flex-row'><img src='${clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>2</span></span></span>)
+        EnbesaClay --> OldWorldClay
+        `
       }
     ]
   },
@@ -189,15 +210,30 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'oilPowerPlant',
-        mermaidDefinition: `flowchart LR; OilWell(<img src='${oilWellIcon}' class='icon-size' /><span class='ratio-count'>3</span>) --> OilPowerPlant(<img src='${oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+        mermaidDefinition: `
+        flowchart LR
+        OilWell(<img src='${oilWellIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
+        OilPowerPlant(<img src='${oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        OilWell --> OilPowerPlant
+        `
       },
       {
         productionChain: 'oilTanker',
-        mermaidDefinition: `flowchart LR; OilTanker(<img src='${oilTankerIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> OilPowerPlant(<img src='${oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>2-3</span>)`
+        mermaidDefinition: `
+        flowchart LR
+        OilTanker(<img src='${oilTankerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        OilPowerPlant(<img src='${oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>2-3</span>)
+        OilTanker --> OilPowerPlant
+        `
       },
       {
         productionChain: 'gasPowerPlant',
-        mermaidDefinition: `flowchart LR; Gas(<img src='${gasIcon}' class='icon-size' /><span class='ratio-count'>6</span>) --> GasPlant(<img src='${gasPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
+        mermaidDefinition: `
+        flowchart LR
+        Gas(<img src='${gasIcon}' class='icon-size' /><span class='ratio-count'>6</span>)
+        GasPlant(<img src='${gasPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Gas --> GasPlant
+        `
       }
     ]
   },
