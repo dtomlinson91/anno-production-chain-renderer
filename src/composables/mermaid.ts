@@ -1,7 +1,7 @@
 import { onMounted } from 'vue';
 import mermaid from 'mermaid';
 
-export function initialiseMermaid() {
+function initialiseMermaid() {
   onMounted(() => {
     mermaid.initialize({
       startOnLoad: false,
@@ -12,3 +12,5 @@ export function initialiseMermaid() {
     });
   });
 }
+
+export { mermaid, initialiseMermaid };
