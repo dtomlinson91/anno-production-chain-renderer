@@ -28,7 +28,7 @@ module.exports = configure(function (/* ctx */) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: [],
+    boot: ['mermaid'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: ['app.scss'],
@@ -56,6 +56,7 @@ module.exports = configure(function (/* ctx */) {
 
       alias: {
         composables: path.join(__dirname, './src/composables'),
+        boot: path.join(__dirname, './src/boot'),
       },
 
       vueRouterMode: 'hash', // available values: 'hash', 'history'
@@ -79,15 +80,22 @@ module.exports = configure(function (/* ctx */) {
       },
       // viteVuePluginOptions: {},
 
-      // vitePlugins: [
-      //   [ 'package-name', { ..options.. } ]
-      // ]
+      // vitePlugins: [],
+
+      extendViteConf(viteConf, { isClient, isServer }) {
+        viteConf.plugins.push(
+          require('rollup-plugin-visualizer').visualizer({
+            emitFile: true,
+            file: 'stats.html',
+          })
+        );
+      },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
     devServer: {
       // https: true
-      open: true, // opens browser window automatically
+      open: false, // opens browser window automatically
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
