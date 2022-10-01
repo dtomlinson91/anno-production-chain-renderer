@@ -388,16 +388,44 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'champagne',
-        mermaidDefinition: `flowchart LR; Sand(<img src='${icons.sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> GlassMakers(<img src='${icons.glassIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Champagne(<img src='${icons.champagneIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Grapes(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>4</span>) --> Champagne`
+        mermaidDefinition: endent`
+        flowchart LR
+        Sand(<img src='${icons.sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Glass(<img src='${icons.glassIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Champagne(<img src='${icons.champagneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Grapes(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        Sand --> Glass --> Champagne
+        Grapes --> Champagne
+        `
       },
       {
         productionChain: 'jewelry',
-        mermaidDefinition: `flowchart LR; Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & GoldOre(<img src='${icons.goldOreIcon}' class='icon-size' /><span class='ratio-count'>5</span>) --> Gold(<img src='${icons.goldIcon}' class='icon-size' /><span class='ratio-count'>2</span>) -->Jewelry(<img src='${icons.jewelryIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Pearls(<img src='${icons.pearlsIcon}' class='icon-size' /><span class='ratio-count'>3</span>) --> Jewelry`
+        mermaidDefinition: endent`
+        flowchart LR
+        Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        GoldOre(<img src='${icons.goldOreIcon}' class='icon-size' /><span class='ratio-count'>5</span>)
+        Gold(<img src='${icons.goldIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Jewelry(<img src='${icons.jewelryIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pearls(<img src='${icons.pearlsIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
+        Charcoal & GoldOre --> Gold --> Jewelry
+        Pearls --> Jewelry
+        `
       },
       {
         productionChain: 'gramophone',
         chainMultiplier: '4',
-        mermaidDefinition: `flowchart LR; Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>) --> Marquetry(<img src='${icons.marquetryIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Gramophone(<img src='${icons.gramophoneIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Gramophone stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;; Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Gramophone`
+        mermaidDefinition: endent`
+        flowchart LR
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Marquetry(<img src='${icons.marquetryIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Gramophone(<img src='${icons.gramophoneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Gramophone stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Wood --> Marquetry --> Gramophone
+        Copper & Zinc --> Brass --> Gramophone
+        `
       }
     ]
   },

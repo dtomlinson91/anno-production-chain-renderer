@@ -238,7 +238,6 @@ export {
   parkasIcon,
   pearlsIcon,
   pemmicanIcon,
-  pigIcon,
   pigsIcon,
   pipesIcon,
   plantainPlantationIcon,
