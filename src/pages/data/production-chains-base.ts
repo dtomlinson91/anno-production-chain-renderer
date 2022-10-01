@@ -312,19 +312,59 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'highWheeler',
-        mermaidDefinition: `flowchart LR; Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<img src='${icons.ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> HighWheeler(<img src='${icons.highWheelerIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style HighWheeler stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;; Caoutchouc(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>4</span>) --> HighWheeler`
+        mermaidDefinition: endent`
+        flowchart LR
+        Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Iron(<img src='${icons.ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        HighWheeler(<img src='${icons.highWheelerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Caoutchouc(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        style HighWheeler stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Coal & Iron --> Steel --> HighWheeler
+        Caoutchouc --> HighWheeler
+        `
       },
       {
         productionChain: 'glasses',
-        mermaidDefinition: `flowchart LR; Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Glasses(<img src='${icons.glassesIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) & Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Brass(<span class='icon-flex-row'><img src='${icons.brassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>) --> Glasses`
+        mermaidDefinition: endent`
+        flowchart LR
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Glasses(<img src='${icons.glassesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Brass(<span class='icon-flex-row'><img src='${icons.brassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
+        Sand --> Glass --> Glasses
+        Copper & Zinc --> Brass --> Glasses
+        `
       },
       {
         productionChain: 'pocketWatches',
-        mermaidDefinition: `flowchart LR; GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>83%</span><span class='ratio-count'>4</span></span></span>) & Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Gold(<span class='icon-flex-row'><img src='${icons.goldIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>) --> PocketWatches(<img src='${icons.pocketWatchesIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>) --> Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>) --> PocketWatches; style PocketWatches stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;`
+        mermaidDefinition: endent`
+        flowchart LR
+        GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>83%</span><span class='ratio-count'>4</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Gold(<span class='icon-flex-row'><img src='${icons.goldIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>)
+        PocketWatches(<img src='${icons.pocketWatchesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
+        style PocketWatches stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        GoldOre & Coal --> Gold --> PocketWatches
+        Sand --> Glass --> PocketWatches
+        `
       },
       {
         productionChain: 'lightBulb',
-        mermaidDefinition: `flowchart LR; Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Filament(<img src='${icons.filamentIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> LightBulb(<img src='${icons.lightBulbIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> LightBulb`
+        mermaidDefinition: endent`
+        flowchart LR
+        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Filament(<img src='${icons.filamentIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        LightBulb(<img src='${icons.lightBulbIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal --> Filament --> LightBulb
+        Sand --> Glass --> LightBulb
+        `
       }
     ]
   },
@@ -478,15 +518,36 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'advancedCoffee',
-        mermaidDefinition: `flowchart LR; Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> MaltHouse(<img src='${icons.malthouseIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Coffee(<img src='${icons.coffeeIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Coffee stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;;`
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        MaltHouse(<img src='${icons.malthouseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Coffee(<img src='${icons.coffeeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Coffee stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Grain --> MaltHouse --> Coffee
+        `
       },
       {
         productionChain: 'advancedRum',
-        mermaidDefinition: `flowchart LR; Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Potato(<img src='${icons.potatoIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Rum(<img src='${icons.rumIcon}' class='icon-size' /><span class='ratio-count'>2</span>); style Rum stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;;`
+        mermaidDefinition: endent`
+        flowchart LR
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Potato(<img src='${icons.potatoIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Rum(<img src='${icons.rumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Rum stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Coal & Potato --> Rum
+        `
       },
       {
         productionChain: 'advancedCotton',
-        mermaidDefinition: `flowchart LR; Sheep(<img src='${icons.woolIcon}' class='icon-size' /><span class='ratio-count'>2</span>) & Wood(<img src='${icons.woodIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Cotton(<img src='${icons.cottonMillIcon}' class='icon-size' /><span class='ratio-count'>2</span>); style Cotton stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;;`
+        mermaidDefinition: endent`
+        flowchart LR
+        Sheep(<img src='${icons.woolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cotton(<img src='${icons.cottonMillIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Cotton stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Sheep & Wood --> Cotton
+        `
       }
     ]
   },
