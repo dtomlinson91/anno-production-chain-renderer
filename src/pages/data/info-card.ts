@@ -1,4 +1,4 @@
-import * as icons from 'src/pages/data/icons';
+import * as icons from './icons';
 
 export const worldItemData = [
   {
