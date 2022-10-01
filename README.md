@@ -157,19 +157,25 @@ For example to add Sewing Machines to Artisans:
 
 ```typescript
 {
-    productionChain: 'sewingMachines',
-    chainMultiplier: '2',
-    mermaidDefinition: endent`
-    flowchart LR
-    Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-    Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-    SewingMachines(<img src='${icons.sewingMachinesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-    Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-    Steel
-    Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-    Charcoal &  Iron --> Steel --> SewingMachines
-    Wood --> SewingMachines
-    `
+  colBreak: false,
+  tierName: 'Artisans',
+  productionChains: [
+    {
+        productionChain: 'sewingMachines',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SewingMachines(<img src='${icons.sewingMachinesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Steel
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal &  Iron --> Steel --> SewingMachines
+        Wood --> SewingMachines
+        `
+    }
+  ]
 }
 ```
 
@@ -177,7 +183,7 @@ for details on the `mermaidDefinition` see the section below.
 
 ## Mermaid definitions
 
-See the documentation for mermaid flowcharts [here](https://mermaid-js.github.io/mermaid/#/flowchart) for more information.
+See the documentation for mermaid flowcharts [here](https://mermaid-js.github.io/mermaid/#/flowchart).
 
 A mermaid definition starts with
 
@@ -236,7 +242,6 @@ Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='r
 Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
 SewingMachines(<img src='${icons.sewingMachinesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
 Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-Steel
 Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
 Charcoal &  Iron --> Steel --> SewingMachines
 Wood --> SewingMachines

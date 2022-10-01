@@ -286,7 +286,6 @@ export const productionChainsBase: TieredProductionChain[] = [
         Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         SewingMachines(<img src='${icons.sewingMachinesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Steel
         Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Charcoal &  Iron --> Steel --> SewingMachines
         Wood --> SewingMachines
