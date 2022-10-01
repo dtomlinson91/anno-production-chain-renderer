@@ -35,7 +35,7 @@
 import { productionChainsBase } from './data/production-chains-base';
 
 // Mermaid
-import { initialiseMermaid } from 'boot/mermaid';
+import { initialiseMermaid } from 'composables/mermaid';
 
 // Components
 import ChainTiers from 'components/ChainTiers.vue';

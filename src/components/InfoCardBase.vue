@@ -1,66 +1,23 @@
 <template>
   <q-list separator class="big-font text-left">
-    <q-item>
-      <q-item-section avatar>
-        <q-img
-          src="~assets/annoIcons/Furs.webp"
-          class="info-icon"
-        ></q-img> </q-item-section
-      ><q-item-section
-        ><span
-          >Furs use Old World
-          <q-img
-            src="~assets/annoIcons/Icon_session_moderate_0.png"
-            class="info-small-icon"
-          ></q-img>
-          production rates.
-        </span></q-item-section
-      >
-    </q-item>
-    <q-item>
-      <q-item-section avatar>
-        <q-img
-          src="~assets/annoIcons/Clay.webp"
-          class="info-icon"
-        ></q-img></q-item-section
-      ><q-item-section
-        ><span
-          >Clay uses Old World
-          <q-img
-            src="~assets/annoIcons/Icon_session_moderate_0.png"
-            class="info-small-icon"
-          ></q-img>
-          production rates.
-        </span></q-item-section
-      >
-    </q-item>
-    <q-item>
-      <q-item-section avatar>
-        <q-img
-          src="~assets/annoIcons/Gold_Ore.webp"
-          class="info-icon"
-        ></q-img></q-item-section
-      ><q-item-section
-        ><span
-          >Gold mines use New World
-          <q-img
-            src="~assets/annoIcons/Icon_session_southamerica_0.png"
-            class="info-small-icon"
-          ></q-img>
-          production rates.</span
-        ></q-item-section
-      >
-    </q-item>
-    <q-item>
-      <q-item-section avatar>
-        <q-img src="~assets/electricityBorder.webp" class="info-icon"></q-img>
-      </q-item-section>
-      <q-item-section>Building has electricity</q-item-section>
-    </q-item>
+    <InfoCardItemWorld
+      v-for="item in worldItemData"
+      :key="item.icon"
+      v-bind="item"
+    ></InfoCardItemWorld>
+    <InfoCardItem
+      v-for="item in itemData"
+      :key="item.icon"
+      v-bind="item"
+    ></InfoCardItem>
   </q-list>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import InfoCardItem from './info_card/InfoCardItem.vue';
+import InfoCardItemWorld from './info_card/InfoCardItemWorld.vue';
+import { itemData, worldItemData } from 'src/pages/data/info-card';
+</script>
 
 <style lang="scss">
 .big-font {

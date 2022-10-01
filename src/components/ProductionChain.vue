@@ -5,7 +5,7 @@
 
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue';
-import { mermaid } from 'boot/mermaid';
+import { mermaid } from 'composables/mermaid';
 
 // DOM Refs
 const diagram = ref<HTMLInputElement | null>(null);
