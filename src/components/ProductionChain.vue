@@ -1,4 +1,11 @@
 <template>
+  <div
+    v-if="chainMultiplier"
+    class="text-right absolute chain-multiplier q-pr-lg q-pt-md"
+  >
+    <q-img src="~assets/productionChainMultiplier.svg" width="60px"></q-img>
+    {{ chainMultiplier }}
+  </div>
   <div ref="diagram"></div>
   <q-separator inset class="q-mb-sm" />
 </template>
@@ -14,6 +21,7 @@ const diagram = ref<HTMLInputElement | null>(null);
 const props = defineProps<{
   productionChain: string;
   mermaidDefinition: string;
+  chainMultiplier?: string;
 }>();
 
 watchEffect(() => {
@@ -65,5 +73,11 @@ watchEffect(() => {
 .icon-flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.chain-multiplier {
+  font-size: 2.5rem;
+  font-weight: bold;
+  right: 0;
 }
 </style>

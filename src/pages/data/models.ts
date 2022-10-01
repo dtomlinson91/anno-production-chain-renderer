@@ -6,5 +6,6 @@ export interface TieredProductionChain {
 
 export interface ProductionChain {
   productionChain: string;
+  chainMultiplier?: string;
   mermaidDefinition: string;
 }

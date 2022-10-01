@@ -14,8 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import InfoCardItem from './info_card/InfoCardItem.vue';
-import InfoCardItemWorld from './info_card/InfoCardItemWorld.vue';
+import InfoCardItem from './InfoCard/InfoCardItem.vue';
+import InfoCardItemWorld from './InfoCard/InfoCardItemWorld.vue';
 import { itemData, worldItemData } from 'src/pages/data/info-card';
 </script>
 

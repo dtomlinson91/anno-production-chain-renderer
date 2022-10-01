@@ -7,7 +7,11 @@
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
 
-      <ChainTiers title="Information" :col-break="false">
+      <ChainTiers
+        title="Information"
+        :col-break="false"
+        class="masonry-col item"
+      >
         <InfoCardBase></InfoCardBase>
       </ChainTiers>
       <ChainTiers
@@ -22,6 +26,7 @@
             v-for="chain in tier.productionChains"
             :key="chain.productionChain"
             :production-chain="chain.productionChain"
+            :chain-multiplier="chain.chainMultiplier"
             :mermaid-definition="chain.mermaidDefinition"
           ></ProductionChain>
         </div>

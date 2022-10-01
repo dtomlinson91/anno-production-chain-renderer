@@ -94,15 +94,17 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'bricks',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
-        Clay(<img src='${icons.clayIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Bricks(<img src='${icons.bricksIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Bricks(<img src='${icons.bricksIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Clay --> Bricks
         `
       },
       {
         productionChain: 'steelBeams',
+        chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
         CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
@@ -114,6 +116,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'windows',
+        chainMultiplier: '4',
         mermaidDefinition: endent`
         flowchart LR
         Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -126,6 +129,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'concrete',
+        chainMultiplier: '4',
         mermaidDefinition: endent`
         flowchart LR
         Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
@@ -139,6 +143,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'mudBricks',
+        chainMultiplier: '4',
         mermaidDefinition: endent`
         flowchart LR; Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
         Teff(<img src='${icons.teffIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -210,20 +215,22 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'sausages',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
-        Pig(<img src='${icons.pigIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sausages(<img src='${icons.sausageIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Pig(<span class='icon-flex-row'><img src='${icons.pigsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sausages(<img src='${icons.sausageIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Pig --> Sausages
         `
       },
       {
         productionChain: 'bread',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Flour(<img src='${icons.flourIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Bread(<img src='${icons.breadIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Bread(<img src='${icons.breadIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Grain --> Flour --> Bread
         `
       },
@@ -239,12 +246,13 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'beer',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Malthouse(<img src='${icons.malthouseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Brewery(<img src='${icons.breweryIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        HopFarm(<img src='${icons.hopFarmIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Malthouse(<span class='icon-flex-row'><img src='${icons.malthouseIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Brewery(<img src='${icons.breweryIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        HopFarm(<span class='icon-flex-row'><img src='${icons.hopFarmIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>75%</span><span class='ratio-count'>2</span></span></span>)
         Grain --> Malthouse --> Brewery
         HopFarm --> Brewery
         `
@@ -257,6 +265,7 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'cannedFood',
+        chainMultiplier: '6',
         mermaidDefinition: endent`
         flowchart LR
         Beef(<span class='icon-flex-row'><img src='${icons.beefIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>)
@@ -270,6 +279,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'sewingMachines',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -284,6 +294,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'rum',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         SugarCane(<img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -326,6 +337,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'glasses',
+        chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
         Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
@@ -340,6 +352,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'pocketWatches',
+        chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
         GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>83%</span><span class='ratio-count'>4</span></span></span>)
@@ -355,6 +368,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'lightBulb',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -382,6 +396,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'gramophone',
+        chainMultiplier: '4',
         mermaidDefinition: `flowchart LR; Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>) --> Marquetry(<img src='${icons.marquetryIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Gramophone(<img src='${icons.gramophoneIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Gramophone stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;; Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Gramophone`
       }
     ]
@@ -396,10 +411,12 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'sleepingBag',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Seal(<span class='icon-flex-row'><img src='${icons.sealIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Goose(<img src='${icons.gooseIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> SleepingBag(<img src='${icons.sleepingBagIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       },
       {
         productionChain: 'oilLamp',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> OilLamp(<img src='${icons.oilLampIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Whaling(<img src='${icons.whalingIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> OilLamp`
       }
     ]
@@ -410,10 +427,12 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'parkas',
+        chainMultiplier: '3',
         mermaidDefinition: `flowchart LR; Bears(<img src='${icons.bearIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Seal(<span class='icon-flex-row'><img src='${icons.sealIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Parkas(<img src='${icons.parkasIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       },
       {
         productionChain: 'huskySled',
+        chainMultiplier: '4',
         mermaidDefinition: `flowchart LR; Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>) & Seal(<span class='icon-flex-row'><img src='${icons.sealIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> SledFrame(<img src='${icons.sledFrameIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> HuskySled(<img src='${icons.huskySledIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Husky(<img src='${icons.huskyIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> HuskySled`
       }
     ]
@@ -424,6 +443,7 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'finery',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Linseed(<img src='${icons.linseedIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Linen(<span class='icon-flex-row'><img src='${icons.linenIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Embroidery(<img src='${icons.embroidererIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       },
       {
@@ -432,6 +452,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'hibiscusTea',
+        chainMultiplier: '3',
         mermaidDefinition: `flowchart LR; HibiscusFarm(<span class='icon-flex-row'><img src='${icons.hibiscusFarmIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>) --> HibiscusTea(<img src='${icons.hibiscusTeaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       }
     ]
@@ -442,6 +463,7 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'ceramics',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) & Indigo(<img src='${icons.indigoIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Ceramics(<img src='${icons.ceramicsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       },
       {
@@ -450,18 +472,22 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'wat',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Teff(<img src='${icons.teffIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Spices(<img src='${icons.spicesIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> TeffMill(<span class='icon-flex-row'><img src='${icons.teffMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Wat(<img src='${icons.watIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Lobster(<img src='${icons.lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Wat`
       },
       {
         productionChain: 'pipes',
+        chainMultiplier: '6',
         mermaidDefinition: `flowchart LR; Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16%</span><span class='ratio-count'>1</span></span></span>) & Tobacco(<span class='icon-flex-row'><img src='${icons.tobaccoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>) --> Pipes(<img src='${icons.pipesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       },
       {
         productionChain: 'luminer',
+        chainMultiplier: '4',
         mermaidDefinition: `flowchart LR; Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>) --> Paper(<span class='icon-flex-row'><img src='${icons.paperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>) --> Luminer(<img src='${icons.luminerIcon}' class='icon-size' /><span class='ratio-count'>1</span>); IndigoIcon(<img src='${icons.indigoIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Luminer`
       },
       {
         productionChain: 'lanterns',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Lanterns(<img src='${icons.lanternsIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Apiary(<span class='icon-flex-row'><img src='${icons.apiaryIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Candles(<span class='icon-flex-row'><img src='${icons.candlesIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Lanterns`
       }
     ]
@@ -476,10 +502,12 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'tailors',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Tailors(<img src='${icons.tailorsIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Linseed(<img src='${icons.linseedIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Linen(<span class='icon-flex-row'><img src='${icons.linenIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Tailors`
       },
       {
         productionChain: 'telephones',
+        chainMultiplier: '3',
         mermaidDefinition: `flowchart LR; Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Filament(<span class='icon-flex-row'><img src='${icons.filamentIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>) --> Telephones(<img src='${icons.telephonesIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Marquetry(<span class='icon-flex-row'><img src='${icons.marquetryIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>) --> Telephones; style Telephones stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;`
       }
     ]
@@ -504,10 +532,12 @@ export const productionChainsBase: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'weapons',
+        chainMultiplier: '6',
         mermaidDefinition: `flowchart LR; charcoalKiln(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>) --> Weapons(<img src='${icons.weaponsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)`
       },
       {
         productionChain: 'heavyWeapons',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Dynamite(<img src='${icons.dynamiteIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> HeavyWeapons(<img src='${icons.heavyWeaponsIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>) --> Dynamite; Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>) & Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> HeavyWeapons; style HeavyWeapons stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7`
       }
     ]
@@ -529,6 +559,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'advancedRum',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -540,6 +571,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'advancedCotton',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Sheep(<img src='${icons.woolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -579,6 +611,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'cigars',
+        chainMultiplier: '2',
         mermaidDefinition: `flowchart LR; Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>) --> Marquetry(<img src='${icons.marquetryIcon}' class='icon-size' /><span class='ratio-count'>2</span>) --> Cigars(<img src='${icons.cigarIcon}' class='icon-size' /><span class='ratio-count'>1</span>); Tobacco(<img src='${icons.tobaccoIcon}' class='icon-size' /><span class='ratio-count'>4</span>) --> Cigars`
       },
       {

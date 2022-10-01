@@ -4,7 +4,8 @@
       <q-img :src="icon" class="info-icon"></q-img>
     </q-item-section>
     <q-item-section>
-      <span>{{ text }}</span>
+      <q-item-label>{{ text }}</q-item-label>
+      <q-item-label>{{ additionalText }}</q-item-label>
     </q-item-section>
   </q-item>
 </template>
@@ -14,5 +15,6 @@
 defineProps<{
   icon: string;
   text: string;
+  additionalText?: string;
 }>();
 </script>

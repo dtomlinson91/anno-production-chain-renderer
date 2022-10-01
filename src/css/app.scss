@@ -2,6 +2,7 @@
 @import 'src/css/rubik-font.scss';
 @import 'src/css/mermaid.scss';
 
+// Font & Text
 @font-face {
   font-family: Soleil;
   src: url('assets/fonts/SoleilRegular.otf');
@@ -21,6 +22,7 @@
   color: #a47718 !important;
 }
 
+// Background
 .bg-off-black {
   background: $off-black !important;
 }

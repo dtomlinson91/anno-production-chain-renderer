@@ -1,4 +1,5 @@
 import * as icons from './icons';
+import fullChainMultiplierIcon from 'assets/productionChainMultiplier.svg';
 
 export const worldItemData = [
   {
@@ -20,7 +21,17 @@ export const worldItemData = [
 
 export const itemData = [
   {
+    icon: icons.charcoalKilnIcon,
+    text: '2 Charcoal Kilns can be replaced with 1 Coal Mine'
+  },
+  {
     icon: icons.electricityIcon,
     text: 'Building has electricity'
+  },
+  {
+    icon: fullChainMultiplierIcon,
+    text: 'Multiplier for a full chain. To scale chain to 100%:',
+    additionalText:
+      'multiply together number * efficiency * multiplier for each building in the chain.'
   }
 ];

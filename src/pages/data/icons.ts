@@ -92,7 +92,6 @@ import paperIcon from 'assets/annoIcons/Icon_paper_0.webp';
 import parkasIcon from 'assets/annoIcons/Parka_Factory.webp';
 import pearlsIcon from 'assets/annoIcons/Pearls.webp';
 import pemmicanIcon from 'assets/annoIcons/Pemmican_Cookhouse.webp';
-import pigIcon from 'assets/annoIcons/Pigs.webp';
 import pigsIcon from 'assets/annoIcons/Pigs.webp';
 import pipesIcon from 'assets/annoIcons/Icon_tobacco_pipes_0.webp';
 import plantainPlantationIcon from 'assets/annoIcons/Plantains.webp';
