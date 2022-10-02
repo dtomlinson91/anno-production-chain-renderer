@@ -3,6 +3,7 @@ import apiaryIcon from 'assets/annoIcons/Icon_beeswax_0.webp';
 import archdukeSchnitzel from 'assets/annoIcons/Archdukes_Schnitzel.webp';
 import arcticIcon from 'assets/annoIcons/Icon_session_passage_0.png';
 import artisnalKitchenIcon from 'assets/annoIcons/Goulash.webp';
+import bananaSurpriseIcon from 'assets/annoIcons/Banana_Surprise.webp';
 import bearIcon from 'assets/annoIcons/Bear_Hunting_Cabin.webp';
 import beefIcon from 'assets/annoIcons/Beef.webp';
 import bootsIcon from 'assets/annoIcons/Icon_leather_shoes_0.webp';
@@ -35,8 +36,10 @@ import copperIcon from 'assets/annoIcons/Copper.webp';
 import cornIcon from 'assets/annoIcons/Corn.webp';
 import cottonIcon from 'assets/annoIcons/Cotton.webp';
 import cottonMillIcon from 'assets/annoIcons/Cotton_fabric.webp';
+import donutFourrerIcon from 'assets/annoIcons/Donut_Fourre.webp';
 import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
 import dynamiteIcon from 'assets/annoIcons/Dynamite.webp';
+import eclairIcon from 'assets/annoIcons/Eclair.webp';
 import electricityIcon from 'assets/electricityBorder.webp';
 import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
 import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
@@ -54,6 +57,7 @@ import gasIcon from 'assets/annoIcons/Arctic_Gas.webp';
 import gasPowerPlantIcon from 'assets/annoIcons/Icon_electric_works_gas_0.webp';
 import glassesIcon from 'assets/annoIcons/Glasses.webp';
 import glassIcon from 'assets/annoIcons/Glass.webp';
+import goatMilkIcon from 'assets/annoIcons/Icon_goat_milk_0.webp';
 import goldIcon from 'assets/annoIcons/Gold.webp';
 import goldOreIcon from 'assets/annoIcons/Gold_Ore.webp';
 import gooseIcon from 'assets/annoIcons/Goose_Farm.webp';
@@ -69,6 +73,7 @@ import huskyIcon from 'assets/annoIcons/Husky_Farm.webp';
 import huskySledIcon from 'assets/annoIcons/Husky_Sled_Factory.webp';
 import indigoIcon from 'assets/annoIcons/Icon_indigo_0.webp';
 import ironIcon from 'assets/annoIcons/Iron.webp';
+import jamIcon from 'assets/annoIcons/Jam.webp';
 import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
 import lanternsIcon from 'assets/annoIcons/Icon_lanterns_0.webp';
 import lemonadeIcon from 'assets/annoIcons/Lemonade.webp';
@@ -88,6 +93,7 @@ import oilPowerPlantIcon from 'assets/annoIcons/Oil_Power_Plant.webp';
 import oilTankerIcon from 'assets/annoIcons/Oil_tanker.webp';
 import oilWellIcon from 'assets/annoIcons/OilWell.webp';
 import oldWorldIcon from 'assets/annoIcons/Icon_session_moderate_0.png';
+import palmierBiscuitIcon from 'assets/annoIcons/Palmier_Biscuit.webp';
 import paperIcon from 'assets/annoIcons/Icon_paper_0.webp';
 import parkasIcon from 'assets/annoIcons/Parka_Factory.webp';
 import pearlsIcon from 'assets/annoIcons/Pearls.webp';
@@ -134,6 +140,7 @@ import tobaccoIcon from 'assets/annoIcons/Tobacco.webp';
 import tortillasIcon from 'assets/annoIcons/Tortilla.webp';
 import tractorIcon from 'assets/annoIcons/TractorBarn.webp';
 import venisonEnCrouteIcon from 'assets/annoIcons/Venison_en_Croute.webp';
+import venisonTartareIcon from 'assets/annoIcons/Venison_Tartare.webp';
 import watIcon from 'assets/annoIcons/Icon_wat_stew_0.webp';
 import weaponsIcon from 'assets/annoIcons/Weapons.webp';
 import whalingIcon from 'assets/annoIcons/Whaling_Station.webp';
@@ -149,6 +156,7 @@ export {
   archdukeSchnitzel,
   arcticIcon,
   artisnalKitchenIcon,
+  bananaSurpriseIcon,
   bearIcon,
   beefIcon,
   bootsIcon,
@@ -181,8 +189,10 @@ export {
   cornIcon,
   cottonIcon,
   cottonMillIcon,
+  donutFourrerIcon,
   dryHouseIcon,
   dynamiteIcon,
+  eclairIcon,
   electricityIcon,
   embroidererIcon,
   enbesaIcon,
@@ -200,6 +210,7 @@ export {
   gasPowerPlantIcon,
   glassesIcon,
   glassIcon,
+  goatMilkIcon,
   goldIcon,
   goldOreIcon,
   gooseIcon,
@@ -215,6 +226,7 @@ export {
   huskySledIcon,
   indigoIcon,
   ironIcon,
+  jamIcon,
   jewelryIcon,
   lanternsIcon,
   lemonadeIcon,
@@ -234,6 +246,7 @@ export {
   oilTankerIcon,
   oilWellIcon,
   oldWorldIcon,
+  palmierBiscuitIcon,
   paperIcon,
   parkasIcon,
   pearlsIcon,
@@ -280,6 +293,7 @@ export {
   tortillasIcon,
   tractorIcon,
   venisonEnCrouteIcon,
+  venisonTartareIcon,
   watIcon,
   weaponsIcon,
   whalingIcon,

@@ -9,3 +9,17 @@ export interface ProductionChain {
   chainMultiplier?: string;
   mermaidDefinition: string;
 }
+
+export interface InfoCardItem {
+  id: string;
+  icon: string;
+  text: string;
+  additionalText?: string;
+}
+
+export interface InfoCardWorldItem {
+  id: string;
+  icon: string;
+  text: string;
+  worldIcon: string;
+}

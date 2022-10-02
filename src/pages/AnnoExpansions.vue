@@ -7,6 +7,13 @@
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
       <ChainTiers
+        title="Information"
+        class="masonry-col item"
+        :col-break="false"
+      >
+        <InfoCardExpansions></InfoCardExpansions>
+      </ChainTiers>
+      <ChainTiers
         v-for="tier in productionChainsExpansions"
         :key="tier.tierName"
         :title="tier.tierName"
@@ -18,6 +25,7 @@
             v-for="chain in tier.productionChains"
             :key="chain.productionChain"
             :production-chain="chain.productionChain"
+            :chain-multiplier="chain.chainMultiplier"
             :mermaid-definition="chain.mermaidDefinition"
           ></ProductionChain>
         </div>
@@ -36,6 +44,7 @@ import { initialiseMermaid } from 'composables/mermaid';
 // Components
 import ChainTiers from 'components/ChainTiers.vue';
 import ProductionChain from 'components/ProductionChain.vue';
+import InfoCardExpansions from 'components/InfoCardExpansions.vue';
 
 initialiseMermaid();
 </script>

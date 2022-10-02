@@ -111,6 +111,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'archdukeSchnitzel',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Pigs0(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -137,6 +138,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       },
       {
         productionChain: 'fishFrites',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Fish(<span class='icon-flex-row'><img src='${icons.fishIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -148,6 +150,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       },
       {
         productionChain: 'venisonEnCroute',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -162,6 +165,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       },
       {
         productionChain: 'lobsterCheminee',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
         Lobster(<img src='${icons.lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -172,5 +176,93 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         `
       }
     ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Café',
+    productionChains: [
+      {
+        productionChain: 'donut',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Donut(<img src='${icons.donutFourrerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Jam(<span class='icon-flex-row'><img src='${icons.jamIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain --> Flour --> Donut
+        Pig --> Tallow --> Donut
+        Jam --> Donut
+        `
+      },
+      {
+        productionChain: 'eclair',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Eclair(<img src='${icons.eclairIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane0(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar0(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        SugarCane1(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar1(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cocoa(<img src='${icons.cocoaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Chocolate(<span class='icon-flex-row'><img src='${icons.chocolateIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain --> Flour --> Eclair
+        SugarCane0 --> Sugar0 --> Eclair
+        SugarCane1 --> Sugar1 --> Chocolate
+        Cocoa --> Chocolate
+        Chocolate --> Eclair
+        `
+      },
+      {
+        productionChain: 'palmierBiscuit',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        PalmierBiscuit(<img src='${icons.palmierBiscuitIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain --> Flour --> PalmierBiscuit
+        Pig --> Tallow --> PalmierBiscuit
+        Cinnamon --> PalmierBiscuit
+        `
+      },
+      {
+        productionChain: 'venisonTartare',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grapes(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        VenisonTartare(<img src='${icons.venisonTartareIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Caribou(<img src='${icons.caribouIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grapes & Caribou & Citrus --> VenisonTartare
+        `
+      },
+      {
+        productionChain: 'bananaSurprise',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Goat(<img src='${icons.goatMilkIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Plantains(<span class='icon-flex-row'><img src='${icons.plantainPlantationIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        BananaSurprise(<img src='${icons.bananaSurpriseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Goat & Plantains & Cinnamon --> BananaSurprise
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Bar',
+    productionChains: []
   }
 ];
