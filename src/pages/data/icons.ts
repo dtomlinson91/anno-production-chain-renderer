@@ -6,6 +6,7 @@ import artisnalKitchenIcon from 'assets/annoIcons/Goulash.webp';
 import bananaSurpriseIcon from 'assets/annoIcons/Banana_Surprise.webp';
 import bearIcon from 'assets/annoIcons/Bear_Hunting_Cabin.webp';
 import beefIcon from 'assets/annoIcons/Beef.webp';
+import blackMuscovyIcon from 'assets/annoIcons/Black_Muscovy.webp';
 import bootsIcon from 'assets/annoIcons/Icon_leather_shoes_0.webp';
 import bowlerHatsIcon from 'assets/annoIcons/Bowler_hats.webp';
 import brassIcon from 'assets/annoIcons/Brass.webp';
@@ -36,6 +37,7 @@ import copperIcon from 'assets/annoIcons/Copper.webp';
 import cornIcon from 'assets/annoIcons/Corn.webp';
 import cottonIcon from 'assets/annoIcons/Cotton.webp';
 import cottonMillIcon from 'assets/annoIcons/Cotton_fabric.webp';
+import daiquiriIcon from 'assets/annoIcons/Daiquiri_Tropic.webp';
 import donutFourrerIcon from 'assets/annoIcons/Donut_Fourre.webp';
 import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
 import dynamiteIcon from 'assets/annoIcons/Dynamite.webp';
@@ -43,6 +45,7 @@ import eclairIcon from 'assets/annoIcons/Eclair.webp';
 import electricityIcon from 'assets/electricityBorder.webp';
 import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
 import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
+import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
 import feltIcon from 'assets/annoIcons/Felt.webp';
 import filamentIcon from 'assets/annoIcons/Carbon_filament.webp';
 import fishFritesIcon from 'assets/annoIcons/Fish_and_Frites.webp';
@@ -57,6 +60,7 @@ import gasIcon from 'assets/annoIcons/Arctic_Gas.webp';
 import gasPowerPlantIcon from 'assets/annoIcons/Icon_electric_works_gas_0.webp';
 import glassesIcon from 'assets/annoIcons/Glasses.webp';
 import glassIcon from 'assets/annoIcons/Glass.webp';
+import gloggIcon from 'assets/annoIcons/Glogg.webp';
 import goatMilkIcon from 'assets/annoIcons/Icon_goat_milk_0.webp';
 import goldIcon from 'assets/annoIcons/Gold.webp';
 import goldOreIcon from 'assets/annoIcons/Gold_Ore.webp';
@@ -86,6 +90,7 @@ import lobstersIcon from 'assets/annoIcons/Icon_seafood_0.webp';
 import luminerIcon from 'assets/annoIcons/Icon_scriptures_0.webp';
 import malthouseIcon from 'assets/annoIcons/Malt.webp';
 import marquetryIcon from 'assets/annoIcons/Wood_veneers.webp';
+import montmatreIcon from 'assets/annoIcons/Montmartre_75.webp';
 import mudBricksIcon from 'assets/annoIcons/Icon_mud_bricks_0.webp';
 import newWorldIcon from 'assets/annoIcons/Icon_session_southamerica_0.png';
 import oilLampIcon from 'assets/annoIcons/Oil_Lamp_Factory.webp';
@@ -159,6 +164,7 @@ export {
   bananaSurpriseIcon,
   bearIcon,
   beefIcon,
+  blackMuscovyIcon,
   bootsIcon,
   bowlerHatsIcon,
   brassIcon,
@@ -189,6 +195,7 @@ export {
   cornIcon,
   cottonIcon,
   cottonMillIcon,
+  daiquiriIcon,
   donutFourrerIcon,
   dryHouseIcon,
   dynamiteIcon,
@@ -196,6 +203,7 @@ export {
   electricityIcon,
   embroidererIcon,
   enbesaIcon,
+  enbesaSunriseIcon,
   feltIcon,
   filamentIcon,
   fishFritesIcon,
@@ -210,6 +218,7 @@ export {
   gasPowerPlantIcon,
   glassesIcon,
   glassIcon,
+  gloggIcon,
   goatMilkIcon,
   goldIcon,
   goldOreIcon,
@@ -239,6 +248,7 @@ export {
   luminerIcon,
   malthouseIcon,
   marquetryIcon,
+  montmatreIcon,
   mudBricksIcon,
   newWorldIcon,
   oilLampIcon,

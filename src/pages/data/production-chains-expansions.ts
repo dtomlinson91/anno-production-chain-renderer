@@ -263,6 +263,93 @@ export const productionChainsExpansions: TieredProductionChain[] = [
   {
     colBreak: false,
     tierName: 'Bar',
+    productionChains: [
+      {
+        productionChain: 'daiquiriTropic',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane0(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        SugarCane1(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Plantain(<span class='icon-flex-row'><img src='${icons.plantainPlantationIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        DaiquiriTropic(<img src='${icons.daiquiriIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane0 --> DaiquiriTropic
+        SugarCane1 & Wood --> Rum --> DaiquiriTropic
+        Plantain --> DaiquiriTropic
+        `
+      },
+      {
+        productionChain: 'blackMuscovy',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        CoffeeBeans(<img src='${icons.coffeeBeansIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Coffee(<span class='icon-flex-row'><img src='${icons.coffeeIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        BlackMuscovy(<img src='${icons.blackMuscovyIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Schnapps(<span class='icon-flex-row'><img src='${icons.schnappsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CoffeeBeans --> Coffee --> BlackMuscovy
+        SugarCane & Wood --> Rum --> BlackMuscovy
+        Potato --> Schnapps --> BlackMuscovy
+        `
+      },
+      {
+        productionChain: 'montmatre',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Champagne(<span class='icon-flex-row'><img src='${icons.champagneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Montmatre(<img src='${icons.montmatreIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane --> Sugar --> Montmatre
+        Sand --> Glass --> Champagne --> Montmatre
+        Vineyard --> Champagne
+        Citrus --> Montmatre
+        `
+      },
+      {
+        productionChain: 'glegg',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Whales(<img src='${icons.whalingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glogg(<img src='${icons.gloggIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Whales & Vineyard & Cinnamon --> Glogg
+        `
+      },
+      {
+        productionChain: 'enbesaSunrise',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Hibiscus(<img src='${icons.hibiscusFarmIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Spices(<img src='${icons.spicesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        EnbesaSunrise(<img src='${icons.enbesaSunriseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Hibiscus --> EnbesaSunrise
+        SugarCane & Wood --> Rum --> EnbesaSunrise
+        Spices --> EnbesaSunrise
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Iron Tower',
     productionChains: []
   }
 ];
