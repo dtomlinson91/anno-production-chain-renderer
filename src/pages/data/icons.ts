@@ -14,12 +14,14 @@ import brassIcon from 'assets/annoIcons/Brass.webp';
 import breadIcon from 'assets/annoIcons/Bread.webp';
 import breweryIcon from 'assets/annoIcons/Beer.webp';
 import bricksIcon from 'assets/annoIcons/Bricks.webp';
+import briefcasesIcon from 'assets/annoIcons/Briefcases.webp';
 import briocheRoyaleIcon from 'assets/annoIcons/Brioche_Royale.webp';
 import camphorWaxIcon from 'assets/annoIcons/Camphor_Wax.webp';
 import candlesIcon from 'assets/annoIcons/Icon_candles_0.webp';
 import cannedFoodIcon from 'assets/annoIcons/Canned_food.webp';
 import caoutchoucIcon from 'assets/annoIcons/Caoutchouc.webp';
 import caribouIcon from 'assets/annoIcons/Caribou_Hunting_Cabin.webp';
+import celluloidIcon from 'assets/annoIcons/Celluloid.webp';
 import ceramicsIcon from 'assets/annoIcons/Icon_ceramics_0.webp';
 import champagneIcon from 'assets/annoIcons/Champagne.webp';
 import charcoalKilnIcon from 'assets/annoIcons/Charcoal_kiln.webp';
@@ -39,6 +41,7 @@ import copperIcon from 'assets/annoIcons/Copper.webp';
 import cornIcon from 'assets/annoIcons/Corn.webp';
 import cottonIcon from 'assets/annoIcons/Cotton.webp';
 import cottonMillIcon from 'assets/annoIcons/Cotton_fabric.webp';
+import crockeryIcon from 'assets/annoIcons/Crockery.webp';
 import daiquiriIcon from 'assets/annoIcons/Daiquiri_Tropic.webp';
 import donutFourrerIcon from 'assets/annoIcons/Donut_Fourre.webp';
 import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
@@ -48,6 +51,7 @@ import electricityIcon from 'assets/electricityBorder.webp';
 import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
 import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
 import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
+import ethanolIcon from 'assets/annoIcons/Ethanol.webp';
 import feltIcon from 'assets/annoIcons/Felt.webp';
 import filamentIcon from 'assets/annoIcons/Carbon_filament.webp';
 import fishFritesIcon from 'assets/annoIcons/Fish_and_Frites.webp';
@@ -82,6 +86,7 @@ import indigoIcon from 'assets/annoIcons/Icon_indigo_0.webp';
 import ironIcon from 'assets/annoIcons/Iron.webp';
 import jamIcon from 'assets/annoIcons/Jam.webp';
 import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
+import lacqueryIcon from 'assets/annoIcons/Lacquer.webp';
 import ladyMarmeladeIcon from 'assets/annoIcons/Lady_Marmelade.webp';
 import lanternsIcon from 'assets/annoIcons/Icon_lanterns_0.webp';
 import lemonadeIcon from 'assets/annoIcons/Lemonade.webp';
@@ -114,6 +119,8 @@ import pocketWatchesIcon from 'assets/annoIcons/Pocket_watch.webp';
 import ponchosIcon from 'assets/annoIcons/Poncho.webp';
 import potatoIcon from 'assets/annoIcons/Potato.webp';
 import redPeppersIcon from 'assets/annoIcons/Red_peppers.webp';
+import refrigeratorsIcon from 'assets/annoIcons/Refrigerators.webp';
+import resinIcon from 'assets/annoIcons/Resin.webp';
 import rumIcon from 'assets/annoIcons/Rum.webp';
 import sailmakersIcon from 'assets/annoIcons/Sails.webp';
 import saltIcon from 'assets/annoIcons/Salt.webp';
@@ -145,10 +152,12 @@ import teffIcon from 'assets/annoIcons/Icon_teff_grass_0.webp';
 import teffMillIcon from 'assets/annoIcons/Icon_teff_flour_0.webp';
 import telephonesIcon from 'assets/annoIcons/Icon_telephones_0.webp';
 import timberIcon from 'assets/annoIcons/Timber.webp';
+import toastersIcon from 'assets/annoIcons/Toasters.webp';
 import tobaccoIcon from 'assets/annoIcons/Tobacco.webp';
 import tortillasIcon from 'assets/annoIcons/Tortilla.webp';
 import tractorIcon from 'assets/annoIcons/TractorBarn.webp';
 import trifleTowerIcon from 'assets/annoIcons/Trifle_Tower.webp';
+import vaccumCleanersIcon from 'assets/annoIcons/Vacuum_Cleaners.webp';
 import venisonEnCrouteIcon from 'assets/annoIcons/Venison_en_Croute.webp';
 import venisonTartareIcon from 'assets/annoIcons/Venison_Tartare.webp';
 import watIcon from 'assets/annoIcons/Icon_wat_stew_0.webp';
@@ -177,12 +186,14 @@ export {
   breadIcon,
   breweryIcon,
   bricksIcon,
+  briefcasesIcon,
   briocheRoyaleIcon,
   camphorWaxIcon,
   candlesIcon,
   cannedFoodIcon,
   caoutchoucIcon,
   caribouIcon,
+  celluloidIcon,
   ceramicsIcon,
   champagneIcon,
   charcoalKilnIcon,
@@ -202,6 +213,7 @@ export {
   cornIcon,
   cottonIcon,
   cottonMillIcon,
+  crockeryIcon,
   daiquiriIcon,
   donutFourrerIcon,
   dryHouseIcon,
@@ -211,6 +223,7 @@ export {
   embroidererIcon,
   enbesaIcon,
   enbesaSunriseIcon,
+  ethanolIcon,
   feltIcon,
   filamentIcon,
   fishFritesIcon,
@@ -245,6 +258,7 @@ export {
   ironIcon,
   jamIcon,
   jewelryIcon,
+  lacqueryIcon,
   ladyMarmeladeIcon,
   lanternsIcon,
   lemonadeIcon,
@@ -277,6 +291,8 @@ export {
   ponchosIcon,
   potatoIcon,
   redPeppersIcon,
+  refrigeratorsIcon,
+  resinIcon,
   rumIcon,
   sailmakersIcon,
   saltIcon,
@@ -308,10 +324,12 @@ export {
   teffMillIcon,
   telephonesIcon,
   timberIcon,
+  toastersIcon,
   tobaccoIcon,
   tortillasIcon,
   tractorIcon,
   trifleTowerIcon,
+  vaccumCleanersIcon,
   venisonEnCrouteIcon,
   venisonTartareIcon,
   watIcon,

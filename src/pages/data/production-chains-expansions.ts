@@ -436,5 +436,79 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         `
       }
     ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Department Store',
+    productionChains: [
+      {
+        productionChain: 'toasters',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Coal0(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Filament(<img src='${icons.filamentIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Toasters(<img src='${icons.toastersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Toasters stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Iron & Coal --> Steel --> Toasters
+        Zinc --> Toasters
+        Coal0 --> Filament --> Toasters
+        `
+      },
+      {
+        productionChain: 'vaccumCleaners',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Sheep(<span class='icon-flex-row'><img src='${icons.woolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        VaccumCleaners(<img src='${icons.vaccumCleanersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style VaccumCleaners stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Wood & Corn --> Ethanol
+        Cotton & CamphorWax & Ethanol --> Celluloid --> VaccumCleaners
+        Iron & Coal --> Steel --> VaccumCleaners
+        Sheep --> VaccumCleaners
+        `
+      },
+      {
+        productionChain: 'crockery',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sand0(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sand1(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Resin(<span class='icon-flex-row'><img src='${icons.resinIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Lacquer(<span class='icon-flex-row'><img src='${icons.lacqueryIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Crockery(<img src='${icons.crockeryIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Crockery stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Clay --> Crockery
+        Wood & Corn --> Ethanol
+        Sand1 & Resin & Ethanol --> Lacquer
+        Lacquer --> Crockery
+        Sand0 --> Crockery
+        `
+      },
+      {
+        productionChain: 'refrigerators',
+        chainMultiplier: '4',
+        mermaidDefinition: endent``
+      }
+    ]
   }
 ];
