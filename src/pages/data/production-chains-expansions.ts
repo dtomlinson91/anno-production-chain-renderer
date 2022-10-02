@@ -350,6 +350,91 @@ export const productionChainsExpansions: TieredProductionChain[] = [
   {
     colBreak: false,
     tierName: 'Iron Tower',
-    productionChains: []
+    productionChains: [
+      {
+        productionChain: 'briocheRoyale',
+        mermaidDefinition: endent`
+        flowchart LR
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sausages(<img src='${icons.sausageIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Bakery(<img src='${icons.breadIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>125%</span><span class='ratio-count'>2</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Gold(<img src='${icons.goldIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        BriocheRoyale(<img src='${icons.briocheRoyaleIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pig --> Sausages --> BriocheRoyale
+        Grain --> Flour --> Bakery --> BriocheRoyale
+        Beef --> BriocheRoyale
+        GoldOre & Coal --> Gold --> BriocheRoyale
+        `
+      },
+      {
+        productionChain: 'trifleTower',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Bread(<img src='${icons.breadIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        SugarCane1(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Trifle(<img src='${icons.trifleTowerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane & Wood --> Rum --> Trifle
+        Grain --> Flour --> Bread --> Trifle
+        Vineyard --> Trifle
+        SugarCane1 --> Sugar --> Trifle
+        `
+      },
+      {
+        productionChain: 'ladyMarmelade',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Champagne(<span class='icon-flex-row'><img src='${icons.champagneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Jam(<span class='icon-flex-row'><img src='${icons.jamIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        LadyMarmelade(<img src='${icons.ladyMarmeladeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane & Wood --> Rum --> LadyMarmelade
+        Sand --> Glass --> Champagne --> LadyMarmelade
+        Vineyard --> Champagne
+        Citrus & Jam --> LadyMarmelade
+        `
+      },
+      {
+        productionChain: 'ageOfExploration',
+        mermaidDefinition: endent`
+        flowchart LR
+        Gas(<span class='icon-flex-row'><img src='${icons.gasIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>450%</span><span class='ratio-count'>1</span></span></span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        RedPepper(<img src='${icons.redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        AgeOfExploration(<img src='${icons.ageOfExplorationIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Gas & Potato & RedPepper & Beef --> AgeOfExploration
+        `
+      },
+      {
+        productionChain: 'homardLitTerroir',
+        mermaidDefinition: endent`
+        flowchart LR
+        Lobster(<img src='${icons.lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sanga(<img src='${icons.sangaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Spices(<img src='${icons.spicesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        HomardLitTerroir(<img src='${icons.homardLitTerroirIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Lobster & Sanga & Potato & Spices --> HomardLitTerroir
+        `
+      }
+    ]
   }
 ];
