@@ -1,3 +1,4 @@
+import ageOfExplorationIcon from 'assets/annoIcons/Age_of_Exploration.webp';
 import alpacaWoolIcon from 'assets/annoIcons/Alpaca_wool.webp';
 import apiaryIcon from 'assets/annoIcons/Icon_beeswax_0.webp';
 import archdukeSchnitzel from 'assets/annoIcons/Archdukes_Schnitzel.webp';
@@ -13,6 +14,7 @@ import brassIcon from 'assets/annoIcons/Brass.webp';
 import breadIcon from 'assets/annoIcons/Bread.webp';
 import breweryIcon from 'assets/annoIcons/Beer.webp';
 import bricksIcon from 'assets/annoIcons/Bricks.webp';
+import briocheRoyaleIcon from 'assets/annoIcons/Brioche_Royale.webp';
 import camphorWaxIcon from 'assets/annoIcons/Camphor_Wax.webp';
 import candlesIcon from 'assets/annoIcons/Icon_candles_0.webp';
 import cannedFoodIcon from 'assets/annoIcons/Canned_food.webp';
@@ -72,6 +74,7 @@ import heavyWeaponsIcon from 'assets/annoIcons/Advanced_weapons.webp';
 import hibiscusFarmIcon from 'assets/annoIcons/Icon_hibiscus_farm_0.webp';
 import hibiscusTeaIcon from 'assets/annoIcons/Icon_hibiscus_tea_0.webp';
 import highWheelerIcon from 'assets/annoIcons/High_wheeler.webp';
+import homardLitTerroirIcon from 'assets/annoIcons/Homard_Lit_de_Terroir.webp';
 import hopFarmIcon from 'assets/annoIcons/Hops.webp';
 import huskyIcon from 'assets/annoIcons/Husky_Farm.webp';
 import huskySledIcon from 'assets/annoIcons/Husky_Sled_Factory.webp';
@@ -79,6 +82,7 @@ import indigoIcon from 'assets/annoIcons/Icon_indigo_0.webp';
 import ironIcon from 'assets/annoIcons/Iron.webp';
 import jamIcon from 'assets/annoIcons/Jam.webp';
 import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
+import ladyMarmeladeIcon from 'assets/annoIcons/Lady_Marmelade.webp';
 import lanternsIcon from 'assets/annoIcons/Icon_lanterns_0.webp';
 import lemonadeIcon from 'assets/annoIcons/Lemonade.webp';
 import lightBulbIcon from 'assets/annoIcons/Light_bulb.webp';
@@ -144,6 +148,7 @@ import timberIcon from 'assets/annoIcons/Timber.webp';
 import tobaccoIcon from 'assets/annoIcons/Tobacco.webp';
 import tortillasIcon from 'assets/annoIcons/Tortilla.webp';
 import tractorIcon from 'assets/annoIcons/TractorBarn.webp';
+import trifleTowerIcon from 'assets/annoIcons/Trifle_Tower.webp';
 import venisonEnCrouteIcon from 'assets/annoIcons/Venison_en_Croute.webp';
 import venisonTartareIcon from 'assets/annoIcons/Venison_Tartare.webp';
 import watIcon from 'assets/annoIcons/Icon_wat_stew_0.webp';
@@ -156,6 +161,7 @@ import workClothesIcon from 'assets/annoIcons/Work_clothes.webp';
 import zincIcon from 'assets/annoIcons/Zinc.webp';
 
 export {
+  ageOfExplorationIcon,
   alpacaWoolIcon,
   apiaryIcon,
   archdukeSchnitzel,
@@ -171,6 +177,7 @@ export {
   breadIcon,
   breweryIcon,
   bricksIcon,
+  briocheRoyaleIcon,
   camphorWaxIcon,
   candlesIcon,
   cannedFoodIcon,
@@ -230,6 +237,7 @@ export {
   hibiscusFarmIcon,
   hibiscusTeaIcon,
   highWheelerIcon,
+  homardLitTerroirIcon,
   hopFarmIcon,
   huskyIcon,
   huskySledIcon,
@@ -237,6 +245,7 @@ export {
   ironIcon,
   jamIcon,
   jewelryIcon,
+  ladyMarmeladeIcon,
   lanternsIcon,
   lemonadeIcon,
   lightBulbIcon,
@@ -302,6 +311,7 @@ export {
   tobaccoIcon,
   tortillasIcon,
   tractorIcon,
+  trifleTowerIcon,
   venisonEnCrouteIcon,
   venisonTartareIcon,
   watIcon,

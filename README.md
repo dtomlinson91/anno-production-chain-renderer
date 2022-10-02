@@ -1,5 +1,9 @@
 # Anno 1800 Production Chain Renderer
 
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/dtomlinson91/anno-production-chain-renderer/quasar)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dtomlinson91/anno-production-chain-renderer/Deploy%20%7C%20GH%20Pages)
+![GitHub](https://img.shields.io/github/license/dtomlinson91/anno-production-chain-renderer)
+
 A production chain diagram for Anno 1800. Based on the original diagram by `/u/toby_p` from Reddit.
 
 This uses Vue3 (Quasar) and [MermaidJS](https://mermaid-js.github.io/mermaid/#/) to render the diagrams.
