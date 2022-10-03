@@ -75,22 +75,16 @@ module.exports = configure(function (/* ctx */) {
       // polyfillModulePreload: true,
       // distDir
 
-      // Vite options
-      extendViteConf(viteConf, { isServer, isClient }) {
-        viteConf.base = '';
-      },
-
-      extendViteConf(viteConf, { isServer, isClient }) {
-        viteConf.build.assetsInlineLimit = 1024;
-      },
-
       // viteVuePluginOptions: {},
 
       // Vite plugins
 
       // vitePlugins: [],
 
+      // Vite options
       extendViteConf(viteConf, { isClient, isServer }) {
+        viteConf.build.assetsInlineLimit = 0;
+
         viteConf.plugins.push(
           require('rollup-plugin-visualizer').visualizer({
             emitFile: true,
