@@ -26,6 +26,7 @@ import celluloidIcon from 'assets/annoIcons/Celluloid.webp';
 import ceramicsIcon from 'assets/annoIcons/Icon_ceramics_0.webp';
 import champagneIcon from 'assets/annoIcons/Champagne.webp';
 import charcoalKilnIcon from 'assets/annoIcons/Charcoal_kiln.webp';
+import chewingGumIcon from 'assets/annoIcons/Chewing_Gum.webp';
 import chocolateIcon from 'assets/annoIcons/Chocolate.webp';
 import cigarIcon from 'assets/annoIcons/Cigars.webp';
 import cinnamonIcon from 'assets/annoIcons/Cinnamon.webp';
@@ -88,7 +89,7 @@ import indigoIcon from 'assets/annoIcons/Icon_indigo_0.webp';
 import ironIcon from 'assets/annoIcons/Iron.webp';
 import jamIcon from 'assets/annoIcons/Jam.webp';
 import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
-import lacqueryIcon from 'assets/annoIcons/Lacquer.webp';
+import lacquerIcon from 'assets/annoIcons/Lacquer.webp';
 import ladyMarmeladeIcon from 'assets/annoIcons/Lady_Marmelade.webp';
 import lanternsIcon from 'assets/annoIcons/Icon_lanterns_0.webp';
 import lemonadeIcon from 'assets/annoIcons/Lemonade.webp';
@@ -203,6 +204,7 @@ export {
   ceramicsIcon,
   champagneIcon,
   charcoalKilnIcon,
+  chewingGumIcon,
   chocolateIcon,
   cigarIcon,
   cinnamonIcon,
@@ -265,7 +267,7 @@ export {
   ironIcon,
   jamIcon,
   jewelryIcon,
-  lacqueryIcon,
+  lacquerIcon,
   ladyMarmeladeIcon,
   lanternsIcon,
   lemonadeIcon,
