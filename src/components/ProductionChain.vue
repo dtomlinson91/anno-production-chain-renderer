@@ -1,11 +1,8 @@
 <template>
-  <div
+  <ProductionChainMultiplier
     v-if="chainMultiplier"
-    class="text-right absolute chain-multiplier q-pr-lg q-pt-md"
-  >
-    <q-img src="~assets/productionChainMultiplier.svg" width="60px"></q-img>
-    {{ chainMultiplier }}
-  </div>
+    :chain-multiplier="chainMultiplier"
+  ></ProductionChainMultiplier>
   <div ref="diagram"></div>
   <q-separator inset class="q-mb-sm" />
 </template>
@@ -13,6 +10,7 @@
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue';
 import { mermaid } from 'composables/mermaid';
+import ProductionChainMultiplier from './ProductionChainMultiplier.vue';
 
 // DOM Refs
 const diagram = ref<HTMLInputElement | null>(null);
@@ -73,11 +71,5 @@ watchEffect(() => {
 .icon-flex-col {
   display: flex;
   flex-direction: column;
-}
-
-.chain-multiplier {
-  font-size: 2.5rem;
-  font-weight: bold;
-  right: 0;
 }
 </style>

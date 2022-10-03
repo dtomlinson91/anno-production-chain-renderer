@@ -5,6 +5,7 @@ import archdukeSchnitzel from 'assets/annoIcons/Archdukes_Schnitzel.webp';
 import arcticIcon from 'assets/annoIcons/Icon_session_passage_0.png';
 import artisnalKitchenIcon from 'assets/annoIcons/Goulash.webp';
 import bananaSurpriseIcon from 'assets/annoIcons/Banana_Surprise.webp';
+import bankersLampsIcon from 'assets/annoIcons/Bankers_Lamps.webp';
 import bearIcon from 'assets/annoIcons/Bear_Hunting_Cabin.webp';
 import beefIcon from 'assets/annoIcons/Beef.webp';
 import blackMuscovyIcon from 'assets/annoIcons/Black_Muscovy.webp';
@@ -58,6 +59,7 @@ import fishFritesIcon from 'assets/annoIcons/Fish_and_Frites.webp';
 import fishIcon from 'assets/annoIcons/Fish.webp';
 import fishOilIcon from 'assets/annoIcons/Fish_Oil.webp';
 import flourIcon from 'assets/annoIcons/Flour.webp';
+import fourPosterBedsIcon from 'assets/annoIcons/Four-Poster_Beds.webp';
 import friedPlantainsIcon from 'assets/annoIcons/Fried_plantains.webp';
 import fuelIcon from 'assets/annoIcons/Fuel.webp';
 import furCoatsIcon from 'assets/annoIcons/Fur_Coats.webp';
@@ -96,6 +98,7 @@ import linenIcon from 'assets/annoIcons/Icon_linen_fabric_0.webp';
 import linseedIcon from 'assets/annoIcons/Icon_linen_farm_0.webp';
 import lobsterChemineeIcon from 'assets/annoIcons/Lobster_Cheminee.webp';
 import lobstersIcon from 'assets/annoIcons/Icon_seafood_0.webp';
+import loungeSeatingIcon from 'assets/annoIcons/Lounge_Seating.webp';
 import luminerIcon from 'assets/annoIcons/Icon_scriptures_0.webp';
 import malthouseIcon from 'assets/annoIcons/Malt.webp';
 import marquetryIcon from 'assets/annoIcons/Wood_veneers.webp';
@@ -158,6 +161,7 @@ import tortillasIcon from 'assets/annoIcons/Tortilla.webp';
 import tractorIcon from 'assets/annoIcons/TractorBarn.webp';
 import trifleTowerIcon from 'assets/annoIcons/Trifle_Tower.webp';
 import vaccumCleanersIcon from 'assets/annoIcons/Vacuum_Cleaners.webp';
+import vanityScreensIcon from 'assets/annoIcons/Vanity_Screens.webp';
 import venisonEnCrouteIcon from 'assets/annoIcons/Venison_en_Croute.webp';
 import venisonTartareIcon from 'assets/annoIcons/Venison_Tartare.webp';
 import watIcon from 'assets/annoIcons/Icon_wat_stew_0.webp';
@@ -167,6 +171,7 @@ import windowMakersIcon from 'assets/annoIcons/Windows.webp';
 import woodIcon from 'assets/annoIcons/Wood.webp';
 import woolIcon from 'assets/annoIcons/Wool.webp';
 import workClothesIcon from 'assets/annoIcons/Work_clothes.webp';
+import writingDesksIcon from 'assets/annoIcons/Writing_Desks.webp';
 import zincIcon from 'assets/annoIcons/Zinc.webp';
 
 export {
@@ -177,6 +182,7 @@ export {
   arcticIcon,
   artisnalKitchenIcon,
   bananaSurpriseIcon,
+  bankersLampsIcon,
   bearIcon,
   beefIcon,
   blackMuscovyIcon,
@@ -230,6 +236,7 @@ export {
   fishIcon,
   fishOilIcon,
   flourIcon,
+  fourPosterBedsIcon,
   friedPlantainsIcon,
   fuelIcon,
   furCoatsIcon,
@@ -268,6 +275,7 @@ export {
   linseedIcon,
   lobsterChemineeIcon,
   lobstersIcon,
+  loungeSeatingIcon,
   luminerIcon,
   malthouseIcon,
   marquetryIcon,
@@ -330,6 +338,7 @@ export {
   tractorIcon,
   trifleTowerIcon,
   vaccumCleanersIcon,
+  vanityScreensIcon,
   venisonEnCrouteIcon,
   venisonTartareIcon,
   watIcon,
@@ -339,5 +348,6 @@ export {
   woodIcon,
   woolIcon,
   workClothesIcon,
+  writingDesksIcon,
   zincIcon
 };
