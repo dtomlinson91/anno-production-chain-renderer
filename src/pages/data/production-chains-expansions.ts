@@ -58,6 +58,60 @@ export const productionChainsExpansions: TieredProductionChain[] = [
   },
   {
     colBreak: false,
+    tierName: 'Chemical Plant',
+    productionChains: [
+      {
+        productionChain: 'ethanol',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood & Corn --> Ethanol
+        `
+      },
+      {
+        productionChain: 'lacquer',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand(<img src='${icons.sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Resin(<img src='${icons.resinIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Lacquer(<img src='${icons.lacquerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand & Resin & Ethanol --> Lacquer
+        `
+      },
+      {
+        productionChain: 'chewingGum',
+        mermaidDefinition: endent`
+        flowchart LR
+        Caoutchouc(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        SugarCane(<img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sugar(<img src='${icons.sugarIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cinnamon(<img src='${icons.cinnamonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        ChewingGum(<img src='${icons.chewingGumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane --> Sugar
+        Caoutchouc & Sugar & Cinnamon --> ChewingGum
+        `
+      },
+      {
+        productionChain: 'celluloid',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Celluloid(<img src='${icons.celluloidIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cotton & CamphorWax & Ethanol --> Celluloid
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
     tierName: 'Tourists',
     productionChains: [
       {
@@ -494,7 +548,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Sand1(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Resin(<span class='icon-flex-row'><img src='${icons.resinIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Lacquer(<span class='icon-flex-row'><img src='${icons.lacqueryIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Crockery(<img src='${icons.crockeryIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style Crockery stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Clay --> Crockery
