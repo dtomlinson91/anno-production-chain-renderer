@@ -12,7 +12,10 @@
         :col-break="false"
         class="masonry-col item"
       >
-        <InfoCardBase></InfoCardBase>
+        <InfoCard
+          :item-data="itemDataBase"
+          :item-world-data="worldItemDataBase"
+        ></InfoCard>
       </ChainTiers>
       <ChainTiers
         v-for="tier in productionChainsBase"
@@ -39,13 +42,16 @@
 // Production Chain Data
 import { productionChainsBase } from './data/production-chains-base';
 
+// Info Card Data
+import { itemDataBase, worldItemDataBase } from 'src/pages/data/info-card';
+
 // Mermaid
 import { initialiseMermaid } from 'composables/mermaid';
 
 // Components
 import ChainTiers from 'components/ChainTiers.vue';
 import ProductionChain from 'components/ProductionChain.vue';
-import InfoCardBase from 'components/InfoCardBase.vue';
+import InfoCard from 'components/InfoCard.vue';
 
 initialiseMermaid();
 </script>

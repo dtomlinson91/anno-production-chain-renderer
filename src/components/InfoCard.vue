@@ -1,12 +1,12 @@
 <template>
   <q-list separator class="big-font text-left">
     <InfoCardItemWorld
-      v-for="item in worldItemData"
+      v-for="item in itemWorldData"
       :key="item.icon"
       v-bind="item"
     ></InfoCardItemWorld>
     <InfoCardItem
-      v-for="item in itemDataBase"
+      v-for="item in itemData"
       :key="item.icon"
       v-bind="item"
     ></InfoCardItem>
@@ -16,7 +16,15 @@
 <script setup lang="ts">
 import InfoCardItem from './InfoCard/InfoCardItem.vue';
 import InfoCardItemWorld from './InfoCard/InfoCardItemWorld.vue';
-import { itemDataBase, worldItemData } from 'src/pages/data/info-card';
+import {
+  InfoCardItem as InfoCardItemModel,
+  InfoCardWorldItem as InfoCardWorldItemModel
+} from 'pages/data/models';
+
+defineProps<{
+  itemData?: InfoCardItemModel[];
+  itemWorldData?: InfoCardWorldItemModel[];
+}>();
 </script>
 
 <style lang="scss">

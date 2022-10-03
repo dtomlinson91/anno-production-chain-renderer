@@ -2,7 +2,7 @@ import * as icons from './icons';
 import fullChainMultiplierIcon from 'assets/productionChainMultiplier.svg';
 import { InfoCardItem, InfoCardWorldItem } from './models';
 
-export const worldItemData: InfoCardWorldItem[] = [
+export const worldItemDataBase: InfoCardWorldItem[] = [
   {
     id: 'furs',
     icon: icons.fursIcon,
