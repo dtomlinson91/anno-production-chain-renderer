@@ -57,6 +57,7 @@ module.exports = configure(function (/* ctx */) {
       alias: {
         composables: path.join(__dirname, './src/composables'),
         boot: path.join(__dirname, './src/boot'),
+        pages: path.join(__dirname, './src/pages'),
       },
 
       vueRouterMode: 'hash', // available values: 'hash', 'history'

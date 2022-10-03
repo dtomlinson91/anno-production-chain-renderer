@@ -4,7 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "composables/*": ["./src/composables/*"],
-      "boot/*": ["./src/boot/*"]
+      "boot/*": ["./src/boot/*"],
+      "pages/*": ["./src/pages/*"]
     }
   }
 }
