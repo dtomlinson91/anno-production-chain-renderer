@@ -75,10 +75,18 @@ module.exports = configure(function (/* ctx */) {
       // polyfillModulePreload: true,
       // distDir
 
+      // Vite options
       extendViteConf(viteConf, { isServer, isClient }) {
         viteConf.base = '';
       },
+
+      extendViteConf(viteConf, { isServer, isClient }) {
+        viteConf.build.assetsInlineLimit = 1024;
+      },
+
       // viteVuePluginOptions: {},
+
+      // Vite plugins
 
       // vitePlugins: [],
 
