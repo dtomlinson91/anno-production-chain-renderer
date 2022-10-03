@@ -468,7 +468,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       {
         productionChain: 'ageOfExploration',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Gas(<span class='icon-flex-row'><img src='${icons.gasIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>450%</span><span class='ratio-count'>1</span></span></span>)
         Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         RedPepper(<img src='${icons.redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
@@ -480,7 +480,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       {
         productionChain: 'homardLitTerroir',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Lobster(<img src='${icons.lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Sanga(<img src='${icons.sangaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -519,19 +519,13 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         mermaidDefinition: endent`
         flowchart LR
         Sheep(<span class='icon-flex-row'><img src='${icons.woolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
         Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
         Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         VaccumCleaners(<img src='${icons.vaccumCleanersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style VaccumCleaners stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
-        Wood & Corn --> Ethanol
-        Cotton & CamphorWax & Ethanol --> Celluloid --> VaccumCleaners
+        Celluloid --> VaccumCleaners
         Iron & Coal --> Steel --> VaccumCleaners
         Sheep --> VaccumCleaners
         `
@@ -543,17 +537,10 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         flowchart LR
         Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Sand0(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Sand1(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Resin(<span class='icon-flex-row'><img src='${icons.resinIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Crockery(<img src='${icons.crockeryIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style Crockery stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Clay --> Crockery
-        Wood & Corn --> Ethanol
-        Sand1 & Resin & Ethanol --> Lacquer
         Lacquer --> Crockery
         Sand0 --> Crockery
         `
@@ -583,17 +570,11 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Briefcases(<img src='${icons.briefcasesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Sanga(<img src='${icons.sangaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         style Briefcases stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Copper & Zinc --> Brass --> Briefcases
-        Wood & Corn --> Ethanol
-        Cotton & CamphorWax & Ethanol --> Celluloid --> Briefcases
+        Celluloid --> Briefcases
         Sanga --> Briefcases
         `
       }
