@@ -711,11 +711,11 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         mermaidDefinition: endent`
         flowchart TB
         FishOil(<span class='icon-flex-row'><img src='${icons.fishOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        CoconutIcon(<span class='icon-flex-row'><img src='${icons.coconutOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CoconutOil(<span class='icon-flex-row'><img src='${icons.coconutOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Lipstick(<img src='${icons.lipstickIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style Lipstick stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
-        FishOil & CoconutIcon & Lacquer --> Lipstick
+        FishOil & CoconutOil & Lacquer --> Lipstick
         `
       },
       {
@@ -723,12 +723,12 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart TB
-        CoconutIcon(<span class='icon-flex-row'><img src='${icons.coconutOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CoconutOil(<span class='icon-flex-row'><img src='${icons.coconutOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Whaling(<img src='${icons.whalingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         FaceCream(<img src='${icons.faceCreamIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style FaceCream stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
-        CoconutIcon & Citrus & Whaling --> FaceCream
+        CoconutOil & Citrus & Whaling --> FaceCream
         `
       }
     ]
