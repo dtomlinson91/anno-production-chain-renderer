@@ -4,7 +4,7 @@
     :chain-multiplier="chainMultiplier"
   ></ProductionChainMultiplier>
   <div ref="diagram"></div>
-  <q-separator inset class="q-mb-sm" />
+  <q-separator inset class="q-my-lg" />
 </template>
 
 <script setup lang="ts">

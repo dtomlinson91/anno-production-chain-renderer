@@ -20,7 +20,7 @@
         </div>
       </q-card-section>
 
-      <q-separator inset class="q-mb-sm" />
+      <q-separator inset class="q-mb-lg" />
     </div>
 
     <slot></slot>
