@@ -26,7 +26,7 @@ import celluloidIcon from 'assets/annoIcons/Celluloid.webp';
 import ceramicsIcon from 'assets/annoIcons/Icon_ceramics_0.webp';
 import champagneIcon from 'assets/annoIcons/Champagne.webp';
 import charcoalKilnIcon from 'assets/annoIcons/Charcoal_kiln.webp';
-import cherryWood from 'assets/annoIcons/Cherry_wood.webp';
+import cherryWoodIcon from 'assets/annoIcons/Cherry_Wood.webp';
 import chewingGumIcon from 'assets/annoIcons/Chewing_Gum.webp';
 import chocolateIcon from 'assets/annoIcons/Chocolate.webp';
 import cigarIcon from 'assets/annoIcons/Cigars.webp';
@@ -211,7 +211,7 @@ export {
   ceramicsIcon,
   champagneIcon,
   charcoalKilnIcon,
-  cherryWood,
+  cherryWoodIcon,
   chewingGumIcon,
   chocolateIcon,
   cigarIcon,

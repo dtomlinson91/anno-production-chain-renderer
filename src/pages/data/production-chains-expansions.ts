@@ -615,7 +615,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         flowchart LR
         Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWood}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWoodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         VanityScreens(<img src='${icons.vanityScreensIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -649,7 +649,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         flowchart TB
         BearHunting(<span class='icon-flex-row'><img src='${icons.bearIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>75%</span><span class='ratio-count'>2</span></span></span>)
         Goose(<img src='${icons.gooseIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWood}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWoodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         FourPosterBeds(<img src='${icons.fourPosterBedsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style FourPosterBeds stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         BearHunting & Goose & CherryWood --> FourPosterBeds
