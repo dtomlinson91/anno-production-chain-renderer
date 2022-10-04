@@ -583,6 +583,91 @@ export const productionChainsExpansions: TieredProductionChain[] = [
   {
     colBreak: false,
     tierName: 'Furniture Store',
-    productionChains: []
+    productionChains: [
+      {
+        productionChain: 'bankersLamps',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Brass(<img src='${icons.zincIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Filament(<img src='${icons.filamentIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand0(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glass0(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        LightBulb(<img src='${icons.lightBulbIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        BankerLamp(<img src='${icons.bankersLampsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style BankerLamp stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Copper & Zinc --> Brass --> BankerLamp
+        Sand --> Glass --> BankerLamp
+        Coal --> Filament --> LightBulb
+        Sand0 --> Glass0 --> LightBulb
+        LightBulb --> BankerLamp
+      `
+      },
+      {
+        productionChain: 'vanityScreens',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWood}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        VanityScreens(<img src='${icons.vanityScreensIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style VanityScreens stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Cotton --> CottonMill
+        CottonMill & CherryWood & Lacquer --> VanityScreens
+      `
+      },
+      {
+        productionChain: 'writingDesks',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Marquetry(<img src='${icons.marquetryIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        WritingDesks(<img src='${icons.writingDesksIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style WritingDesks stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Copper & Zinc --> Brass
+        Wood --> Marquetry
+        Brass & Marquetry & Lacquer --> WritingDesks
+      `
+      },
+      {
+        productionChain: 'fourPosterBeds',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart TB
+        BearHunting(<span class='icon-flex-row'><img src='${icons.bearIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>75%</span><span class='ratio-count'>2</span></span></span>)
+        Goose(<img src='${icons.gooseIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWood}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        FourPosterBeds(<img src='${icons.fourPosterBedsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style FourPosterBeds stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        BearHunting & Goose & CherryWood --> FourPosterBeds
+        `
+      },
+      {
+        productionChain: 'loungeSeating',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart TB
+        Sheep(<span class='icon-flex-row'><img src='${icons.woolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sanga(<img src='${icons.sangaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        WansaWood(<span class='icon-flex-row'><img src='${icons.wansaWood}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        LoungeSeating(<img src='${icons.loungeSeatingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style LoungeSeating stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Sheep & Sanga & WansaWood --> LoungeSeating
+        `
+      }
+    ]
   }
 ];
