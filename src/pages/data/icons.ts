@@ -26,6 +26,7 @@ import celluloidIcon from 'assets/annoIcons/Celluloid.webp';
 import ceramicsIcon from 'assets/annoIcons/Icon_ceramics_0.webp';
 import champagneIcon from 'assets/annoIcons/Champagne.webp';
 import charcoalKilnIcon from 'assets/annoIcons/Charcoal_kiln.webp';
+import cherryWood from 'assets/annoIcons/Cherry_wood.webp';
 import chewingGumIcon from 'assets/annoIcons/Chewing_Gum.webp';
 import chocolateIcon from 'assets/annoIcons/Chocolate.webp';
 import cigarIcon from 'assets/annoIcons/Cigars.webp';
@@ -165,6 +166,7 @@ import vaccumCleanersIcon from 'assets/annoIcons/Vacuum_Cleaners.webp';
 import vanityScreensIcon from 'assets/annoIcons/Vanity_Screens.webp';
 import venisonEnCrouteIcon from 'assets/annoIcons/Venison_en_Croute.webp';
 import venisonTartareIcon from 'assets/annoIcons/Venison_Tartare.webp';
+import wansaWood from 'assets/annoIcons/Icon_wansa_wood_0.webp';
 import watIcon from 'assets/annoIcons/Icon_wat_stew_0.webp';
 import weaponsIcon from 'assets/annoIcons/Weapons.webp';
 import whalingIcon from 'assets/annoIcons/Whaling_Station.webp';
@@ -204,6 +206,7 @@ export {
   ceramicsIcon,
   champagneIcon,
   charcoalKilnIcon,
+  cherryWood,
   chewingGumIcon,
   chocolateIcon,
   cigarIcon,
@@ -343,6 +346,7 @@ export {
   vanityScreensIcon,
   venisonEnCrouteIcon,
   venisonTartareIcon,
+  wansaWood,
   watIcon,
   weaponsIcon,
   whalingIcon,
