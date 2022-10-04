@@ -46,6 +46,7 @@ import cottonIcon from 'assets/annoIcons/Cotton.webp';
 import cottonMillIcon from 'assets/annoIcons/Cotton_fabric.webp';
 import crockeryIcon from 'assets/annoIcons/Crockery.webp';
 import daiquiriIcon from 'assets/annoIcons/Daiquiri_Tropic.webp';
+import detergentIcon from 'assets/annoIcons/Detergent.webp';
 import donutFourrerIcon from 'assets/annoIcons/Donut_Fourre.webp';
 import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
 import dynamiteIcon from 'assets/annoIcons/Dynamite.webp';
@@ -55,6 +56,7 @@ import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
 import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
 import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
 import ethanolIcon from 'assets/annoIcons/Ethanol.webp';
+import faceCreamIcon from 'assets/annoIcons/Face_Cream.webp';
 import feltIcon from 'assets/annoIcons/Felt.webp';
 import filamentIcon from 'assets/annoIcons/Carbon_filament.webp';
 import fishFritesIcon from 'assets/annoIcons/Fish_and_Frites.webp';
@@ -98,6 +100,7 @@ import lightBulbIcon from 'assets/annoIcons/Light_bulb.webp';
 import limestoneIcon from 'assets/annoIcons/Cement.webp';
 import linenIcon from 'assets/annoIcons/Icon_linen_fabric_0.webp';
 import linseedIcon from 'assets/annoIcons/Icon_linen_farm_0.webp';
+import lipstickIcon from 'assets/annoIcons/Lipstick.webp';
 import lobsterChemineeIcon from 'assets/annoIcons/Lobster_Cheminee.webp';
 import lobstersIcon from 'assets/annoIcons/Icon_seafood_0.webp';
 import loungeSeatingIcon from 'assets/annoIcons/Lounge_Seating.webp';
@@ -121,6 +124,7 @@ import pigsIcon from 'assets/annoIcons/Pigs.webp';
 import pipesIcon from 'assets/annoIcons/Icon_tobacco_pipes_0.webp';
 import plantainPlantationIcon from 'assets/annoIcons/Plantains.webp';
 import pocketWatchesIcon from 'assets/annoIcons/Pocket_watch.webp';
+import pomadeIcon from 'assets/annoIcons/Pomade.webp';
 import ponchosIcon from 'assets/annoIcons/Poncho.webp';
 import potatoIcon from 'assets/annoIcons/Potato.webp';
 import redPeppersIcon from 'assets/annoIcons/Red_peppers.webp';
@@ -159,6 +163,7 @@ import telephonesIcon from 'assets/annoIcons/Icon_telephones_0.webp';
 import timberIcon from 'assets/annoIcons/Timber.webp';
 import toastersIcon from 'assets/annoIcons/Toasters.webp';
 import tobaccoIcon from 'assets/annoIcons/Tobacco.webp';
+import toothpasteIcon from 'assets/annoIcons/Toothpaste.webp';
 import tortillasIcon from 'assets/annoIcons/Tortilla.webp';
 import tractorIcon from 'assets/annoIcons/TractorBarn.webp';
 import trifleTowerIcon from 'assets/annoIcons/Trifle_Tower.webp';
@@ -226,6 +231,7 @@ export {
   cottonMillIcon,
   crockeryIcon,
   daiquiriIcon,
+  detergentIcon,
   donutFourrerIcon,
   dryHouseIcon,
   dynamiteIcon,
@@ -235,6 +241,7 @@ export {
   enbesaIcon,
   enbesaSunriseIcon,
   ethanolIcon,
+  faceCreamIcon,
   feltIcon,
   filamentIcon,
   fishFritesIcon,
@@ -278,6 +285,7 @@ export {
   limestoneIcon,
   linenIcon,
   linseedIcon,
+  lipstickIcon,
   lobsterChemineeIcon,
   lobstersIcon,
   loungeSeatingIcon,
@@ -301,6 +309,7 @@ export {
   pipesIcon,
   plantainPlantationIcon,
   pocketWatchesIcon,
+  pomadeIcon,
   ponchosIcon,
   potatoIcon,
   redPeppersIcon,
@@ -339,6 +348,7 @@ export {
   timberIcon,
   toastersIcon,
   tobaccoIcon,
+  toothpasteIcon,
   tortillasIcon,
   tractorIcon,
   trifleTowerIcon,
