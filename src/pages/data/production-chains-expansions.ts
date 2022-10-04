@@ -669,5 +669,68 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         `
       }
     ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Drug Store',
+    productionChains: [
+      {
+        productionChain: 'toothpaste',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Soap(<span class='icon-flex-row'><img src='${icons.soapIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Toothpaste(<img src='${icons.toothpasteIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Toothpaste stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        SugarCane --> Sugar --> Toothpaste
+        Coal --> Toothpaste
+        Pig --> Tallow --> Soap --> Toothpaste
+        `
+      },
+      {
+        productionChain: 'detergent',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart TB
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Detergent(<img src='${icons.detergentIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Detergent stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Ethanol & Citrus & Saltpeter --> Detergent
+        `
+      },
+      {
+        productionChain: 'lipstick',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart TB
+        FishOil(<span class='icon-flex-row'><img src='${icons.fishOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CoconutIcon(<span class='icon-flex-row'><img src='${icons.coconutOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Lipstick(<img src='${icons.lipstickIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Lipstick stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        FishOil & CoconutIcon & Lacquer --> Lipstick
+        `
+      },
+      {
+        productionChain: 'faceCream',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        CoconutIcon(<span class='icon-flex-row'><img src='${icons.coconutOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Whaling(<img src='${icons.whalingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        FaceCream(<img src='${icons.faceCreamIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style FaceCream stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        CoconutIcon & Citrus & Whaling --> FaceCream
+        `
+      }
+    ]
   }
 ];
