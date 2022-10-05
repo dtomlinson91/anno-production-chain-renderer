@@ -2,25 +2,32 @@ import * as icons from './icons';
 import fullChainMultiplierIcon from 'assets/productionChainMultiplier.svg';
 import { InfoCardItem, InfoCardWorldItem } from './models';
 
+export const commonWorldItemData: InfoCardWorldItem[] = [
+  {
+    id: 'gold',
+    icon: icons.goldOreIcon,
+    textPre: 'Gold mines use New World',
+    textPost: 'production rates.',
+    worldIcon: icons.newWorldIcon
+  }
+];
+
 export const worldItemDataBase: InfoCardWorldItem[] = [
   {
     id: 'furs',
     icon: icons.fursIcon,
-    text: 'Furs use Old World',
+    textPre: 'Furs use Old World',
+    textPost: 'production rates.',
     worldIcon: icons.oldWorldIcon
   },
   {
     id: 'clay',
     icon: icons.clayIcon,
-    text: 'Clay uses Old World',
-    worldIcon: icons.oldWorldIcon
+    textPre: 'Represents a Clay Mine. A clay collector includes Enbesa',
+    textPost: 'icon.',
+    worldIcon: icons.enbesaIcon
   },
-  {
-    id: 'gold',
-    icon: icons.goldOreIcon,
-    text: 'Gold mines use New World',
-    worldIcon: icons.newWorldIcon
-  }
+  ...commonWorldItemData
 ];
 
 export const itemDataBase: InfoCardItem[] = [

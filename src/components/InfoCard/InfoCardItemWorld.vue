@@ -5,9 +5,9 @@
     </q-item-section>
     <q-item-section>
       <span>
-        {{ text }}
+        {{ textPre }}
         <q-img :src="worldIcon" class="info-small-icon"></q-img>
-        production rates.
+        {{ textPost }}
       </span>
     </q-item-section>
   </q-item>
@@ -18,6 +18,7 @@
 defineProps<{
   icon: string;
   worldIcon: string;
-  text: string;
+  textPre: string;
+  textPost: string;
 }>();
 </script>

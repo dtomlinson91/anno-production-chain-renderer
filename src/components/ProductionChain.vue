@@ -68,6 +68,18 @@ watchEffect(() => {
   flex-direction: row;
 }
 
+.icon-regional-container {
+  margin-left: 45px;
+}
+
+.icon-regional {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 32px;
+}
+
 .icon-flex-col {
   display: flex;
   flex-direction: column;
