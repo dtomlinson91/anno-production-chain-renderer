@@ -48,6 +48,54 @@ export const productionChainsBase: TieredProductionChain[] = [
   },
   {
     colBreak: false,
+    tierName: 'Fuel | Silo',
+    productionChains: [
+      {
+        productionChain: 'tractorGrain',
+        mermaidDefinition: endent`
+        flowchart LR
+        TractorGrain(<span class='icon-flex-row'><img src='${icons.grainIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.tractorIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        TractorGrain --> Grain
+        `
+      },
+      {
+        productionChain: 'siloPig',
+        mermaidDefinition: endent`
+        flowchart LR
+        SiloPig(<span class='icon-flex-row'><img src='${icons.pigsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.siloIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>2.66</span>)
+        SiloPig --> Pig
+        `
+      },
+      {
+        productionChain: 'tractor',
+        mermaidDefinition: endent`
+        flowchart LR
+        OilWell(<img src='${icons.oilWellIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Fuel(<img src='${icons.fuelIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tractor(<img src='${icons.tractorIcon}' class='icon-size' /><span class='ratio-count'>20</span>)
+        OilWell --> Fuel --> Tractor
+        `
+      },
+      {
+        productionChain: 'silos',
+        mermaidDefinition: endent`
+        flowchart TB
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Teff(<img src='${icons.teffIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>5</span>)
+        Grain --> Silo
+        Corn --> Silo
+        Teff --> Silo
+        `
+      }
+    ]
+  },
+
+  {
+    colBreak: false,
     tierName: 'Electricity',
     productionChains: [
       {
@@ -546,7 +594,7 @@ export const productionChainsBase: TieredProductionChain[] = [
         chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
-        Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Clay(<span class='icon-flex-row icon-regional-container'><img src='${icons.enbesaIcon}' class='icon-regional' /><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Indigo(<img src='${icons.indigoIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
         Ceramics(<img src='${icons.ceramicsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Clay & Indigo --> Ceramics
@@ -583,7 +631,7 @@ export const productionChainsBase: TieredProductionChain[] = [
         chainMultiplier: '6',
         mermaidDefinition: endent`
         flowchart LR
-        Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16%</span><span class='ratio-count'>1</span></span></span>)
+        Clay(<span class='icon-flex-row icon-regional-container'><img src='${icons.enbesaIcon}' class='icon-regional' /><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16%</span><span class='ratio-count'>1</span></span></span>)
         Tobacco(<span class='icon-flex-row'><img src='${icons.tobaccoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>)
         Pipes(<img src='${icons.pipesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Clay & Tobacco --> Pipes
@@ -663,31 +711,7 @@ export const productionChainsBase: TieredProductionChain[] = [
       }
     ]
   },
-  {
-    colBreak: false,
-    tierName: 'Sails',
-    productionChains: [
-      {
-        productionChain: 'oldWorldSails',
-        mermaidDefinition: endent`
-        flowchart LR
-        Wool(<img src='${icons.woolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sailmakers(<img src='${icons.sailmakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Wool --> Sailmakers
-        `
-      },
-      {
-        productionChain: 'newWorldSails',
-        mermaidDefinition: endent`
-        flowchart LR
-        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        CottonMill(<img src='${icons.cottonMillIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sailmakers(<img src='${icons.sailmakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Cotton --> CottonMill --> Sailmakers
-        `
-      }
-    ]
-  },
+  { colBreak: true, tierName: 'blank', productionChains: [] },
   {
     colBreak: false,
     tierName: 'Weapons',
@@ -847,6 +871,31 @@ export const productionChainsBase: TieredProductionChain[] = [
         Cocoa(<img src='${icons.cocoaIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
         SugarCane --> Sugar --> Chocolate
         Cocoa --> Chocolate
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Sails',
+    productionChains: [
+      {
+        productionChain: 'oldWorldSails',
+        mermaidDefinition: endent`
+        flowchart LR
+        Wool(<img src='${icons.woolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sailmakers(<img src='${icons.sailmakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wool --> Sailmakers
+        `
+      },
+      {
+        productionChain: 'newWorldSails',
+        mermaidDefinition: endent`
+        flowchart LR
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CottonMill(<img src='${icons.cottonMillIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sailmakers(<img src='${icons.sailmakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cotton --> CottonMill --> Sailmakers
         `
       }
     ]

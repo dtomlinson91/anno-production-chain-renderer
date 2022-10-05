@@ -11,7 +11,10 @@
         class="masonry-col item"
         :col-break="false"
       >
-        <InfoCard :item-data="itemDataExpansions"></InfoCard>
+        <InfoCard
+          :item-data="itemDataExpansions"
+          :item-world-data="worldItemDataExpansions"
+        ></InfoCard>
       </ChainTiers>
       <ChainTiers
         v-for="tier in productionChainsExpansions"
@@ -39,7 +42,10 @@
 import { productionChainsExpansions } from './data/production-chains-expansions';
 
 // Info Card Data
-import { itemDataExpansions } from 'src/pages/data/info-card';
+import {
+  itemDataExpansions,
+  worldItemDataExpansions
+} from 'src/pages/data/info-card';
 
 // Mermaid
 import { initialiseMermaid } from 'composables/mermaid';

@@ -5,59 +5,6 @@ import * as icons from './icons';
 export const productionChainsExpansions: TieredProductionChain[] = [
   {
     colBreak: false,
-    tierName: 'Region Ratios',
-    productionChains: [
-      {
-        productionChain: 'tractorGrain',
-        mermaidDefinition: endent`
-        flowchart LR
-        TractorGrain(<span class='icon-flex-row'><img src='${icons.grainIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.tractorIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
-        TractorGrain --> Grain
-        `
-      },
-      {
-        productionChain: 'siloPig',
-        mermaidDefinition: endent`
-        flowchart LR
-        SiloPig(<span class='icon-flex-row'><img src='${icons.pigsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.siloIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
-        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>2.66</span>)
-        SiloPig --> Pig
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
-    tierName: 'Fuel | Silo',
-    productionChains: [
-      {
-        productionChain: 'tractor',
-        mermaidDefinition: endent`
-        flowchart LR
-        OilWell(<img src='${icons.oilWellIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Fuel(<img src='${icons.fuelIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Tractor(<img src='${icons.tractorIcon}' class='icon-size' /><span class='ratio-count'>20</span>)
-        OilWell --> Fuel --> Tractor
-        `
-      },
-      {
-        productionChain: 'silos',
-        mermaidDefinition: endent`
-        flowchart TB
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Teff(<img src='${icons.teffIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>5</span>)
-        Grain --> Silo
-        Corn --> Silo
-        Teff --> Silo
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
     tierName: 'Chemical Plant',
     productionChains: [
       {
