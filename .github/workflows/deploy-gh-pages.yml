@@ -1,24 +1,24 @@
-﻿name: Deploy | GH Pages
+﻿# name: Deploy | GH Pages
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install project
-        run: yarn install
-      - name: Install Quasar CLI
-        run: yarn global add @quasar/cli
-      - name: Build
-        run: quasar build
-      - name: Deploy to GH pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/spa
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+#       - name: Install project
+#         run: yarn install
+#       - name: Install Quasar CLI
+#         run: yarn global add @quasar/cli
+#       - name: Build
+#         run: quasar build
+#       - name: Deploy to GH pages
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: dist/spa
