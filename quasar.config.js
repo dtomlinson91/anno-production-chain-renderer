@@ -60,7 +60,7 @@ module.exports = configure(function (/* ctx */) {
         pages: path.join(__dirname, './src/pages'),
       },
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
