@@ -76,7 +76,7 @@ $column: 5;
 }
 
 .masonry-container {
-  height: 6000px;
+  height: $page-height;
 
   .masonry-col {
     width: 1000px;
