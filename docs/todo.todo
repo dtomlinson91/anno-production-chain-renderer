@@ -1,28 +1,23 @@
-Vue:
-    ☐ Component for info card
-        Pass data in as props
-    ☐ Abstract css out and import it into components that use it?
-    ☐ Favicon
-
-Info Card - Expansions:
-    ☐ Mine
-    ☐ Clay
-    ☐ Electricity
-
-ProductionChains:
-  ☐ Move multifactories (celluloid etc) into its own box and edit the other charts to refer to it.
+Vercel:
+    ☐ Try history mode on vercel
 
 Utils:
     ☐ Python script to take screenshot
 
-Ratios:
-    ☐ Check steel ratio in base for basic 3 that use it? Does it match up?
-
-Documentation:
-    ✔ Vite inlining assets as base64 below a certain size @done(22-10-03 22:19)
-        https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
 
 Archive:
+✔ Component for info card @done(22-10-03 22:52) @project(Vue)
+Pass data in as props
+✘ Abstract css out and import it into components that use it? @cancelled(22-10-03 22:52) @project(Vue)
+✔ Favicon @done(22-10-03 23:45) @project(Vue)
+✔ Mine @done(22-10-05 03:54) @project(Info Card - Expansions)
+✔ Clay @done(22-10-05 03:54) @project(Info Card - Expansions)
+✔ Electricity @done(22-10-05 03:54) @project(Info Card - Expansions)
+✔ Find what chains belong to what seaons and rename pages/move @done(22-10-05 03:54)
+✔ Move multifactories (celluloid etc) into its own box and edit the other charts to refer to it. @done(22-10-03 23:45)
+✔ Check steel ratio in base for basic 3 that use it? Does it match up? @done(22-10-03 22:52) @project(Ratios)
+✔ Vite inlining assets as base64 below a certain size @done(22-10-03 22:19) @project(Documentation)
+https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
 ✘ push to gh pages @cancelled(22-09-25 22:01) @project(ToDo)
 ✔ document div with background instead of img @done(22-09-25 21:08) @project(ToDo)
 ✔ document vite importing assets @done(22-09-25 21:04) @project(ToDo)
