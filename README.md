@@ -10,7 +10,7 @@ This uses Vue3 (Quasar) and [MermaidJS](https://mermaid-js.github.io/mermaid/#/)
 
 ## 🌎 Live view
 
-<https://dtomlinson91.github.io/anno-production-chain-renderer>
+<https://anno-production-chain-renderer.vercel.app>
 
 Browser extensions like [GoFullPage](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl) can be used to take a full-screen screenshot.
 
