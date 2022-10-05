@@ -5,6 +5,30 @@ import * as icons from './icons';
 export const productionChainsExpansions: TieredProductionChain[] = [
   {
     colBreak: false,
+    tierName: 'Building Materials',
+    productionChains: [
+      {
+        productionChain: 'elevators',
+        mermaidDefinition: endent`
+      flowchart LR
+      Iron(<img src='${icons.ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+      Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+      Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+      Wood(<img src='${icons.woodIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+      Marquetry(<img src='${icons.marquetryIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+      SteamMotor(<img src='${icons.steamMotorsIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
+      Elevator(<img src='${icons.elevatorIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+      style SteamMotor stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+      style Elevator stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+      Iron & Coal --> Steel --> Elevator
+      Wood --> Marquetry --> Elevator
+      SteamMotor --> Elevator
+      `
+      }
+    ]
+  },
+  {
+    colBreak: false,
     tierName: 'Chemical Plant',
     productionChains: [
       {
@@ -31,6 +55,24 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         `
       },
       {
+        productionChain: 'celluloid',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Celluloid(<img src='${icons.celluloidIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cotton & CamphorWax & Ethanol --> Celluloid
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Skyscrapers',
+    productionChains: [
+      {
         productionChain: 'chewingGum',
         mermaidDefinition: endent`
         flowchart LR
@@ -44,15 +86,95 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         `
       },
       {
-        productionChain: 'celluloid',
-        chainMultiplier: '2',
+        productionChain: 'typewriters',
         mermaidDefinition: endent`
-        flowchart TB
-        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Celluloid(<img src='${icons.celluloidIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Cotton & CamphorWax & Ethanol --> Celluloid
+        flowchart LR
+        Iron(<img src='${icons.ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Copper(<img src='${icons.copperIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Zinc(<img src='${icons.zincIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        Lacquer(<img src='${icons.lacquerIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Typewriters(<img src='${icons.typewritersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Typewriters stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Iron & Coal --> Steel --> Typewriters
+        Copper & Zinc --> Brass --> Typewriters
+        Lacquer --> Typewriters
+        `
+      },
+      {
+        productionChain: 'violins',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWoodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Violins(<img src='${icons.violinsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Iron & Coal --> Steel --> Violins
+        CherryWood --> Violins
+        Lacquer --> Violins
+        `
+      },
+      {
+        productionChain: 'biscuits',
+        mermaidDefinition: endent`
+        flowchart LR
+        Pigs(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        Flour(<img src='${icons.flourIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Citrus(<img src='${icons.citrusIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Biscuits(<img src='${icons.biscuitsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Biscuits stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Pigs --> Tallow --> Biscuits
+        Grain --> Flour --> Biscuits
+        Citrus --> Biscuits
+        `
+      },
+      {
+        productionChain: 'cognac',
+        mermaidDefinition: endent`
+        flowchart LR
+        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWoodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cognac(<img src='${icons.cognacIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane --> Sugar
+        Vineyard & CherryWood & Sugar --> Cognac
+        `
+      },
+      {
+        productionChain: 'billiardsTable',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Alpaca(<span class='icon-flex-row'><img src='${icons.alpacaWoolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Felt(<span class='icon-flex-row'><img src='${icons.feltIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CherryWood(<span class='icon-flex-row'><img src='${icons.cherryWoodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Billiards(<img src='${icons.billiardsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        CherryWood --> Billiards
+        Alpaca --> Felt --> Billiards
+        Celluloid --> Billiards
+        `
+      },
+      {
+        productionChain: 'toys',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Alpaca(<span class='icon-flex-row'><img src='${icons.alpacaWoolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Felt(<span class='icon-flex-row'><img src='${icons.feltIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Toys(<img src='${icons.toysIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Alpaca --> Felt --> Toys
+        Celluloid & Lacquer --> Toys
         `
       }
     ]
@@ -348,6 +470,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       }
     ]
   },
+  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Iron Tower',

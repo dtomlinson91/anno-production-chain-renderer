@@ -8,6 +8,8 @@ import bananaSurpriseIcon from 'assets/annoIcons/Banana_Surprise.webp';
 import bankersLampsIcon from 'assets/annoIcons/Bankers_Lamps.webp';
 import bearIcon from 'assets/annoIcons/Bear_Hunting_Cabin.webp';
 import beefIcon from 'assets/annoIcons/Beef.webp';
+import billiardsIcon from 'assets/annoIcons/Billiard_Tables.webp';
+import biscuitsIcon from 'assets/annoIcons/Biscuits.webp';
 import blackMuscovyIcon from 'assets/annoIcons/Black_Muscovy.webp';
 import bootsIcon from 'assets/annoIcons/Icon_leather_shoes_0.webp';
 import bowlerHatsIcon from 'assets/annoIcons/Bowler_hats.webp';
@@ -39,6 +41,7 @@ import cocoaIcon from 'assets/annoIcons/Cocoa.webp';
 import coconutOilIcon from 'assets/annoIcons/Coconut_Oil.webp';
 import coffeeBeansIcon from 'assets/annoIcons/Coffee_beans.webp';
 import coffeeIcon from 'assets/annoIcons/Coffee.webp';
+import cognacIcon from 'assets/annoIcons/Cognac.webp';
 import concreteFactory from 'assets/annoIcons/Reinforced_concrete.webp';
 import copperIcon from 'assets/annoIcons/Copper.webp';
 import cornIcon from 'assets/annoIcons/Corn.webp';
@@ -52,6 +55,7 @@ import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
 import dynamiteIcon from 'assets/annoIcons/Dynamite.webp';
 import eclairIcon from 'assets/annoIcons/Eclair.webp';
 import electricityIcon from 'assets/electricityBorder.webp';
+import elevatorIcon from 'assets/annoIcons/Elevators.webp';
 import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
 import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
 import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
@@ -165,12 +169,15 @@ import toastersIcon from 'assets/annoIcons/Toasters.webp';
 import tobaccoIcon from 'assets/annoIcons/Tobacco.webp';
 import toothpasteIcon from 'assets/annoIcons/Toothpaste.webp';
 import tortillasIcon from 'assets/annoIcons/Tortilla.webp';
+import toysIcon from 'assets/annoIcons/Toys.webp';
 import tractorIcon from 'assets/annoIcons/TractorBarn.webp';
 import trifleTowerIcon from 'assets/annoIcons/Trifle_Tower.webp';
+import typewritersIcon from 'assets/annoIcons/Typewriters.webp';
 import vaccumCleanersIcon from 'assets/annoIcons/Vacuum_Cleaners.webp';
 import vanityScreensIcon from 'assets/annoIcons/Vanity_Screens.webp';
 import venisonEnCrouteIcon from 'assets/annoIcons/Venison_en_Croute.webp';
 import venisonTartareIcon from 'assets/annoIcons/Venison_Tartare.webp';
+import violinsIcon from 'assets/annoIcons/Violins.webp';
 import wansaWood from 'assets/annoIcons/Icon_wansa_wood_0.webp';
 import watIcon from 'assets/annoIcons/Icon_wat_stew_0.webp';
 import weaponsIcon from 'assets/annoIcons/Weapons.webp';
@@ -193,6 +200,8 @@ export {
   bankersLampsIcon,
   bearIcon,
   beefIcon,
+  billiardsIcon,
+  biscuitsIcon,
   blackMuscovyIcon,
   bootsIcon,
   bowlerHatsIcon,
@@ -224,6 +233,7 @@ export {
   coconutOilIcon,
   coffeeBeansIcon,
   coffeeIcon,
+  cognacIcon,
   concreteFactory,
   copperIcon,
   cornIcon,
@@ -237,6 +247,7 @@ export {
   dynamiteIcon,
   eclairIcon,
   electricityIcon,
+  elevatorIcon,
   embroidererIcon,
   enbesaIcon,
   enbesaSunriseIcon,
@@ -350,12 +361,15 @@ export {
   tobaccoIcon,
   toothpasteIcon,
   tortillasIcon,
+  toysIcon,
   tractorIcon,
   trifleTowerIcon,
+  typewritersIcon,
   vaccumCleanersIcon,
   vanityScreensIcon,
   venisonEnCrouteIcon,
   venisonTartareIcon,
+  violinsIcon,
   wansaWood,
   watIcon,
   weaponsIcon,
