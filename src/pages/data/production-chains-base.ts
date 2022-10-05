@@ -145,7 +145,7 @@ export const productionChainsBase: TieredProductionChain[] = [
         productionChain: 'mudBricks',
         chainMultiplier: '4',
         mermaidDefinition: endent`
-        flowchart LR; Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        flowchart LR; Clay(<span class='icon-flex-row icon-regional-container'><img src='${icons.enbesaIcon}' class='icon-regional' /><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
         Teff(<img src='${icons.teffIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         MudBricks(<img src='${icons.mudBricksIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Clay & Teff --> MudBricks

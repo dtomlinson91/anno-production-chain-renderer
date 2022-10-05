@@ -20,6 +20,7 @@ export interface InfoCardItem {
 export interface InfoCardWorldItem {
   id: string;
   icon: string;
-  text: string;
+  textPre: string;
+  textPost: string;
   worldIcon: string;
 }
