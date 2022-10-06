@@ -87,6 +87,7 @@ import gooseIcon from 'assets/annoIcons/Goose_Farm.webp';
 import grainIcon from 'assets/annoIcons/Grain.webp';
 import gramophoneIcon from 'assets/annoIcons/Gramophone.webp';
 import grapesIcon from 'assets/annoIcons/Grapes.webp';
+import haciendaIcon from 'assets/annoIcons/Hacienda.webp';
 import heavyWeaponsIcon from 'assets/annoIcons/Advanced_weapons.webp';
 import hibiscusFarmIcon from 'assets/annoIcons/Icon_hibiscus_farm_0.webp';
 import hibiscusTeaIcon from 'assets/annoIcons/Icon_hibiscus_tea_0.webp';
@@ -283,6 +284,7 @@ export {
   grainIcon,
   gramophoneIcon,
   grapesIcon,
+  haciendaIcon,
   heavyWeaponsIcon,
   hibiscusFarmIcon,
   hibiscusTeaIcon,
