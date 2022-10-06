@@ -802,5 +802,63 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         `
       }
     ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Hacienda',
+    productionChains: [
+      {
+        productionChain: 'hotSauce',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Spices(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.spicesIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        HotSauce(<img src='${icons.hotSauceIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Spices --> HotSauce
+        `
+      },
+      {
+        productionChain: 'atole',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Corn(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Atole(<img src='${icons.atoleIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Corn & SugarCane --> Atole
+        `
+      },
+      {
+        productionChain: 'haciendaRum',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<img src='${icons.rumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane & Wood --> Rum
+        `
+      },
+      {
+        productionChain: 'haciendaSchnapps',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Potato(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Schnapps(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.schnappsIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Potato --> Schnapps
+        `
+      },
+      {
+        productionChain: 'haciendaBeer',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Corn(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Beer(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.breweryIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Grain & Corn --> Beer
+        `
+      }
+    ]
   }
 ];
