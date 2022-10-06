@@ -2,16 +2,17 @@ import * as icons from './icons';
 import fullChainMultiplierIcon from 'assets/productionChainMultiplier.svg';
 import { InfoCardItem, InfoCardWorldItem } from './models';
 
+// Common items
 export const commonItemData: InfoCardItem[] = [
   {
     id: 'charcoal',
     icon: icons.charcoalKilnIcon,
-    text: '2 Charcoal Kilns can be replaced with 1 Coal Mine'
+    text: '2 Charcoal Kilns can be replaced with 1 Coal Mine.'
   },
   {
     id: 'electricity',
     icon: icons.electricityIcon,
-    text: 'Building has electricity'
+    text: 'Building has electricity.'
   },
   {
     id: 'fullChain',
@@ -32,6 +33,7 @@ const commonWorldItemData: InfoCardWorldItem[] = [
   }
 ];
 
+// Base to S2
 export const itemDataBase: InfoCardItem[] = [...commonItemData];
 
 export const worldItemDataBase: InfoCardWorldItem[] = [
@@ -53,8 +55,16 @@ export const worldItemDataBase: InfoCardWorldItem[] = [
   }
 ];
 
+// S2 to S4
 export const itemDataExpansions: InfoCardItem[] = [...commonItemData];
 
 export const worldItemDataExpansions: InfoCardWorldItem[] = [
-  ...commonWorldItemData
+  ...commonWorldItemData,
+  {
+    id: 'hacienda',
+    icon: icons.haciendaIcon,
+    textPre: 'Hacienda chains use New World',
+    textPost: 'buildings.',
+    worldIcon: icons.newWorldIcon
+  }
 ];
