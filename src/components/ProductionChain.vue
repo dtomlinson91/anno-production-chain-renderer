@@ -69,12 +69,12 @@ watchEffect(() => {
 }
 
 .icon-regional-container {
-  margin-left: 45px;
+  margin-left: 55px;
 }
 
 .icon-regional {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   left: 0px;
   top: 32px;
