@@ -4,6 +4,7 @@ import apiaryIcon from 'assets/annoIcons/Icon_beeswax_0.webp';
 import archdukeSchnitzel from 'assets/annoIcons/Archdukes_Schnitzel.webp';
 import arcticIcon from 'assets/annoIcons/Icon_session_passage_0.png';
 import artisnalKitchenIcon from 'assets/annoIcons/Goulash.webp';
+import atoleIcon from 'assets/annoIcons/Atole.webp';
 import bananaSurpriseIcon from 'assets/annoIcons/Banana_Surprise.webp';
 import bankersLampsIcon from 'assets/annoIcons/Bankers_Lamps.webp';
 import bearIcon from 'assets/annoIcons/Bear_Hunting_Cabin.webp';
@@ -52,6 +53,7 @@ import daiquiriIcon from 'assets/annoIcons/Daiquiri_Tropic.webp';
 import detergentIcon from 'assets/annoIcons/Detergent.webp';
 import donutFourrerIcon from 'assets/annoIcons/Donut_Fourre.webp';
 import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
+import dungIcon from 'assets/annoIcons/Dung.webp';
 import dynamiteIcon from 'assets/annoIcons/Dynamite.webp';
 import eclairIcon from 'assets/annoIcons/Eclair.webp';
 import electricityIcon from 'assets/electricityBorder.webp';
@@ -62,6 +64,7 @@ import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
 import ethanolIcon from 'assets/annoIcons/Ethanol.webp';
 import faceCreamIcon from 'assets/annoIcons/Face_Cream.webp';
 import feltIcon from 'assets/annoIcons/Felt.webp';
+import fertiliserIcon from 'assets/annoIcons/Fertiliser.webp';
 import filamentIcon from 'assets/annoIcons/Carbon_filament.webp';
 import fishFritesIcon from 'assets/annoIcons/Fish_and_Frites.webp';
 import fishIcon from 'assets/annoIcons/Fish.webp';
@@ -90,6 +93,7 @@ import hibiscusTeaIcon from 'assets/annoIcons/Icon_hibiscus_tea_0.webp';
 import highWheelerIcon from 'assets/annoIcons/High_wheeler.webp';
 import homardLitTerroirIcon from 'assets/annoIcons/Homard_Lit_de_Terroir.webp';
 import hopFarmIcon from 'assets/annoIcons/Hops.webp';
+import hotSauceIcon from 'assets/annoIcons/Hot_Sauce.webp';
 import huskyIcon from 'assets/annoIcons/Husky_Farm.webp';
 import huskySledIcon from 'assets/annoIcons/Husky_Sled_Factory.webp';
 import indigoIcon from 'assets/annoIcons/Icon_indigo_0.webp';
@@ -196,6 +200,7 @@ export {
   archdukeSchnitzel,
   arcticIcon,
   artisnalKitchenIcon,
+  atoleIcon,
   bananaSurpriseIcon,
   bankersLampsIcon,
   bearIcon,
@@ -244,6 +249,7 @@ export {
   detergentIcon,
   donutFourrerIcon,
   dryHouseIcon,
+  dungIcon,
   dynamiteIcon,
   eclairIcon,
   electricityIcon,
@@ -254,6 +260,7 @@ export {
   ethanolIcon,
   faceCreamIcon,
   feltIcon,
+  fertiliserIcon,
   filamentIcon,
   fishFritesIcon,
   fishIcon,
@@ -282,6 +289,7 @@ export {
   highWheelerIcon,
   homardLitTerroirIcon,
   hopFarmIcon,
+  hotSauceIcon,
   huskyIcon,
   huskySledIcon,
   indigoIcon,
