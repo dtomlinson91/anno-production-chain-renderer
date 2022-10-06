@@ -29,6 +29,31 @@ export const productionChainsExpansions: TieredProductionChain[] = [
   },
   {
     colBreak: false,
+    tierName: 'Silo',
+    productionChains: [
+      {
+        productionChain: 'siloAlpaca',
+        mermaidDefinition: endent`
+        flowchart LR
+        SiloPig(<span class='icon-flex-row'><img src='${icons.alpacaWoolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.siloIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        Pig(<img src='${icons.alpacaWoolIcon}' class='icon-size' /><span class='ratio-count'>2.66</span>)
+        SiloPig --> Pig
+        `
+      },
+      {
+        productionChain: 'silos',
+        mermaidDefinition: endent`
+        flowchart LR
+        Dung(<img src='${icons.dungIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Fertiliser(<img src='${icons.fertiliserIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>5</span>)
+        Dung --> Fertiliser --> Silo
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
     tierName: 'Chemical Plant',
     productionChains: [
       {
@@ -822,7 +847,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
-        Corn(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Atole(<img src='${icons.atoleIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Corn & SugarCane --> Atole
@@ -854,7 +879,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         mermaidDefinition: endent`
         flowchart LR
         Grain(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
-        Corn(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Beer(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.breweryIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
         Grain & Corn --> Beer
         `
