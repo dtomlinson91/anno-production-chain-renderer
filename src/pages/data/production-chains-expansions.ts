@@ -276,7 +276,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       {
         productionChain: 'stroggofGoulash',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
         RedPeppers(<img src='${icons.redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
         Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -288,7 +288,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         productionChain: 'fishFrites',
         chainMultiplier: '2',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Fish(<span class='icon-flex-row'><img src='${icons.fishIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -315,7 +315,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         productionChain: 'lobsterCheminee',
         chainMultiplier: '2',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Lobster(<img src='${icons.lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Tobacco(<img src='${icons.tobaccoIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
@@ -386,7 +386,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         productionChain: 'venisonTartare',
         chainMultiplier: '2',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Grapes(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
         VenisonTartare(<img src='${icons.venisonTartareIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Caribou(<img src='${icons.caribouIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
@@ -398,7 +398,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         productionChain: 'bananaSurprise',
         chainMultiplier: '2',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Goat(<img src='${icons.goatMilkIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Plantains(<span class='icon-flex-row'><img src='${icons.plantainPlantationIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -629,7 +629,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         productionChain: 'crockery',
         chainMultiplier: '4',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Clay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Sand0(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Lacquer(<span class='icon-flex-row'><img src='${icons.lacquerIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -830,64 +830,6 @@ export const productionChainsExpansions: TieredProductionChain[] = [
   },
   {
     colBreak: false,
-    tierName: 'Hacienda',
-    productionChains: [
-      {
-        productionChain: 'hotSauce',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Spices(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.spicesIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        HotSauce(<img src='${icons.hotSauceIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Spices --> HotSauce
-        `
-      },
-      {
-        productionChain: 'atole',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Atole(<img src='${icons.atoleIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Corn & SugarCane --> Atole
-        `
-      },
-      {
-        productionChain: 'haciendaRum',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        SugarCane(<img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Rum(<img src='${icons.rumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        SugarCane & Wood --> Rum
-        `
-      },
-      {
-        productionChain: 'haciendaSchnapps',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Potato(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Schnapps(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.schnappsIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
-        Potato --> Schnapps
-        `
-      },
-      {
-        productionChain: 'haciendaBeer',
-        mermaidDefinition: endent`
-        flowchart LR
-        Grain(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Beer(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.breweryIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
-        Grain & Corn --> Beer
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
     tierName: 'Supply Factories | Airships',
     productionChains: [
       {
@@ -965,6 +907,96 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Cocoa --> Chocolate
         Potato --> Schnapps --> CarePackage
         `
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Hacienda',
+    productionChains: [
+      {
+        productionChain: 'hotSauce',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Spices(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.spicesIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        HotSauce(<img src='${icons.hotSauceIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Spices --> HotSauce
+        `
+      },
+      {
+        productionChain: 'atole',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Atole(<img src='${icons.atoleIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Corn & SugarCane --> Atole
+        `
+      },
+      {
+        productionChain: 'haciendaRum',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<img src='${icons.rumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane & Wood --> Rum
+        `
+      },
+      {
+        productionChain: 'haciendaSchnapps',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Potato(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Schnapps(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.schnappsIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Potato --> Schnapps
+        `
+      },
+      {
+        productionChain: 'haciendaBeer',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Beer(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.breweryIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
+        Grain & Corn --> Beer
+        `
+      }
+    ]
+  },
+  { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
+  {
+    colBreak: false,
+    tierName: 'Empire of the Skies',
+    productionChains: [
+      {
+        productionChain: 'aluminium',
+        chainMultiplier: '9',
+        mermaidDefinition: endent`
+        flowchart LR
+        Bauxite(<span class='icon-flex-row'><img src='${icons.bauxiteIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>11%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Aluminium(<img src='${icons.aluminiumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Bauxite & Charcoal --> Aluminium
+      `
+      },
+      {
+        productionChain: 'helium',
+        mermaidDefinition: endent`
+        flowchart LR
+        Clay(<img src='${icons.clayIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        FishOil(<img src='${icons.fishOilIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        IndustrialLubricant(<img src='${icons.industrialLubricant}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>8</span>)
+        Helium(<img src='${icons.heliumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Clay --> Helium
+        FishOil & Saltpeter --> IndustrialLubricant --> Helium
+      `
       }
     ]
   }

@@ -66,5 +66,13 @@ export const worldItemDataExpansions: InfoCardWorldItem[] = [
     textPre: 'Hacienda chains use New World',
     textPost: 'buildings.',
     worldIcon: icons.newWorldIcon
+  },
+  {
+    id: 'airship',
+    icon: icons.airshipIcon,
+    textPre:
+      'Ratios for airship drop chains are the same when built in the New World',
+    textPost: '.',
+    worldIcon: icons.newWorldIcon
   }
 ];
