@@ -849,7 +849,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Saltpeter --> Bomb
         Pig --> Tallow --> Dynamite --> Bomb
         Saltpeter0 --> Dynamite
-        Iron & Coal --> Steel --> Dynamite
+        Iron & Coal --> Steel --> Bomb
         `
       },
       {
