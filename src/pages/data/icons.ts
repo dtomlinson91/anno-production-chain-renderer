@@ -1,5 +1,7 @@
 import ageOfExplorationIcon from 'assets/annoIcons/Age_of_Exploration.webp';
+import airshipIcon from 'assets/annoIcons/Airship.webp';
 import alpacaWoolIcon from 'assets/annoIcons/Alpaca_wool.webp';
+import aluminiumIcon from 'assets/annoIcons/Aluminium_Profiles.webp';
 import apiaryIcon from 'assets/annoIcons/Icon_beeswax_0.webp';
 import archdukeSchnitzel from 'assets/annoIcons/Archdukes_Schnitzel.webp';
 import arcticIcon from 'assets/annoIcons/Icon_session_passage_0.png';
@@ -7,6 +9,7 @@ import artisnalKitchenIcon from 'assets/annoIcons/Goulash.webp';
 import atoleIcon from 'assets/annoIcons/Atole.webp';
 import bananaSurpriseIcon from 'assets/annoIcons/Banana_Surprise.webp';
 import bankersLampsIcon from 'assets/annoIcons/Bankers_Lamps.webp';
+import bauxiteIcon from 'assets/annoIcons/Bauxite.webp';
 import bearIcon from 'assets/annoIcons/Bear_Hunting_Cabin.webp';
 import beefIcon from 'assets/annoIcons/Beef.webp';
 import billiardsIcon from 'assets/annoIcons/Billiard_Tables.webp';
@@ -91,6 +94,7 @@ import gramophoneIcon from 'assets/annoIcons/Gramophone.webp';
 import grapesIcon from 'assets/annoIcons/Grapes.webp';
 import haciendaIcon from 'assets/annoIcons/Hacienda.webp';
 import heavyWeaponsIcon from 'assets/annoIcons/Advanced_weapons.webp';
+import heliumIcon from 'assets/annoIcons/Helium.webp';
 import hibiscusFarmIcon from 'assets/annoIcons/Icon_hibiscus_farm_0.webp';
 import hibiscusTeaIcon from 'assets/annoIcons/Icon_hibiscus_tea_0.webp';
 import highWheelerIcon from 'assets/annoIcons/High_wheeler.webp';
@@ -100,6 +104,7 @@ import hotSauceIcon from 'assets/annoIcons/Hot_Sauce.webp';
 import huskyIcon from 'assets/annoIcons/Husky_Farm.webp';
 import huskySledIcon from 'assets/annoIcons/Husky_Sled_Factory.webp';
 import indigoIcon from 'assets/annoIcons/Icon_indigo_0.webp';
+import industrialLubricant from 'assets/annoIcons/Industrial_Lubricant.webp';
 import ironIcon from 'assets/annoIcons/Iron.webp';
 import jamIcon from 'assets/annoIcons/Jam.webp';
 import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
@@ -200,7 +205,9 @@ import zincIcon from 'assets/annoIcons/Zinc.webp';
 
 export {
   ageOfExplorationIcon,
+  airshipIcon,
   alpacaWoolIcon,
+  aluminiumIcon,
   apiaryIcon,
   archdukeSchnitzel,
   arcticIcon,
@@ -208,6 +215,7 @@ export {
   atoleIcon,
   bananaSurpriseIcon,
   bankersLampsIcon,
+  bauxiteIcon,
   bearIcon,
   beefIcon,
   billiardsIcon,
@@ -292,6 +300,7 @@ export {
   grapesIcon,
   haciendaIcon,
   heavyWeaponsIcon,
+  heliumIcon,
   hibiscusFarmIcon,
   hibiscusTeaIcon,
   highWheelerIcon,
@@ -301,6 +310,7 @@ export {
   huskyIcon,
   huskySledIcon,
   indigoIcon,
+  industrialLubricant,
   ironIcon,
   jamIcon,
   jewelryIcon,

@@ -1,6 +1,9 @@
 Vercel:
     ✘ Try history mode on vercel @cancelled(22-10-05 22:18)
 
+Quasar:
+    ☐ Fix navbar not autoclosing on click
+
 Utils:
     ☐ Python script to take screenshot
 
