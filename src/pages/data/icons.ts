@@ -12,6 +12,7 @@ import beefIcon from 'assets/annoIcons/Beef.webp';
 import billiardsIcon from 'assets/annoIcons/Billiard_Tables.webp';
 import biscuitsIcon from 'assets/annoIcons/Biscuits.webp';
 import blackMuscovyIcon from 'assets/annoIcons/Black_Muscovy.webp';
+import bombsIcon from 'assets/annoIcons/Bombs.webp';
 import bootsIcon from 'assets/annoIcons/Icon_leather_shoes_0.webp';
 import bowlerHatsIcon from 'assets/annoIcons/Bowler_hats.webp';
 import brassIcon from 'assets/annoIcons/Brass.webp';
@@ -24,6 +25,7 @@ import camphorWaxIcon from 'assets/annoIcons/Camphor_Wax.webp';
 import candlesIcon from 'assets/annoIcons/Icon_candles_0.webp';
 import cannedFoodIcon from 'assets/annoIcons/Canned_food.webp';
 import caoutchoucIcon from 'assets/annoIcons/Caoutchouc.webp';
+import carePackagesIcon from 'assets/annoIcons/Care_Packages.webp';
 import caribouIcon from 'assets/annoIcons/Caribou_Hunting_Cabin.webp';
 import celluloidIcon from 'assets/annoIcons/Celluloid.webp';
 import ceramicsIcon from 'assets/annoIcons/Icon_ceramics_0.webp';
@@ -125,6 +127,7 @@ import oilTankerIcon from 'assets/annoIcons/Oil_tanker.webp';
 import oilWellIcon from 'assets/annoIcons/OilWell.webp';
 import oldWorldIcon from 'assets/annoIcons/Icon_session_moderate_0.png';
 import palmierBiscuitIcon from 'assets/annoIcons/Palmier_Biscuit.webp';
+import pamphletsIcon from 'assets/annoIcons/Pamphlets.webp';
 import paperIcon from 'assets/annoIcons/Icon_paper_0.webp';
 import parkasIcon from 'assets/annoIcons/Parka_Factory.webp';
 import pearlsIcon from 'assets/annoIcons/Pearls.webp';
@@ -148,6 +151,7 @@ import sangaIcon from 'assets/annoIcons/Icon_watusi_0.webp';
 import sausageIcon from 'assets/annoIcons/Sausages.webp';
 import schnappsIcon from 'assets/annoIcons/Schnapps.webp';
 import sealIcon from 'assets/annoIcons/Seal_Hunting_Docks.webp';
+import seaMinesIcon from 'assets/annoIcons/Sea_Mines.webp';
 import sewingMachinesIcon from 'assets/annoIcons/Sewing_machines.webp';
 import shampooIcon from 'assets/annoIcons/Shampoo.webp';
 import siloIcon from 'assets/annoIcons/Silo.webp';
@@ -209,6 +213,7 @@ export {
   billiardsIcon,
   biscuitsIcon,
   blackMuscovyIcon,
+  bombsIcon,
   bootsIcon,
   bowlerHatsIcon,
   brassIcon,
@@ -221,6 +226,7 @@ export {
   candlesIcon,
   cannedFoodIcon,
   caoutchoucIcon,
+  carePackagesIcon,
   caribouIcon,
   celluloidIcon,
   ceramicsIcon,
@@ -322,6 +328,7 @@ export {
   oilWellIcon,
   oldWorldIcon,
   palmierBiscuitIcon,
+  pamphletsIcon,
   paperIcon,
   parkasIcon,
   pearlsIcon,
@@ -345,6 +352,7 @@ export {
   sausageIcon,
   schnappsIcon,
   sealIcon,
+  seaMinesIcon,
   sewingMachinesIcon,
   shampooIcon,
   siloIcon,

@@ -885,5 +885,87 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         `
       }
     ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Supply Factories | Airships',
+    productionChains: [
+      {
+        productionChain: 'bombs',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Saltpeter0(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Dynamite(<img src='${icons.dynamiteIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Bomb(<img src='${icons.bombsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Saltpeter --> Bomb
+        Pig --> Tallow --> Dynamite --> Bomb
+        Saltpeter0 --> Dynamite
+        Iron & Coal --> Steel --> Dynamite
+        `
+      },
+      {
+        productionChain: 'seaMines',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Dynamite(<img src='${icons.dynamiteIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SeaMine(<img src='${icons.seaMinesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Copper --> SeaMine
+        Pig --> Tallow --> Dynamite --> SeaMine
+        Saltpeter --> Dynamite
+        Iron & Coal --> Steel --> SeaMine
+        `
+      },
+      {
+        productionChain: 'pamphlets',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pamphlets(<img src='${icons.pamphletsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood & Cotton --> Pamphlets
+        `
+      },
+      {
+        productionChain: 'carePackage',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Cattle(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        RedPeppers(<img src='${icons.redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        ArtisnalKitchen(<img src='${icons.artisnalKitchenIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Cannery(<span class='icon-flex-row'><img src='${icons.cannedFoodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>75%</span><span class='ratio-count'>2</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        CarePackage(<img src='${icons.carePackagesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Chocolate(<span class='icon-flex-row'><img src='${icons.chocolateIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cocoa(<img src='${icons.cocoaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cattle(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Schnapps(<span class='icon-flex-row'><img src='${icons.schnappsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cattle & RedPeppers --> ArtisnalKitchen --> Cannery --> CarePackage
+        Iron --> Cannery
+        SugarCane --> Sugar --> Chocolate --> CarePackage
+        Cocoa --> Chocolate
+        Potato --> Schnapps --> CarePackage
+        `
+      }
+    ]
   }
 ];
