@@ -469,7 +469,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         productionChain: 'glegg',
         chainMultiplier: '2',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart TB
         Whales(<img src='${icons.whalingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
         Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
@@ -910,6 +910,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       }
     ]
   },
+  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Hacienda',
@@ -968,7 +969,6 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       }
     ]
   },
-  { colBreak: true, tierName: 'skip' },
   { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
