@@ -64,6 +64,7 @@ import eclairIcon from 'assets/annoIcons/Eclair.webp';
 import electricityIcon from 'assets/electricityBorder.webp';
 import elevatorIcon from 'assets/annoIcons/Elevators.webp';
 import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
+import empireOfTheSkiesIcon from 'assets/annoIcons/Empire_of_the_Skies_DLC_icon.webp';
 import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
 import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
 import ethanolIcon from 'assets/annoIcons/Ethanol.webp';
@@ -110,6 +111,7 @@ import jamIcon from 'assets/annoIcons/Jam.webp';
 import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
 import lacquerIcon from 'assets/annoIcons/Lacquer.webp';
 import ladyMarmeladeIcon from 'assets/annoIcons/Lady_Marmelade.webp';
+import landOfLionsIcon from 'assets/annoIcons/Icon_dlc_land_of_lions.webp';
 import lanternsIcon from 'assets/annoIcons/Icon_lanterns_0.webp';
 import lemonadeIcon from 'assets/annoIcons/Lemonade.webp';
 import lightBulbIcon from 'assets/annoIcons/Light_bulb.webp';
@@ -270,6 +272,7 @@ export {
   electricityIcon,
   elevatorIcon,
   embroidererIcon,
+  empireOfTheSkiesIcon,
   enbesaIcon,
   enbesaSunriseIcon,
   ethanolIcon,
@@ -316,6 +319,7 @@ export {
   jewelryIcon,
   lacquerIcon,
   ladyMarmeladeIcon,
+  landOfLionsIcon,
   lanternsIcon,
   lemonadeIcon,
   lightBulbIcon,
