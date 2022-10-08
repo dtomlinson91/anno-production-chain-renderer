@@ -49,14 +49,20 @@ export const worldItemDataBase: InfoCardWorldItem[] = [
     id: 'clay',
     icon: icons.clayIcon,
     textPre: 'Enbesa',
-    textPost:
-      ' production chains use Clay Collectors. All other chains use Clay Mines.',
+    textPost: ' production chains use Clay Collectors.',
     worldIcon: icons.enbesaIcon
   }
 ];
 
 // S2 to S4
-export const itemDataExpansions: InfoCardItem[] = [...commonItemData];
+export const itemDataExpansions: InfoCardItem[] = [
+  {
+    id: 'airship',
+    icon: icons.airshipIcon,
+    text: 'Airship drop chain ratios are the same for Old World & New World.'
+  },
+  ...commonItemData
+];
 
 export const worldItemDataExpansions: InfoCardWorldItem[] = [
   ...commonWorldItemData,
@@ -65,14 +71,6 @@ export const worldItemDataExpansions: InfoCardWorldItem[] = [
     icon: icons.haciendaIcon,
     textPre: 'Hacienda chains use New World',
     textPost: 'buildings.',
-    worldIcon: icons.newWorldIcon
-  },
-  {
-    id: 'airship',
-    icon: icons.airshipIcon,
-    textPre:
-      'Ratios for airship drop chains are the same when built in the New World',
-    textPost: '.',
     worldIcon: icons.newWorldIcon
   }
 ];

@@ -63,7 +63,7 @@ import { initialiseMermaid } from 'composables/mermaid';
 initialiseMermaid();
 const expansionInfoItem = ref({
   icon: icons.landOfLionsIcon,
-  text: 'Contains all chains from Base Game through to Season 2 (Land of Lions).'
+  text: 'All chains from Base Game through Season 2 (Land of Lions).'
 });
 </script>
 

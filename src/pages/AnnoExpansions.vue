@@ -66,7 +66,7 @@ import { initialiseMermaid } from 'composables/mermaid';
 initialiseMermaid();
 const expansionInfoItem = ref({
   icon: icons.empireOfTheSkiesIcon,
-  text: 'Contains all chains from Season 3 through to Season 4 (Empire of the Skies).'
+  text: 'All chains from Season 3 through Season 4 (Empire of the Skies).'
 });
 </script>
 
