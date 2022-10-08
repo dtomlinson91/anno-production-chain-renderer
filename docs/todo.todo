@@ -1,19 +1,11 @@
-Vercel:
-    ✘ Try history mode on vercel @cancelled(22-10-05 22:18)
-
-Quasar:
-    ✘ Fix navbar not autoclosing on click @cancelled(22-10-08 12:32)
-    ☐ Add expansion item to info card for each page
-
-Utils:
-    ☐ Python script to take screenshot
-
-Documentation:
-    ☐ Document the anno notes in Trilium (calculating)
-    ☐ Document the links to all the anno buildings (start with the dlc page and each one has a summary)
-
 
 Archive:
+✘ Try history mode on vercel @cancelled(22-10-05 22:18) @project(Vercel)
+✘ Fix navbar not autoclosing on click @cancelled(22-10-08 12:32) @project(Quasar)
+✔ Add expansion item to info card for each page @done(22-10-08 20:06) @project(Quasar)
+✘ Python script to take screenshot @cancelled(22-10-08 20:06) @project(Utils)
+✔ Document the anno notes in Trilium (calculating) @done(22-10-08 20:06) @project(Documentation)
+✔ Document the links to all the anno buildings (start with the dlc page and each one has a summary) @done(22-10-08 20:08) @project(Documentation)
 ✔ Component for info card @done(22-10-03 22:52) @project(Vue)
 Pass data in as props
 ✘ Abstract css out and import it into components that use it? @cancelled(22-10-03 22:52) @project(Vue)
