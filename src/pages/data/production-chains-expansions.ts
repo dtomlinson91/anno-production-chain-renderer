@@ -825,6 +825,19 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         style FaceCream stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         CoconutOil & Citrus & Whaling --> FaceCream
         `
+      },
+      {
+        productionChain: 'pomade',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Apiary(<span class='icon-flex-row'><img src='${icons.apiaryIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Hibiscus(<img src='${icons.hibiscusFarmIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pomade(<img src='${icons.pomadeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        style Pomade stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        CamphorWax & Apiary & Hibiscus --> Pomade
+        `
       }
     ]
   },
