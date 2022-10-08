@@ -6,7 +6,6 @@
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
-
       <ChainTiers
         title="Information"
         :col-break="false"
@@ -15,7 +14,9 @@
         <InfoCard
           :item-data="itemDataBase"
           :item-world-data="worldItemDataBase"
-        ></InfoCard>
+        >
+          <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
+        </InfoCard>
       </ChainTiers>
       <ChainTiers
         v-for="tier in productionChainsBase"
@@ -39,21 +40,31 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
+// Components
+import ChainTiers from 'components/ChainTiers.vue';
+import ProductionChain from 'components/ProductionChain.vue';
+import InfoCard from 'components/InfoCard.vue';
+import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
+
 // Production Chain Data
 import { productionChainsBase } from './data/production-chains-base';
 
 // Info Card Data
 import { itemDataBase, worldItemDataBase } from 'src/pages/data/info-card';
 
+// Icons
+import * as icons from './data/icons';
+
 // Mermaid
 import { initialiseMermaid } from 'composables/mermaid';
 
-// Components
-import ChainTiers from 'components/ChainTiers.vue';
-import ProductionChain from 'components/ProductionChain.vue';
-import InfoCard from 'components/InfoCard.vue';
-
 initialiseMermaid();
+const expansionInfoItem = ref({
+  icon: icons.landOfLionsIcon,
+  text: 'Contains all chains from Base Game through to Season 2 (Land of Lions).'
+});
 </script>
 
 <style lang="scss">
@@ -76,7 +87,7 @@ $column: 5;
 }
 
 .masonry-container {
-  height: $page-height;
+  height: 6100px;
 
   .masonry-col {
     width: 1000px;

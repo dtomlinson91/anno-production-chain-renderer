@@ -14,7 +14,9 @@
         <InfoCard
           :item-data="itemDataExpansions"
           :item-world-data="worldItemDataExpansions"
-        ></InfoCard>
+        >
+          <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
+        </InfoCard>
       </ChainTiers>
       <ChainTiers
         v-for="tier in productionChainsExpansions"
@@ -38,6 +40,14 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
+// Components
+import ChainTiers from 'components/ChainTiers.vue';
+import ProductionChain from 'components/ProductionChain.vue';
+import InfoCard from 'components/InfoCard.vue';
+import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
+
 // Production Chain Data
 import { productionChainsExpansions } from './data/production-chains-expansions';
 
@@ -47,15 +57,17 @@ import {
   worldItemDataExpansions
 } from 'src/pages/data/info-card';
 
+// Icons
+import * as icons from './data/icons';
+
 // Mermaid
 import { initialiseMermaid } from 'composables/mermaid';
 
-// Components
-import ChainTiers from 'components/ChainTiers.vue';
-import ProductionChain from 'components/ProductionChain.vue';
-import InfoCard from 'components/InfoCard.vue';
-
 initialiseMermaid();
+const expansionInfoItem = ref({
+  icon: icons.empireOfTheSkiesIcon,
+  text: 'Contains all chains from Season 3 through to Season 4 (Empire of the Skies).'
+});
 </script>
 
 <style lang="scss">
@@ -78,7 +90,7 @@ $columns: 5;
 }
 
 .masonry-container {
-  height: $page-height;
+  height: 8180px;
 
   .masonry-col {
     width: 1000px;

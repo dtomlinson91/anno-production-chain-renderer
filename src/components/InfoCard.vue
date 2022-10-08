@@ -1,5 +1,6 @@
 <template>
   <q-list separator class="big-font text-left">
+    <slot></slot>
     <InfoCardItemWorld
       v-for="item in itemWorldData"
       :key="item.icon"
