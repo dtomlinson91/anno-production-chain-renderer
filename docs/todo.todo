@@ -2,13 +2,15 @@ Vercel:
     ✘ Try history mode on vercel @cancelled(22-10-05 22:18)
 
 Quasar:
-    ☐ Fix navbar not autoclosing on click
+    ✘ Fix navbar not autoclosing on click @cancelled(22-10-08 12:32)
+    ☐ Add expansion item to info card for each page
 
 Utils:
     ☐ Python script to take screenshot
 
 Documentation:
     ☐ Document the anno notes in Trilium (calculating)
+    ☐ Document the links to all the anno buildings (start with the dlc page and each one has a summary)
 
 
 Archive:
