@@ -19,7 +19,7 @@ export const commonItemData: InfoCardItem[] = [
     icon: fullChainMultiplierIcon,
     text: 'Multiplier for a full chain. To scale chain to 100%:',
     additionalText:
-      'multiply together number * efficiency * multiplier for each building in the chain.'
+      'multiply together number of buildings * efficiency % * multiplier for each building in the chain.'
   }
 ];
 

@@ -6,6 +6,7 @@
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
+      <div class="flex-break item"></div>
       <ChainTiers
         title="Information"
         class="masonry-col item"
@@ -65,14 +66,14 @@ import { initialiseMermaid } from 'composables/mermaid';
 
 initialiseMermaid();
 const expansionInfoItem = ref({
-  icon: icons.empireOfTheSkiesIcon,
-  text: 'All chains from Season 3 through Season 4 (Empire of the Skies).'
+  icon: icons.newWorldRisingIcon,
+  text: 'All chains from Season 3 through Season 4.'
 });
 </script>
 
 <style lang="scss">
 // Masonry Layout - 5 cols
-$columns: 5;
+$columns: 6;
 
 .flex-break {
   flex: 1 0 100% !important;
@@ -90,11 +91,12 @@ $columns: 5;
 }
 
 .masonry-container {
-  height: 8180px;
+  height: 9100px;
 
   .masonry-col {
     width: 1000px;
     padding: 1px;
   }
 }
+
 </style>

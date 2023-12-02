@@ -793,6 +793,7 @@ export const productionChainsBase: TieredProductionChain[] = [
   },
   { colBreak: true, tierName: 'blank', productionChains: [] },
   { colBreak: true, tierName: 'blank', productionChains: [] },
+  { colBreak: true, tierName: 'blank', productionChains: [] },
   {
     colBreak: false,
     tierName: 'Jornaleros | Obreros',

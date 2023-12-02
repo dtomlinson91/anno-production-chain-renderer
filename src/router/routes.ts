@@ -8,17 +8,17 @@ const routes: RouteRecordRaw[] = [
       { path: '', component: () => import('pages/AnnoBase.vue') },
       {
         path: '/expansions',
-        component: () => import('pages/AnnoExpansions.vue')
-      }
-    ]
+        component: () => import('pages/AnnoExpansions.vue'),
+      },
+    ],
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
-  }
+    component: () => import('pages/ErrorNotFound.vue'),
+  },
 ];
 
 export default routes;

@@ -24,6 +24,7 @@ import breweryIcon from 'assets/annoIcons/Beer.webp';
 import bricksIcon from 'assets/annoIcons/Bricks.webp';
 import briefcasesIcon from 'assets/annoIcons/Briefcases.webp';
 import briocheRoyaleIcon from 'assets/annoIcons/Brioche_Royale.webp';
+import calamariIcon from 'assets/annoIcons/Calamari.webp';
 import camphorWaxIcon from 'assets/annoIcons/Camphor_Wax.webp';
 import candlesIcon from 'assets/annoIcons/Icon_candles_0.webp';
 import cannedFoodIcon from 'assets/annoIcons/Canned_food.webp';
@@ -38,6 +39,7 @@ import cherryWoodIcon from 'assets/annoIcons/Cherry_Wood.webp';
 import chewingGumIcon from 'assets/annoIcons/Chewing_Gum.webp';
 import chocolateIcon from 'assets/annoIcons/Chocolate.webp';
 import cigarIcon from 'assets/annoIcons/Cigars.webp';
+import cinemaIcon from 'assets/annoIcons/Cinema.webp';
 import cinnamonIcon from 'assets/annoIcons/Cinnamon.webp';
 import citrusIcon from 'assets/annoIcons/Citrus.webp';
 import clayIcon from 'assets/annoIcons/Clay.webp';
@@ -50,6 +52,7 @@ import coffeeIcon from 'assets/annoIcons/Coffee.webp';
 import cognacIcon from 'assets/annoIcons/Cognac.webp';
 import concreteFactory from 'assets/annoIcons/Reinforced_concrete.webp';
 import copperIcon from 'assets/annoIcons/Copper.webp';
+import costumeIcon from 'assets/annoIcons/Costumes.webp';
 import cornIcon from 'assets/annoIcons/Corn.webp';
 import cottonIcon from 'assets/annoIcons/Cotton.webp';
 import cottonMillIcon from 'assets/annoIcons/Cotton_fabric.webp';
@@ -61,6 +64,7 @@ import dryHouseIcon from 'assets/annoIcons/Icon_dried_meat_0.webp';
 import dungIcon from 'assets/annoIcons/Dung.webp';
 import dynamiteIcon from 'assets/annoIcons/Dynamite.webp';
 import eclairIcon from 'assets/annoIcons/Eclair.webp';
+import electricCablesIcon from 'assets/annoIcons/Electric_Cables.webp';
 import electricityIcon from 'assets/electricityBorder.webp';
 import elevatorIcon from 'assets/annoIcons/Elevators.webp';
 import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
@@ -69,8 +73,12 @@ import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
 import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
 import ethanolIcon from 'assets/annoIcons/Ethanol.webp';
 import faceCreamIcon from 'assets/annoIcons/Face_Cream.webp';
+import fansIcon from 'assets/annoIcons/Fans.webp';
 import feltIcon from 'assets/annoIcons/Felt.webp';
 import fertiliserIcon from 'assets/annoIcons/Fertiliser.webp';
+import filmReelIcon from 'assets/annoIcons/Film_Reel.webp';
+import fireDepartment from 'assets/annoIcons/Fire_Department.webp';
+import fireExtinguisher from 'assets/annoIcons/Fire_Extinguishers.webp';
 import filamentIcon from 'assets/annoIcons/Carbon_filament.webp';
 import fishFritesIcon from 'assets/annoIcons/Fish_and_Frites.webp';
 import fishIcon from 'assets/annoIcons/Fish.webp';
@@ -96,17 +104,21 @@ import grapesIcon from 'assets/annoIcons/Grapes.webp';
 import haciendaIcon from 'assets/annoIcons/Hacienda.webp';
 import heavyWeaponsIcon from 'assets/annoIcons/Advanced_weapons.webp';
 import heliumIcon from 'assets/annoIcons/Helium.webp';
+import herbIcon from 'assets/annoIcons/Herbs.webp';
 import hibiscusFarmIcon from 'assets/annoIcons/Icon_hibiscus_farm_0.webp';
 import hibiscusTeaIcon from 'assets/annoIcons/Icon_hibiscus_tea_0.webp';
 import highWheelerIcon from 'assets/annoIcons/High_wheeler.webp';
 import homardLitTerroirIcon from 'assets/annoIcons/Homard_Lit_de_Terroir.webp';
 import hopFarmIcon from 'assets/annoIcons/Hops.webp';
+import hospitalIcon from 'assets/annoIcons/City_Hospital.webp';
 import hotSauceIcon from 'assets/annoIcons/Hot_Sauce.webp';
 import huskyIcon from 'assets/annoIcons/Husky_Farm.webp';
 import huskySledIcon from 'assets/annoIcons/Husky_Sled_Factory.webp';
+import iceCreamIcon from 'assets/annoIcons/Ice_Cream.webp';
 import indigoIcon from 'assets/annoIcons/Icon_indigo_0.webp';
 import industrialLubricant from 'assets/annoIcons/Industrial_Lubricant.webp';
 import ironIcon from 'assets/annoIcons/Iron.webp';
+import jaleaIcon from 'assets/annoIcons/Jalea.webp';
 import jamIcon from 'assets/annoIcons/Jam.webp';
 import jewelryIcon from 'assets/annoIcons/Jewelry.webp';
 import lacquerIcon from 'assets/annoIcons/Lacquer.webp';
@@ -125,24 +137,37 @@ import loungeSeatingIcon from 'assets/annoIcons/Lounge_Seating.webp';
 import luminerIcon from 'assets/annoIcons/Icon_scriptures_0.webp';
 import malthouseIcon from 'assets/annoIcons/Malt.webp';
 import marquetryIcon from 'assets/annoIcons/Wood_veneers.webp';
+import medicineIcon from 'assets/annoIcons/Medicine.webp';
+import mezcalIcon from 'assets/annoIcons/Mezcal.webp';
+import milkIcon from 'assets/annoIcons/Milk.webp';
+import mineralIcon from 'assets/annoIcons/Minerals.webp';
 import montmatreIcon from 'assets/annoIcons/Montmartre_75.webp';
+import motorIcon from 'assets/annoIcons/Motor.webp';
 import mudBricksIcon from 'assets/annoIcons/Icon_mud_bricks_0.webp';
+import nanduFeathersIcon from 'assets/annoIcons/Nandu_Feathers.webp';
+import nanduIcon from 'assets/annoIcons/Nandu_Leather.webp';
 import newWorldIcon from 'assets/annoIcons/Icon_session_southamerica_0.png';
+import newWorldRisingIcon from 'assets/annoIcons/New_World_Rising_DLC_icon.webp';
 import oilLampIcon from 'assets/annoIcons/Oil_Lamp_Factory.webp';
 import oilPowerPlantIcon from 'assets/annoIcons/Oil_Power_Plant.webp';
 import oilTankerIcon from 'assets/annoIcons/Oil_tanker.webp';
 import oilWellIcon from 'assets/annoIcons/OilWell.webp';
 import oldWorldIcon from 'assets/annoIcons/Icon_session_moderate_0.png';
+import orchidIcon from 'assets/annoIcons/Orchid.webp';
 import palmierBiscuitIcon from 'assets/annoIcons/Palmier_Biscuit.webp';
 import pamphletsIcon from 'assets/annoIcons/Pamphlets.webp';
 import paperIcon from 'assets/annoIcons/Icon_paper_0.webp';
 import parkasIcon from 'assets/annoIcons/Parka_Factory.webp';
 import pearlsIcon from 'assets/annoIcons/Pearls.webp';
 import pemmicanIcon from 'assets/annoIcons/Pemmican_Cookhouse.webp';
+import perfumeIcon from 'assets/annoIcons/Perfumes.webp';
+import pigmentIcon from 'assets/annoIcons/Pigments.webp';
 import pigsIcon from 'assets/annoIcons/Pigs.webp';
 import pipesIcon from 'assets/annoIcons/Icon_tobacco_pipes_0.webp';
 import plantainPlantationIcon from 'assets/annoIcons/Plantains.webp';
 import pocketWatchesIcon from 'assets/annoIcons/Pocket_watch.webp';
+import policeEquipementIcon from 'assets/annoIcons/Police_Equipment.webp';
+import policeHeadquartersIcon from 'assets/annoIcons/Police_Headquarters.webp';
 import pomadeIcon from 'assets/annoIcons/Pomade.webp';
 import ponchosIcon from 'assets/annoIcons/Poncho.webp';
 import potatoIcon from 'assets/annoIcons/Potato.webp';
@@ -153,9 +178,11 @@ import rumIcon from 'assets/annoIcons/Rum.webp';
 import sailmakersIcon from 'assets/annoIcons/Sails.webp';
 import saltIcon from 'assets/annoIcons/Salt.webp';
 import saltpeterIcon from 'assets/annoIcons/Saltpeter.webp';
+import sambaIcon from 'assets/annoIcons/Samba_School.webp';
 import sandIcon from 'assets/annoIcons/Quartz_sand.webp';
 import sangaIcon from 'assets/annoIcons/Icon_watusi_0.webp';
 import sausageIcon from 'assets/annoIcons/Sausages.webp';
+import scooterIcon from 'assets/annoIcons/Scooter.webp';
 import schnappsIcon from 'assets/annoIcons/Schnapps.webp';
 import sealIcon from 'assets/annoIcons/Seal_Hunting_Docks.webp';
 import seaMinesIcon from 'assets/annoIcons/Sea_Mines.webp';
@@ -165,6 +192,7 @@ import siloIcon from 'assets/annoIcons/Silo.webp';
 import sledFrameIcon from 'assets/annoIcons/Sled_Frame_Factory.webp';
 import sleepingBagIcon from 'assets/annoIcons/Sleeping_Bag_Factory.webp';
 import soapIcon from 'assets/annoIcons/Soap.webp';
+import soccerBallsIcon from 'assets/annoIcons/Soccer_Balls.webp';
 import souvenirsIcon from 'assets/annoIcons/Souvenirs.webp';
 import spicesIcon from 'assets/annoIcons/Icon_spices_0.webp';
 import steamCarriagesIcon from 'assets/annoIcons/Steam_carriages.webp';
@@ -232,6 +260,7 @@ export {
   bricksIcon,
   briefcasesIcon,
   briocheRoyaleIcon,
+  calamariIcon,
   camphorWaxIcon,
   candlesIcon,
   cannedFoodIcon,
@@ -246,6 +275,7 @@ export {
   chewingGumIcon,
   chocolateIcon,
   cigarIcon,
+  cinemaIcon,
   cinnamonIcon,
   citrusIcon,
   clayIcon,
@@ -262,6 +292,7 @@ export {
   cottonIcon,
   cottonMillIcon,
   crockeryIcon,
+  costumeIcon,
   daiquiriIcon,
   detergentIcon,
   donutFourrerIcon,
@@ -269,6 +300,7 @@ export {
   dungIcon,
   dynamiteIcon,
   eclairIcon,
+  electricCablesIcon,
   electricityIcon,
   elevatorIcon,
   embroidererIcon,
@@ -277,9 +309,13 @@ export {
   enbesaSunriseIcon,
   ethanolIcon,
   faceCreamIcon,
+  fansIcon,
   feltIcon,
   fertiliserIcon,
+  filmReelIcon,
   filamentIcon,
+  fireDepartment,
+  fireExtinguisher,
   fishFritesIcon,
   fishIcon,
   fishOilIcon,
@@ -304,17 +340,21 @@ export {
   haciendaIcon,
   heavyWeaponsIcon,
   heliumIcon,
+  herbIcon,
   hibiscusFarmIcon,
   hibiscusTeaIcon,
   highWheelerIcon,
   homardLitTerroirIcon,
   hopFarmIcon,
+  hospitalIcon,
   hotSauceIcon,
   huskyIcon,
   huskySledIcon,
+  iceCreamIcon,
   indigoIcon,
   industrialLubricant,
   ironIcon,
+  jaleaIcon,
   jamIcon,
   jewelryIcon,
   lacquerIcon,
@@ -333,24 +373,37 @@ export {
   luminerIcon,
   malthouseIcon,
   marquetryIcon,
+  medicineIcon,
+  mezcalIcon,
+  milkIcon,
+  mineralIcon,
   montmatreIcon,
+  motorIcon,
   mudBricksIcon,
+  nanduFeathersIcon,
+  nanduIcon,
   newWorldIcon,
+  newWorldRisingIcon,
   oilLampIcon,
   oilPowerPlantIcon,
   oilTankerIcon,
   oilWellIcon,
   oldWorldIcon,
+  orchidIcon,
   palmierBiscuitIcon,
   pamphletsIcon,
   paperIcon,
   parkasIcon,
   pearlsIcon,
   pemmicanIcon,
+  perfumeIcon,
+  pigmentIcon,
   pigsIcon,
   pipesIcon,
   plantainPlantationIcon,
   pocketWatchesIcon,
+  policeEquipementIcon,
+  policeHeadquartersIcon,
   pomadeIcon,
   ponchosIcon,
   potatoIcon,
@@ -361,9 +414,11 @@ export {
   sailmakersIcon,
   saltIcon,
   saltpeterIcon,
+  sambaIcon,
   sandIcon,
   sangaIcon,
   sausageIcon,
+  scooterIcon,
   schnappsIcon,
   sealIcon,
   seaMinesIcon,
@@ -373,6 +428,7 @@ export {
   sledFrameIcon,
   sleepingBagIcon,
   soapIcon,
+  soccerBallsIcon,
   souvenirsIcon,
   spicesIcon,
   steamCarriagesIcon,
@@ -411,5 +467,5 @@ export {
   woolIcon,
   workClothesIcon,
   writingDesksIcon,
-  zincIcon
+  zincIcon,
 };

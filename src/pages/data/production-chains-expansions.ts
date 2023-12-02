@@ -3,6 +3,7 @@ import { TieredProductionChain } from './models';
 import * as icons from './icons';
 
 export const productionChainsExpansions: TieredProductionChain[] = [
+  // { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Building Materials',
@@ -23,9 +24,9 @@ export const productionChainsExpansions: TieredProductionChain[] = [
       Iron & Coal --> Steel --> Elevator
       Wood --> Marquetry --> Elevator
       SteamMotor --> Elevator
-      `
-      }
-    ]
+      `,
+      },
+    ],
   },
   {
     colBreak: false,
@@ -38,7 +39,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         SiloPig(<span class='icon-flex-row'><img src='${icons.alpacaWoolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.siloIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
         Pig(<img src='${icons.alpacaWoolIcon}' class='icon-size' /><span class='ratio-count'>2.66</span>)
         SiloPig --> Pig
-        `
+        `,
       },
       {
         productionChain: 'silos',
@@ -48,51 +49,11 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Fertiliser(<img src='${icons.fertiliserIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>5</span>)
         Dung --> Fertiliser --> Silo
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
-    tierName: 'Chemical Plant',
-    productionChains: [
-      {
-        productionChain: 'ethanol',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart TB
-        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Wood & Corn --> Ethanol
-        `
+        `,
       },
-      {
-        productionChain: 'lacquer',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart TB
-        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sand(<img src='${icons.sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Resin(<img src='${icons.resinIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Lacquer(<img src='${icons.lacquerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sand & Resin & Ethanol --> Lacquer
-        `
-      },
-      {
-        productionChain: 'celluloid',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart TB
-        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Celluloid(<img src='${icons.celluloidIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Cotton & CamphorWax & Ethanol --> Celluloid
-        `
-      }
-    ]
+    ],
   },
+
   {
     colBreak: false,
     tierName: 'Skyscrapers',
@@ -108,7 +69,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         ChewingGum(<img src='${icons.chewingGumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         SugarCane --> Sugar
         Caoutchouc & Sugar & Cinnamon --> ChewingGum
-        `
+        `,
       },
       {
         productionChain: 'typewriters',
@@ -126,7 +87,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Iron & Coal --> Steel --> Typewriters
         Copper & Zinc --> Brass --> Typewriters
         Lacquer --> Typewriters
-        `
+        `,
       },
       {
         productionChain: 'violins',
@@ -142,7 +103,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Iron & Coal --> Steel --> Violins
         CherryWood --> Violins
         Lacquer --> Violins
-        `
+        `,
       },
       {
         productionChain: 'biscuits',
@@ -158,7 +119,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Pigs --> Tallow --> Biscuits
         Grain --> Flour --> Biscuits
         Citrus --> Biscuits
-        `
+        `,
       },
       {
         productionChain: 'cognac',
@@ -171,7 +132,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Cognac(<img src='${icons.cognacIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         SugarCane --> Sugar
         Vineyard & CherryWood & Sugar --> Cognac
-        `
+        `,
       },
       {
         productionChain: 'billiardsTable',
@@ -186,7 +147,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         CherryWood --> Billiards
         Alpaca --> Felt --> Billiards
         Celluloid --> Billiards
-        `
+        `,
       },
       {
         productionChain: 'toys',
@@ -200,302 +161,249 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Toys(<img src='${icons.toysIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Alpaca --> Felt --> Toys
         Celluloid & Lacquer --> Toys
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
   {
     colBreak: false,
-    tierName: 'Tourists',
+    tierName: 'Artistas',
     productionChains: [
       {
-        productionChain: 'shampoo',
+        productionChain: 'sewingmachinesnw',
+        chainMultiplier: '6',
         mermaidDefinition: endent`
-        flowchart LR
-        CoconutOil(<img src='${icons.coconutOilIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Cinnamon(<img src='${icons.cinnamonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Shampoo(<img src='${icons.shampooIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Pigs(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Soap(<img src='${icons.soapIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        CoconutOil & Cinnamon --> Shampoo
-        Pigs --> Tallow --> Soap --> Shampoo
-        `
+        flowchart LR;
+        Bauxite(<span class='icon-flex-row'><img src='${icons.bauxiteIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Aluminium(<img src='${icons.aluminiumIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        SewingMachines(<img src='${icons.sewingMachinesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Bauxite & Charcoal --> Aluminium
+        Wood & Aluminium --> SewingMachines
+        `,
       },
       {
-        productionChain: 'lemonade',
+        productionChain: 'soccerballs',
         mermaidDefinition: endent`
-        flowchart LR
+        flowchart LR;
+        Nandu(<img src='${icons.nanduIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Caoutchouc(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        SoccerBalls(<img src='${icons.soccerBallsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Nandu & Caoutchouc --> SoccerBalls
+        `,
+      },
+      {
+        productionChain: 'mezcal',
+        mermaidDefinition: endent`
+        flowchart LR;
         SugarCane(<img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sugar(<img src='${icons.sugarIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Lemonade(<img src='${icons.lemonadeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Citrus(<img src='${icons.citrusIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
-        SugarCane --> Sugar --> Lemonade
-        Citrus --> Lemonade
-        Saltpeter --> Lemonade
-        `
+        Sugar(<img src='${icons.sugarIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Herb(<img src='${icons.herbIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Mezcal(<img src='${icons.mezcalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane --> Sugar
+        Citrus & Sugar & Herb --> Mezcal
+        `,
       },
       {
-        productionChain: 'souvenirs',
+        productionChain: 'jalea',
         mermaidDefinition: endent`
-        flowchart LR
-        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Souvenirs(<img src='${icons.souvenirsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sand(<img src='${icons.sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Glass(<img src='${icons.glassIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Souvenirs
-        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        CamphorWax --> Souvenirs
-        Sand --> Glass --> Souvenirs
-        Cotton --> Souvenirs
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
-    tierName: 'Restaurants',
-    productionChains: [
-      {
-        productionChain: 'archdukeSchnitzel',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Pigs0(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Schnitzel(<img src='${icons.archdukeSchnitzel}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Schnitzel
-        Pigs1(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Pigs0 --> Schnitzel
-        Potato --> Schnitzel
-        Pigs1 --> Tallow --> Schnitzel
-        `
+        flowchart TB;
+        Calamari(<img src='${icons.calamariIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Herb(<img src='${icons.herbIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Jalea(<img src='${icons.jaleaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Calamari & Herb & Corn --> Jalea
+        `,
       },
       {
-        productionChain: 'stroggofGoulash',
+        productionChain: 'icecream',
+        chainMultiplier: '6',
         mermaidDefinition: endent`
-        flowchart TB
-        Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        RedPeppers(<img src='${icons.redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        StroggofGoulash(<img src='${icons.stroggofGoulashIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Beef & RedPeppers & Corn --> StroggofGoulash
-        `
-      },
-      {
-        productionChain: 'fishFrites',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart TB
-        Fish(<span class='icon-flex-row'><img src='${icons.fishIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        FishFrites(<img src='${icons.fishFritesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Fish & Potato & Citrus --> FishFrites
-        `
-      },
-      {
-        productionChain: 'venisonEnCroute',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        VenisonEnCroute(<img src='${icons.venisonEnCrouteIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Caribou(<img src='${icons.caribouIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Grain --> Flour --> VenisonEnCroute
-        Potato --> VenisonEnCroute
-        Caribou --> VenisonEnCroute
-        `
-      },
-      {
-        productionChain: 'lobsterCheminee',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart TB
-        Lobster(<img src='${icons.lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Tobacco(<img src='${icons.tobaccoIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        LobsterCheminee(<img src='${icons.lobsterChemineeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Lobster & Citrus & Tobacco --> LobsterCheminee
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
-    tierName: 'Café',
-    productionChains: [
-      {
-        productionChain: 'donut',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Donut(<img src='${icons.donutFourrerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Jam(<span class='icon-flex-row'><img src='${icons.jamIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Grain --> Flour --> Donut
-        Pig --> Tallow --> Donut
-        Jam --> Donut
-        `
-      },
-      {
-        productionChain: 'eclair',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Eclair(<img src='${icons.eclairIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        SugarCane0(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Sugar0(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        SugarCane1(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Sugar1(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Cocoa(<img src='${icons.cocoaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Chocolate(<span class='icon-flex-row'><img src='${icons.chocolateIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Grain --> Flour --> Eclair
-        SugarCane0 --> Sugar0 --> Eclair
-        SugarCane1 --> Sugar1 --> Chocolate
-        Cocoa --> Chocolate
-        Chocolate --> Eclair
-        `
-      },
-      {
-        productionChain: 'palmierBiscuit',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
-        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        PalmierBiscuit(<img src='${icons.palmierBiscuitIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Grain --> Flour --> PalmierBiscuit
-        Pig --> Tallow --> PalmierBiscuit
-        Cinnamon --> PalmierBiscuit
-        `
-      },
-      {
-        productionChain: 'venisonTartare',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart TB
-        Grapes(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        VenisonTartare(<img src='${icons.venisonTartareIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Caribou(<img src='${icons.caribouIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Grapes & Caribou & Citrus --> VenisonTartare
-        `
-      },
-      {
-        productionChain: 'bananaSurprise',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart TB
-        Goat(<img src='${icons.goatMilkIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Plantains(<span class='icon-flex-row'><img src='${icons.plantainPlantationIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        BananaSurprise(<img src='${icons.bananaSurpriseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Goat & Plantains & Cinnamon --> BananaSurprise
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
-    tierName: 'Bar',
-    productionChains: [
-      {
-        productionChain: 'daiquiriTropic',
-        chainMultiplier: '4',
-        mermaidDefinition: endent`
-        flowchart LR
-        SugarCane0(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        SugarCane1(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
-        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Plantain(<span class='icon-flex-row'><img src='${icons.plantainPlantationIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        DaiquiriTropic(<img src='${icons.daiquiriIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        SugarCane0 --> DaiquiriTropic
-        SugarCane1 & Wood --> Rum --> DaiquiriTropic
-        Plantain --> DaiquiriTropic
-        `
-      },
-      {
-        productionChain: 'blackMuscovy',
-        chainMultiplier: '4',
-        mermaidDefinition: endent`
-        flowchart LR
-        CoffeeBeans(<img src='${icons.coffeeBeansIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Coffee(<span class='icon-flex-row'><img src='${icons.coffeeIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        BlackMuscovy(<img src='${icons.blackMuscovyIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
-        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Schnapps(<span class='icon-flex-row'><img src='${icons.schnappsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        CoffeeBeans --> Coffee --> BlackMuscovy
-        SugarCane & Wood --> Rum --> BlackMuscovy
-        Potato --> Schnapps --> BlackMuscovy
-        `
-      },
-      {
-        productionChain: 'montmatre',
-        chainMultiplier: '2',
-        mermaidDefinition: endent`
-        flowchart LR
+        flowchart LR;
         SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Champagne(<span class='icon-flex-row'><img src='${icons.champagneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Chocolate(<span class='icon-flex-row'><img src='${icons.chocolateIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Montmatre(<img src='${icons.montmatreIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        SugarCane --> Sugar --> Montmatre
-        Sand --> Glass --> Champagne --> Montmatre
-        Vineyard --> Champagne
-        Citrus --> Montmatre
-        `
+        Cocoa(<img src='${icons.cocoaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        IceCream(<img src='${icons.iceCreamIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Milk(<span class='icon-flex-row'><img src='${icons.milkIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>); style Milk stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        SugarCane --> Sugar --> Chocolate
+        Cocoa --> Chocolate
+        Milk & Chocolate & Citrus --> IceCream
+        `,
       },
       {
-        productionChain: 'glegg',
-        chainMultiplier: '2',
+        productionChain: 'firestation',
+        chainMultiplier: '24',
         mermaidDefinition: endent`
-        flowchart TB
-        Whales(<img src='${icons.whalingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Glogg(<img src='${icons.gloggIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Whales & Vineyard & Cinnamon --> Glogg
-        `
+        flowchart LR;
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>5%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        Caoutchouc(<span class='icon-flex-row'><img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        FireExtinguisher(<span class='icon-flex-row'><img src='${icons.fireExtinguisher}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>13%</span><span class='ratio-count'>1</span></span></span>)
+        FireDepartment(<img src='${icons.fireDepartment}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Iron & Charcoal --> Steel
+        Steel & Caoutchouc --> FireExtinguisher --> FireDepartment
+        `,
       },
       {
-        productionChain: 'enbesaSunrise',
+        productionChain: 'perfume',
         chainMultiplier: '4',
         mermaidDefinition: endent`
-        flowchart LR
-        Hibiscus(<img src='${icons.hibiscusFarmIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        flowchart LR;
         Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
-        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
-        Spices(<img src='${icons.spicesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        EnbesaSunrise(<img src='${icons.enbesaSunriseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Hibiscus --> EnbesaSunrise
-        SugarCane & Wood --> Rum --> EnbesaSunrise
-        Spices --> EnbesaSunrise
-        `
-      }
-    ]
+        Orchid(<span class='icon-flex-row'><img src='${icons.orchidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CoconutOil(<span class='icon-flex-row'><img src='${icons.coconutOilIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Perfume(<img src='${icons.perfumeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Ethanol & Orchid & CoconutOil --> Perfume
+        Wood & Corn --> Ethanol
+        `,
+      },
+      {
+        productionChain: 'samba',
+        chainMultiplier: '8',
+        mermaidDefinition: endent`
+        flowchart LR;
+        Cotton(<span class='icon-flex-row'><img src='${icons.cottonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Minerals(<span class='icon-flex-row'><img src='${icons.mineralIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>13%</span><span class='ratio-count'>1</span></span></span>)
+        Pigments(<span class='icon-flex-row'><img src='${icons.pigmentIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>38%</span><span class='ratio-count'>1</span></span></span>)
+        Costumes(<span class='icon-flex-row'><img src='${icons.costumeIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Saltpeter(<span class='icon-flex-row'><img src='${icons.saltpeterIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>); style Saltpeter stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        NanduFeathers(<span class='icon-flex-row'><img src='${icons.nanduFeathersIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>); style NanduFeathers stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Samba(<img src='${icons.sambaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cotton --> CottonMill
+        Saltpeter & Minerals --> Pigments
+        CottonMill & Pigments & NanduFeathers --> Costumes
+        Costumes --> Samba
+        `,
+      },
+      {
+        productionChain: 'police',
+        chainMultiplier: '24',
+        mermaidDefinition: endent`
+        flowchart LR;
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>5%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        Cotton(<span class='icon-flex-row'><img src='${icons.cottonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>5%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        PoliceEquipment(<span class='icon-flex-row'><img src='${icons.policeEquipementIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        PoliceHeadquarters(<img src='${icons.policeHeadquartersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Iron & Charcoal --> Steel
+        Cotton --> CottonMill
+        Wood & Steel & CottonMill --> PoliceEquipment
+        PoliceEquipment --> PoliceHeadquarters
+        `,
+      },
+      {
+        productionChain: 'fan',
+        chainMultiplier: '6',
+        mermaidDefinition: endent`
+        flowchart LR;
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Bauxite(<span class='icon-flex-row'><img src='${icons.bauxiteIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Copper(<img src='${icons.copperIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Caoutchouc(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Charcoal0(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Charcoal1(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cables(<img src='${icons.electricCablesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Celluloid(<img src='${icons.celluloidIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Aluminium(<img src='${icons.aluminiumIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
+        Motors(<img src='${icons.motorIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Motors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Fans(<img src='${icons.fansIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Fans stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Wood & Corn --> Ethanol
+        Copper & Caoutchouc --> Cables
+        Cotton & CamphorWax & Ethanol --> Celluloid
+        Iron & Charcoal0 --> Steel
+        Cables & Celluloid & Steel --> Motors
+        Bauxite & Charcoal1 --> Aluminium
+        Motors & Aluminium --> Fans
+        `,
+      },
+      {
+        productionChain: 'cinema',
+        chainMultiplier: '12',
+        mermaidDefinition: endent`
+        flowchart LR;
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<span class='icon-flex-row'><img src='${icons.cornIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Cotton(<span class='icon-flex-row'><img src='${icons.cottonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        Film(<span class='icon-flex-row'><img src='${icons.filmReelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        Saltpeter(<span class='icon-flex-row'><img src='${icons.saltpeterIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>); style Saltpeter stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Cinema(<img src='${icons.cinemaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood & Corn --> Ethanol
+        Cotton & CamphorWax & Ethanol --> Celluloid
+        Saltpeter & Celluloid --> Film
+        Film --> Cinema
+        `,
+      },
+      {
+        productionChain: 'hospital',
+        chainMultiplier: '24',
+        mermaidDefinition: endent`
+        flowchart LR;
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>5%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<span class='icon-flex-row'><img src='${icons.cornIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>17%</span><span class='ratio-count'>1</span></span></span>)
+        Orchid(<span class='icon-flex-row'><img src='${icons.orchidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        Herb(<span class='icon-flex-row'><img src='${icons.herbIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>9%</span><span class='ratio-count'>1</span></span></span>)
+        Medicine(<span class='icon-flex-row'><img src='${icons.medicineIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>13%</span><span class='ratio-count'>1</span></span></span>)
+        Hospital(<img src='${icons.hospitalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood & Corn --> Ethanol
+        Orchid & Ethanol & Herb --> Medicine
+        Medicine --> Hospital
+        `,
+      },
+      {
+        productionChain: 'scooter',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR;
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Mineral(<span class='icon-flex-row'><img src='${icons.mineralIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Pigments(<span class='icon-flex-row'><img src='${icons.pigmentIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>75%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Caoutchouc0(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cables(<img src='${icons.electricCablesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Caoutchouc1(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Saltpeter stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Scooter(<img src='${icons.scooterIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Scooter stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Motors(<span class='icon-flex-row'><img src='${icons.motorIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>); style Motors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Wood & Corn --> Ethanol
+        Copper & Caoutchouc0 --> Cables
+        Cotton & CamphorWax & Ethanol --> Celluloid
+        Iron & Charcoal --> Steel
+        Saltpeter & Mineral --> Pigments
+        Cables & Celluloid & Steel --> Motors
+        Pigments & Motors & Caoutchouc1 --> Scooter
+        `,
+      },
+    ],
   },
-  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Iron Tower',
@@ -518,7 +426,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Grain --> Flour --> Bakery --> BriocheRoyale
         Beef --> BriocheRoyale
         GoldOre & Coal --> Gold --> BriocheRoyale
-        `
+        `,
       },
       {
         productionChain: 'trifleTower',
@@ -538,7 +446,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Grain --> Flour --> Bread --> Trifle
         Vineyard --> Trifle
         SugarCane1 --> Sugar --> Trifle
-        `
+        `,
       },
       {
         productionChain: 'ladyMarmelade',
@@ -558,7 +466,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Sand --> Glass --> Champagne --> LadyMarmelade
         Vineyard --> Champagne
         Citrus & Jam --> LadyMarmelade
-        `
+        `,
       },
       {
         productionChain: 'ageOfExploration',
@@ -570,7 +478,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
         AgeOfExploration(<img src='${icons.ageOfExplorationIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Gas & Potato & RedPepper & Beef --> AgeOfExploration
-        `
+        `,
       },
       {
         productionChain: 'homardLitTerroir',
@@ -582,10 +490,305 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Spices(<img src='${icons.spicesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         HomardLitTerroir(<img src='${icons.homardLitTerroirIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Lobster & Sanga & Potato & Spices --> HomardLitTerroir
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
+  {
+    colBreak: false,
+    tierName: 'Tourists',
+    productionChains: [
+      {
+        productionChain: 'shampoo',
+        mermaidDefinition: endent`
+        flowchart LR
+        CoconutOil(<img src='${icons.coconutOilIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cinnamon(<img src='${icons.cinnamonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Shampoo(<img src='${icons.shampooIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pigs(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Soap(<img src='${icons.soapIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        CoconutOil & Cinnamon --> Shampoo
+        Pigs --> Tallow --> Soap --> Shampoo
+        `,
+      },
+      {
+        productionChain: 'lemonade',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sugar(<img src='${icons.sugarIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Lemonade(<img src='${icons.lemonadeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Citrus(<img src='${icons.citrusIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        SugarCane --> Sugar --> Lemonade
+        Citrus --> Lemonade
+        Saltpeter --> Lemonade
+        `,
+      },
+      {
+        productionChain: 'souvenirs',
+        mermaidDefinition: endent`
+        flowchart LR
+        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Souvenirs(<img src='${icons.souvenirsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand(<img src='${icons.sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Glass(<img src='${icons.glassIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Souvenirs
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CamphorWax --> Souvenirs
+        Sand --> Glass --> Souvenirs
+        Cotton --> Souvenirs
+        `,
+      },
+    ],
+  },
+  {
+    colBreak: false,
+    tierName: 'Restaurants',
+    productionChains: [
+      {
+        productionChain: 'archdukeSchnitzel',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Pigs0(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Schnitzel(<img src='${icons.archdukeSchnitzel}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Schnitzel
+        Pigs1(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pigs0 --> Schnitzel
+        Potato --> Schnitzel
+        Pigs1 --> Tallow --> Schnitzel
+        `,
+      },
+      {
+        productionChain: 'stroggofGoulash',
+        mermaidDefinition: endent`
+        flowchart TB
+        Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        RedPeppers(<img src='${icons.redPeppersIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        StroggofGoulash(<img src='${icons.stroggofGoulashIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Beef & RedPeppers & Corn --> StroggofGoulash
+        `,
+      },
+      {
+        productionChain: 'fishFrites',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Fish(<span class='icon-flex-row'><img src='${icons.fishIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        FishFrites(<img src='${icons.fishFritesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Fish & Potato & Citrus --> FishFrites
+        `,
+      },
+      {
+        productionChain: 'venisonEnCroute',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        VenisonEnCroute(<img src='${icons.venisonEnCrouteIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Caribou(<img src='${icons.caribouIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Grain --> Flour --> VenisonEnCroute
+        Potato --> VenisonEnCroute
+        Caribou --> VenisonEnCroute
+        `,
+      },
+      {
+        productionChain: 'lobsterCheminee',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Lobster(<img src='${icons.lobstersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Tobacco(<img src='${icons.tobaccoIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        LobsterCheminee(<img src='${icons.lobsterChemineeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Lobster & Citrus & Tobacco --> LobsterCheminee
+        `,
+      },
+    ],
+  },
+  {
+    colBreak: false,
+    tierName: 'Café',
+    productionChains: [
+      {
+        productionChain: 'donut',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Donut(<img src='${icons.donutFourrerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Jam(<span class='icon-flex-row'><img src='${icons.jamIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain --> Flour --> Donut
+        Pig --> Tallow --> Donut
+        Jam --> Donut
+        `,
+      },
+      {
+        productionChain: 'eclair',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Eclair(<img src='${icons.eclairIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane0(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar0(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        SugarCane1(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar1(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cocoa(<img src='${icons.cocoaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Chocolate(<span class='icon-flex-row'><img src='${icons.chocolateIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain --> Flour --> Eclair
+        SugarCane0 --> Sugar0 --> Eclair
+        SugarCane1 --> Sugar1 --> Chocolate
+        Cocoa --> Chocolate
+        Chocolate --> Eclair
+        `,
+      },
+      {
+        productionChain: 'palmierBiscuit',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        PalmierBiscuit(<img src='${icons.palmierBiscuitIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain --> Flour --> PalmierBiscuit
+        Pig --> Tallow --> PalmierBiscuit
+        Cinnamon --> PalmierBiscuit
+        `,
+      },
+      {
+        productionChain: 'venisonTartare',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Grapes(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        VenisonTartare(<img src='${icons.venisonTartareIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Caribou(<img src='${icons.caribouIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grapes & Caribou & Citrus --> VenisonTartare
+        `,
+      },
+      {
+        productionChain: 'bananaSurprise',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Goat(<img src='${icons.goatMilkIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Plantains(<span class='icon-flex-row'><img src='${icons.plantainPlantationIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        BananaSurprise(<img src='${icons.bananaSurpriseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Goat & Plantains & Cinnamon --> BananaSurprise
+        `,
+      },
+    ],
+  },
+  { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
+  {
+    colBreak: false,
+    tierName: 'Bar',
+    productionChains: [
+      {
+        productionChain: 'daiquiriTropic',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane0(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        SugarCane1(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Plantain(<span class='icon-flex-row'><img src='${icons.plantainPlantationIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        DaiquiriTropic(<img src='${icons.daiquiriIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane0 --> DaiquiriTropic
+        SugarCane1 & Wood --> Rum --> DaiquiriTropic
+        Plantain --> DaiquiriTropic
+        `,
+      },
+      {
+        productionChain: 'blackMuscovy',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        CoffeeBeans(<img src='${icons.coffeeBeansIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Coffee(<span class='icon-flex-row'><img src='${icons.coffeeIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        BlackMuscovy(<img src='${icons.blackMuscovyIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Schnapps(<span class='icon-flex-row'><img src='${icons.schnappsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        CoffeeBeans --> Coffee --> BlackMuscovy
+        SugarCane & Wood --> Rum --> BlackMuscovy
+        Potato --> Schnapps --> BlackMuscovy
+        `,
+      },
+      {
+        productionChain: 'montmatre',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Champagne(<span class='icon-flex-row'><img src='${icons.champagneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Montmatre(<img src='${icons.montmatreIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane --> Sugar --> Montmatre
+        Sand --> Glass --> Champagne --> Montmatre
+        Vineyard --> Champagne
+        Citrus --> Montmatre
+        `,
+      },
+      {
+        productionChain: 'glegg',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Whales(<img src='${icons.whalingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Vineyard(<img src='${icons.grapesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Glogg(<img src='${icons.gloggIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Whales & Vineyard & Cinnamon --> Glogg
+        `,
+      },
+      {
+        productionChain: 'enbesaSunrise',
+        chainMultiplier: '4',
+        mermaidDefinition: endent`
+        flowchart LR
+        Hibiscus(<img src='${icons.hibiscusFarmIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Rum(<span class='icon-flex-row'><img src='${icons.rumIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Spices(<img src='${icons.spicesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        EnbesaSunrise(<img src='${icons.enbesaSunriseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Hibiscus --> EnbesaSunrise
+        SugarCane & Wood --> Rum --> EnbesaSunrise
+        Spices --> EnbesaSunrise
+        `,
+      },
+    ],
+  },
+
   {
     colBreak: false,
     tierName: 'Department Store',
@@ -606,7 +809,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Iron & Coal --> Steel --> Toasters
         Zinc --> Toasters
         Coal0 --> Filament --> Toasters
-        `
+        `,
       },
       {
         productionChain: 'vaccumCleaners',
@@ -623,7 +826,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Celluloid --> VaccumCleaners
         Iron & Coal --> Steel --> VaccumCleaners
         Sheep --> VaccumCleaners
-        `
+        `,
       },
       {
         productionChain: 'crockery',
@@ -638,7 +841,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Clay --> Crockery
         Lacquer --> Crockery
         Sand0 --> Crockery
-        `
+        `,
       },
       {
         productionChain: 'refrigerators',
@@ -654,7 +857,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         style Refrigerators stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Iron & Coal --> Steel --> Refrigerators
         Gas & Caoutchouc --> Refrigerators
-        `
+        `,
       },
       {
         productionChain: 'briefcases',
@@ -671,9 +874,9 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Copper & Zinc --> Brass --> Briefcases
         Celluloid --> Briefcases
         Sanga --> Briefcases
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
   {
     colBreak: false,
@@ -701,7 +904,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Coal --> Filament --> LightBulb
         Sand0 --> Glass0 --> LightBulb
         LightBulb --> BankerLamp
-      `
+      `,
       },
       {
         productionChain: 'vanityScreens',
@@ -717,7 +920,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         style VanityScreens stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Cotton --> CottonMill
         CottonMill & CherryWood & Lacquer --> VanityScreens
-      `
+      `,
       },
       {
         productionChain: 'writingDesks',
@@ -735,7 +938,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Copper & Zinc --> Brass
         Wood --> Marquetry
         Brass & Marquetry & Lacquer --> WritingDesks
-      `
+      `,
       },
       {
         productionChain: 'fourPosterBeds',
@@ -748,7 +951,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         FourPosterBeds(<img src='${icons.fourPosterBedsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style FourPosterBeds stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         BearHunting & Goose & CherryWood --> FourPosterBeds
-        `
+        `,
       },
       {
         productionChain: 'loungeSeating',
@@ -761,9 +964,9 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         LoungeSeating(<img src='${icons.loungeSeatingIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style LoungeSeating stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Sheep & Sanga & WansaWood --> LoungeSeating
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
   {
     colBreak: false,
@@ -785,7 +988,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         SugarCane --> Sugar --> Toothpaste
         Coal --> Toothpaste
         Pig --> Tallow --> Soap --> Toothpaste
-        `
+        `,
       },
       {
         productionChain: 'detergent',
@@ -798,7 +1001,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Detergent(<img src='${icons.detergentIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style Detergent stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Ethanol & Citrus & Saltpeter --> Detergent
-        `
+        `,
       },
       {
         productionChain: 'lipstick',
@@ -811,7 +1014,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Lipstick(<img src='${icons.lipstickIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style Lipstick stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         FishOil & CoconutOil & Lacquer --> Lipstick
-        `
+        `,
       },
       {
         productionChain: 'faceCream',
@@ -824,7 +1027,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         FaceCream(<img src='${icons.faceCreamIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style FaceCream stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         CoconutOil & Citrus & Whaling --> FaceCream
-        `
+        `,
       },
       {
         productionChain: 'pomade',
@@ -837,10 +1040,11 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Pomade(<img src='${icons.pomadeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         style Pomade stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         CamphorWax & Apiary & Hibiscus --> Pomade
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
+  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Supply Factories | Airships',
@@ -863,7 +1067,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Pig --> Tallow --> Dynamite --> Bomb
         Saltpeter0 --> Dynamite
         Iron & Coal --> Steel --> Bomb
-        `
+        `,
       },
       {
         productionChain: 'seaMines',
@@ -883,7 +1087,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Pig --> Tallow --> Dynamite --> SeaMine
         Saltpeter --> Dynamite
         Iron & Coal --> Steel --> SeaMine
-        `
+        `,
       },
       {
         productionChain: 'pamphlets',
@@ -894,7 +1098,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Pamphlets(<img src='${icons.pamphletsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Wood & Cotton --> Pamphlets
-        `
+        `,
       },
       {
         productionChain: 'carePackage',
@@ -919,11 +1123,10 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         SugarCane --> Sugar --> Chocolate --> CarePackage
         Cocoa --> Chocolate
         Potato --> Schnapps --> CarePackage
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
-  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Hacienda',
@@ -936,7 +1139,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Spices(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.spicesIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         HotSauce(<img src='${icons.hotSauceIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Spices --> HotSauce
-        `
+        `,
       },
       {
         productionChain: 'atole',
@@ -947,7 +1150,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Atole(<img src='${icons.atoleIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Corn & SugarCane --> Atole
-        `
+        `,
       },
       {
         productionChain: 'haciendaRum',
@@ -958,7 +1161,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Rum(<img src='${icons.rumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         SugarCane & Wood --> Rum
-        `
+        `,
       },
       {
         productionChain: 'haciendaSchnapps',
@@ -968,7 +1171,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Potato(<span class='icon-flex-row icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Schnapps(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.schnappsIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
         Potato --> Schnapps
-        `
+        `,
       },
       {
         productionChain: 'haciendaBeer',
@@ -978,11 +1181,51 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Beer(<span class='icon-regional-container'><img src='${icons.newWorldIcon}' class='icon-regional' /><img src='${icons.breweryIcon}' class='icon-size' /><span class='ratio-count'>1</span></span>)
         Grain & Corn --> Beer
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
-  { colBreak: true, tierName: 'skip' },
+  {
+    colBreak: false,
+    tierName: 'Chemical Plant',
+    productionChains: [
+      {
+        productionChain: 'ethanol',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<img src='${icons.cornIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood & Corn --> Ethanol
+        `,
+      },
+      {
+        productionChain: 'lacquer',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand(<img src='${icons.sandIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Resin(<img src='${icons.resinIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Lacquer(<img src='${icons.lacquerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sand & Resin & Ethanol --> Lacquer
+        `,
+      },
+      {
+        productionChain: 'celluloid',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart TB
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CamphorWax(<img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Ethanol(<img src='${icons.ethanolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Celluloid(<img src='${icons.celluloidIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cotton & CamphorWax & Ethanol --> Celluloid
+        `,
+      },
+    ],
+  },
   {
     colBreak: false,
     tierName: 'Empire of the Skies',
@@ -996,7 +1239,7 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
         Aluminium(<img src='${icons.aluminiumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Bauxite & Charcoal --> Aluminium
-      `
+      `,
       },
       {
         productionChain: 'helium',
@@ -1009,8 +1252,8 @@ export const productionChainsExpansions: TieredProductionChain[] = [
         Helium(<img src='${icons.heliumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Clay --> Helium
         FishOil & Saltpeter --> IndustrialLubricant --> Helium
-      `
-      }
-    ]
-  }
+      `,
+      },
+    ],
+  },
 ];
