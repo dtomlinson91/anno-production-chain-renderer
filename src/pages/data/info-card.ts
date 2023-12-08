@@ -12,14 +12,13 @@ export const commonItemData: InfoCardItem[] = [
   {
     id: 'electricity',
     icon: icons.electricityIcon,
-    text: 'Building has electricity.'
+    text: 'Building requires electricity.'
   },
   {
     id: 'fullChain',
     icon: fullChainMultiplierIcon,
-    text: 'Multiplier for a full chain. To scale chain to 100%:',
-    additionalText:
-      'multiply together number of buildings * efficiency % * multiplier for each building in the chain.'
+    text: 'The multiplier for a full chain. To scale chain to 100% multiply together (for every building in the chain): ',
+    additionalText: ' number of buildings × efficiency % × multiplier'
   }
 ];
 

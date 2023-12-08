@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf" class="custom-width">
+    <!--<q-layout view="lHh Lpr lFf" class="">-->
     <q-header :reveal="true" :reveal-offset="0">
       <q-toolbar class="toolbar-background text-white">
         <q-btn

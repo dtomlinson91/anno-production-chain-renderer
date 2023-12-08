@@ -1,26 +1,24 @@
 <template>
-  <q-page>
+  <q-page class="custom-width">
     <div class="column masonry-container">
       <div class="flex-break hidden item"></div>
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
-      <div class="flex-break item"></div>
-      <div class="flex-break item"></div>
       <ChainTiers
-        title="Information"
-        class="masonry-col item"
+        :title="expansionInfoItem.title"
         :col-break="false"
+        class="masonry-col item"
       >
         <InfoCard
-          :item-data="itemDataExpansions"
-          :item-world-data="worldItemDataExpansions"
+          :item-data="itemDataBase"
+          :item-world-data="worldItemDataBase"
         >
           <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
         </InfoCard>
       </ChainTiers>
       <ChainTiers
-        v-for="tier in productionChainsExpansions"
+        v-for="tier in productionChainsSeason3"
         :key="tier.tierName"
         :title="tier.tierName"
         :col-break="tier.colBreak"
@@ -50,13 +48,10 @@ import InfoCard from 'components/InfoCard.vue';
 import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
 
 // Production Chain Data
-import { productionChainsExpansions } from './data/production-chains-expansions';
+import { productionChainsSeason3 } from './data/production-chains-season-3';
 
 // Info Card Data
-import {
-  itemDataExpansions,
-  worldItemDataExpansions
-} from 'src/pages/data/info-card';
+import { itemDataBase, worldItemDataBase } from 'src/pages/data/info-card';
 
 // Icons
 import * as icons from './data/icons';
@@ -66,32 +61,33 @@ import { initialiseMermaid } from 'composables/mermaid';
 
 initialiseMermaid();
 const expansionInfoItem = ref({
-  icon: icons.newWorldRisingIcon,
-  text: 'All chains from Season 3 through Season 4.'
+  title: 'Season 3',
+  icon: icons.highLifeIcon,
+  text: 'All chains for Season 3 (Docklands, Tourist Season & The High Life).'
 });
 </script>
 
 <style lang="scss">
 // Masonry Layout - 5 cols
-$columns: 6;
+$column: 4;
 
 .flex-break {
   flex: 1 0 100% !important;
   width: 0 !important;
 }
 
-@for $i from 1 through ($columns - 1) {
-  .masonry-container > .item:nth-child(#{$columns}n + #{$i}) {
+@for $i from 1 through ($column - 1) {
+  .masonry-container > .item:nth-child(#{$column}n + #{$i}) {
     order: #{$i};
   }
 }
 
-.masonry-container > .item:nth-child(#{$columns}n) {
-  order: #{$columns};
+.masonry-container > .item:nth-child(#{$column}n) {
+  order: #{$column};
 }
 
 .masonry-container {
-  height: 9100px;
+  height: 7650px;
 
   .masonry-col {
     width: 1000px;
@@ -99,4 +95,7 @@ $columns: 6;
   }
 }
 
+.custom-width {
+  width: 4100px;
+}
 </style>

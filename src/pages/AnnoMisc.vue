@@ -4,9 +4,6 @@
       <div class="flex-break hidden item"></div>
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
-      <div class="flex-break item"></div>
-      <div class="flex-break item"></div>
-      <div class="flex-break item"></div>
       <ChainTiers
         :title="expansionInfoItem.title"
         :col-break="false"
@@ -20,7 +17,7 @@
         </InfoCard>
       </ChainTiers>
       <ChainTiers
-        v-for="tier in productionChainsBase"
+        v-for="tier in productionChainsMisc"
         :key="tier.tierName"
         :title="tier.tierName"
         :col-break="tier.colBreak"
@@ -50,7 +47,7 @@ import InfoCard from 'components/InfoCard.vue';
 import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
 
 // Production Chain Data
-import { productionChainsBase } from './data/production-chains-base';
+import { productionChainsMisc } from './data/production-chains-misc';
 
 // Info Card Data
 import { itemDataBase, worldItemDataBase } from 'src/pages/data/info-card';
@@ -63,7 +60,7 @@ import { initialiseMermaid } from 'composables/mermaid';
 
 initialiseMermaid();
 const expansionInfoItem = ref({
-  title: 'Base Game',
+  title: 'ratios | fuel | materials',
   icon: icons.siteLogoIcon,
   text: 'All chains for Base Game (including ratios, fuel, electricity and building materials)'
 });
@@ -71,7 +68,7 @@ const expansionInfoItem = ref({
 
 <style lang="scss">
 // Masonry Layout - 5 cols
-$column: 6;
+$column: 3;
 
 .flex-break {
   flex: 1 0 100% !important;
@@ -89,7 +86,7 @@ $column: 6;
 }
 
 .masonry-container {
-  height: 2850px;
+  height: 2250px;
 
   .masonry-col {
     width: 1000px;
@@ -98,6 +95,6 @@ $column: 6;
 }
 
 .custom-width {
-  width: 6100px;
+  width: 3100px;
 }
 </style>
