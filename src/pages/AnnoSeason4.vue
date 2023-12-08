@@ -4,7 +4,6 @@
       <div class="flex-break hidden item"></div>
       <div class="flex-break item"></div>
       <div class="flex-break item"></div>
-      <div class="flex-break item"></div>
       <ChainTiers
         :title="expansionInfoItem.title"
         :col-break="false"
@@ -69,7 +68,7 @@ const expansionInfoItem = ref({
 
 <style lang="scss">
 // Masonry Layout - 5 cols
-$column: 4;
+$column: 3;
 
 .flex-break {
   flex: 1 0 100% !important;
@@ -87,7 +86,7 @@ $column: 4;
 }
 
 .masonry-container {
-  height: 7650px;
+  height: 7000px;
 
   .masonry-col {
     width: 1000px;
@@ -96,6 +95,6 @@ $column: 4;
 }
 
 .custom-width {
-  width: 4100px;
+  width: 3100px;
 }
 </style>

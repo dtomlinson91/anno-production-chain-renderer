@@ -139,7 +139,13 @@ export const productionChainsSeason4: TieredProductionChain[] = [
         Wood & Steel & CottonMill --> PoliceEquipment
         PoliceEquipment --> PoliceHeadquarters
         `
-      },
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Artistas',
+    productionChains: [
       {
         productionChain: 'fan',
         chainMultiplier: '6',
@@ -324,6 +330,8 @@ export const productionChainsSeason4: TieredProductionChain[] = [
       }
     ]
   },
+  { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Hacienda',
