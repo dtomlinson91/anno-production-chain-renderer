@@ -32,9 +32,9 @@ export const productionChainsMisc: TieredProductionChain[] = [
         chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
-        CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
-        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
-        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
+        CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
         SteelBeams(<img src='${icons.steelBeamsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         CharcoalKiln & Iron --> Steel --> SteelBeams
         `
@@ -99,8 +99,8 @@ export const productionChainsMisc: TieredProductionChain[] = [
         chainMultiplier: '9',
         mermaidDefinition: endent`
         flowchart LR
-        Bauxite(<span class='icon-flex-row'><img src='${icons.bauxiteIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>11%</span><span class='ratio-count'>1</span></span></span>)
-        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Bauxite(<span class='icon-flex-row'><img src='${icons.bauxiteIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>11.11%</span><span class='ratio-count'>1</span></span></span>)
+        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
         Aluminium(<img src='${icons.aluminiumIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Bauxite & Charcoal --> Aluminium
       `

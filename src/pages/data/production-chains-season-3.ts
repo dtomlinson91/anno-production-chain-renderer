@@ -129,7 +129,7 @@ export const productionChainsSeason3: TieredProductionChain[] = [
         Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Bakery(<img src='${icons.breadIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>83%</span><span class='ratio-count'>3</span></span></span>)
+        GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>83.33%</span><span class='ratio-count'>3</span></span></span>)
         Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
         Gold(<img src='${icons.goldIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         BriocheRoyale(<img src='${icons.briocheRoyaleIcon}' class='icon-size' /><span class='ratio-count'>1</span>)

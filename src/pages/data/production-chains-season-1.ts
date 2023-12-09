@@ -55,7 +55,7 @@ export const productionChainsSeason1: TieredProductionChain[] = [
         mermaidDefinition: endent`
         flowchart LR
         Bears(<img src='${icons.bearIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Seal(<span class='icon-flex-row'><img src='${icons.sealIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Seal(<span class='icon-flex-row'><img src='${icons.sealIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
         Parkas(<img src='${icons.parkasIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Bears & Seal --> Parkas
         `

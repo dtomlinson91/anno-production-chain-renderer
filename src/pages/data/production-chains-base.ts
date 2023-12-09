@@ -81,11 +81,11 @@ export const productionChainsBase: TieredProductionChain[] = [
         chainMultiplier: '6',
         mermaidDefinition: endent`
         flowchart LR
-        Beef(<span class='icon-flex-row'><img src='${icons.beefIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>)
-        RedPepper(<span class='icon-flex-row'><img src='${icons.redPeppersIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>)
-        ArtisnalKitchen(<span class='icon-flex-row'><img src='${icons.artisnalKitchenIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>)
+        Beef(<span class='icon-flex-row'><img src='${icons.beefIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>2</span></span></span>)
+        RedPepper(<span class='icon-flex-row'><img src='${icons.redPeppersIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>2</span></span></span>)
+        ArtisnalKitchen(<span class='icon-flex-row'><img src='${icons.artisnalKitchenIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>2</span></span></span>)
         Cannery(<img src='${icons.cannedFoodIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
         Beef & RedPepper --> ArtisnalKitchen --> Cannery
         Iron --> Cannery
         `
@@ -152,12 +152,12 @@ export const productionChainsBase: TieredProductionChain[] = [
         chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
-        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
-        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
         Glasses(<img src='${icons.glassesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
-        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
-        Brass(<span class='icon-flex-row'><img src='${icons.brassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Brass(<span class='icon-flex-row'><img src='${icons.brassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
         Sand --> Glass --> Glasses
         Copper & Zinc --> Brass --> Glasses
         `
@@ -167,12 +167,12 @@ export const productionChainsBase: TieredProductionChain[] = [
         chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
-        GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>83%</span><span class='ratio-count'>4</span></span></span>)
-        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
-        Gold(<span class='icon-flex-row'><img src='${icons.goldIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>2</span></span></span>)
+        GoldOre(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>83.33%</span><span class='ratio-count'>4</span></span></span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Gold(<span class='icon-flex-row'><img src='${icons.goldIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>2</span></span></span>)
         PocketWatches(<img src='${icons.pocketWatchesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
-        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66%</span><span class='ratio-count'>1</span></span></span>)
+        Sand(<span class='icon-flex-row'><img src='${icons.sandIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
+        Glass(<span class='icon-flex-row'><img src='${icons.glassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
         style PocketWatches stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
         GoldOre & Coal --> Gold --> PocketWatches
         Sand --> Glass --> PocketWatches
@@ -370,9 +370,9 @@ export const productionChainsBase: TieredProductionChain[] = [
         chainMultiplier: '6',
         mermaidDefinition: endent`
         flowchart LR
-        CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
-        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16%</span><span class='ratio-count'>1</span></span></span>)
-        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33%</span><span class='ratio-count'>1</span></span></span>)
+        CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
         Weapons(<img src='${icons.weaponsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         CharcoalKiln & Iron --> Steel --> Weapons
         `
