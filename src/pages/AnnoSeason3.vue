@@ -11,15 +11,12 @@
           :col-break="false"
           class="masonry-col item"
         >
-          <InfoCard
-            :item-data="itemDataBase"
-            :item-world-data="worldItemDataBase"
-          >
+          <InfoCard>
             <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
           </InfoCard>
         </ChainTiers>
         <ChainTiers
-          v-for="tier in productionChainsBase"
+          v-for="tier in productionChainsSeason3"
           :key="tier.tierName"
           :title="tier.tierName"
           :col-break="tier.colBreak"
@@ -50,10 +47,7 @@ import InfoCard from 'components/InfoCard.vue';
 import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
 
 // Production Chain Data
-import { productionChainsBase } from './data/production-chains-base';
-
-// Info Card Data
-import { itemDataBase, worldItemDataBase } from 'src/pages/data/info-card';
+import { productionChainsSeason3 } from './data/production-chains-season-3';
 
 // Icons
 import * as icons from './data/icons';
@@ -63,9 +57,9 @@ import { initialiseMermaid } from 'composables/mermaid';
 
 initialiseMermaid();
 const expansionInfoItem = ref({
-  title: 'Base Game',
-  icon: icons.siteLogoIcon,
-  text: 'All chains for Base Game (including ratios, fuel, electricity and building materials)'
+  title: 'Season 3',
+  icon: icons.highLifeIcon,
+  text: 'All chains for Season 3 (Docklands, Tourist Season & The High Life).'
 });
 </script>
 
@@ -89,7 +83,7 @@ $column: 4;
 }
 
 .masonry-container {
-  height: 4100px;
+  height: 7690px;
 
   .masonry-col {
     width: 1000px;
@@ -100,6 +94,6 @@ $column: 4;
 }
 
 .custom-width {
-  width: 4200px;
+  width: 4150px;
 }
 </style>

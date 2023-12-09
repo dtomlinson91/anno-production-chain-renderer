@@ -1,14 +1,38 @@
 [
   {
-    "title": "Season 1 - Season 2",
-    "caption": "Base Game up to Season 2",
+    "title": "Base Game",
+    "caption": "Chains for base game",
     "icon": "las la-atlas",
     "link": "/"
   },
   {
-    "title": "Season 3 - Season 4",
-    "caption": "Expansions from Season 3 to Season 4",
+    "title": "Misc",
+    "caption": "Chains for Ratios, Fuel, Electricity and Building Materials",
     "icon": "las la-atlas",
-    "link": "/expansions"
+    "link": "/misc"
+  },
+  {
+    "title": "Season 1",
+    "caption": "Chains for Season 1 (Sunken Treasures, Botanica & The Passage)",
+    "icon": "las la-atlas",
+    "link": "/season1"
+  },
+  {
+    "title": "Season 2",
+    "caption": "Chains for Season 2 (Seat of Power, Bright Harvest & Land of Lions)",
+    "icon": "las la-atlas",
+    "link": "/season2"
+  },
+  {
+    "title": "Season 3",
+    "caption": "Chains for Season 3 (Docklands, Tourist Season & The High Life)",
+    "icon": "las la-atlas",
+    "link": "/season3"
+  },
+  {
+    "title": "Season 4",
+    "caption": "Chains for Season 4 (Seeds of Change, Empire of the Skies & New World Rising)",
+    "icon": "las la-atlas",
+    "link": "/season4"
   }
 ]

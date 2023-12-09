@@ -107,6 +107,7 @@ import heliumIcon from 'assets/annoIcons/Helium.webp';
 import herbIcon from 'assets/annoIcons/Herbs.webp';
 import hibiscusFarmIcon from 'assets/annoIcons/Icon_hibiscus_farm_0.webp';
 import hibiscusTeaIcon from 'assets/annoIcons/Icon_hibiscus_tea_0.webp';
+import highLifeIcon from 'assets/annoIcons/Icon_dlc_high_life.webp';
 import highWheelerIcon from 'assets/annoIcons/High_wheeler.webp';
 import homardLitTerroirIcon from 'assets/annoIcons/Homard_Lit_de_Terroir.webp';
 import hopFarmIcon from 'assets/annoIcons/Hops.webp';
@@ -158,6 +159,7 @@ import palmierBiscuitIcon from 'assets/annoIcons/Palmier_Biscuit.webp';
 import pamphletsIcon from 'assets/annoIcons/Pamphlets.webp';
 import paperIcon from 'assets/annoIcons/Icon_paper_0.webp';
 import parkasIcon from 'assets/annoIcons/Parka_Factory.webp';
+import passageIcon from 'assets/annoIcons/Icon_dlc_passage.webp';
 import pearlsIcon from 'assets/annoIcons/Pearls.webp';
 import pemmicanIcon from 'assets/annoIcons/Pemmican_Cookhouse.webp';
 import perfumeIcon from 'assets/annoIcons/Perfumes.webp';
@@ -189,6 +191,7 @@ import seaMinesIcon from 'assets/annoIcons/Sea_Mines.webp';
 import sewingMachinesIcon from 'assets/annoIcons/Sewing_machines.webp';
 import shampooIcon from 'assets/annoIcons/Shampoo.webp';
 import siloIcon from 'assets/annoIcons/Silo.webp';
+import siteLogoIcon from 'assets/annoIcons/Site-logo.webp';
 import sledFrameIcon from 'assets/annoIcons/Sled_Frame_Factory.webp';
 import sleepingBagIcon from 'assets/annoIcons/Sleeping_Bag_Factory.webp';
 import soapIcon from 'assets/annoIcons/Soap.webp';
@@ -343,6 +346,7 @@ export {
   herbIcon,
   hibiscusFarmIcon,
   hibiscusTeaIcon,
+  highLifeIcon,
   highWheelerIcon,
   homardLitTerroirIcon,
   hopFarmIcon,
@@ -394,6 +398,7 @@ export {
   pamphletsIcon,
   paperIcon,
   parkasIcon,
+  passageIcon,
   pearlsIcon,
   pemmicanIcon,
   perfumeIcon,
@@ -425,6 +430,7 @@ export {
   sewingMachinesIcon,
   shampooIcon,
   siloIcon,
+  siteLogoIcon,
   sledFrameIcon,
   sleepingBagIcon,
   soapIcon,
@@ -467,5 +473,5 @@ export {
   woolIcon,
   workClothesIcon,
   writingDesksIcon,
-  zincIcon,
+  zincIcon
 };

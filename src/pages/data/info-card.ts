@@ -10,16 +10,20 @@ export const commonItemData: InfoCardItem[] = [
     text: '2 Charcoal Kilns can be replaced with 1 Coal Mine.'
   },
   {
+    id: 'airship',
+    icon: icons.airshipIcon,
+    text: 'Airship drop chain ratios are the same for Old World & New World.'
+  },
+  {
     id: 'electricity',
     icon: icons.electricityIcon,
-    text: 'Building has electricity.'
+    text: 'Building requires electricity.'
   },
   {
     id: 'fullChain',
     icon: fullChainMultiplierIcon,
-    text: 'Multiplier for a full chain. To scale chain to 100%:',
-    additionalText:
-      'multiply together number of buildings * efficiency % * multiplier for each building in the chain.'
+    text: 'The multiplier for a full chain. To scale chain to 100% multiply together (for every item in the chain): ',
+    additionalText: ' number of buildings × efficiency % × multiplier'
   }
 ];
 
@@ -30,10 +34,16 @@ const commonWorldItemData: InfoCardWorldItem[] = [
     textPre: 'Gold mines use New World',
     textPost: 'production rates.',
     worldIcon: icons.newWorldIcon
+  },
+  {
+    id: 'hacienda',
+    icon: icons.haciendaIcon,
+    textPre: 'Hacienda chains use New World',
+    textPost: 'buildings.',
+    worldIcon: icons.newWorldIcon
   }
 ];
 
-// Base to S2
 export const itemDataBase: InfoCardItem[] = [...commonItemData];
 
 export const worldItemDataBase: InfoCardWorldItem[] = [
@@ -55,22 +65,15 @@ export const worldItemDataBase: InfoCardWorldItem[] = [
 ];
 
 // S2 to S4
-export const itemDataExpansions: InfoCardItem[] = [
-  {
-    id: 'airship',
-    icon: icons.airshipIcon,
-    text: 'Airship drop chain ratios are the same for Old World & New World.'
-  },
-  ...commonItemData
-];
+// export const itemDataExpansions: InfoCardItem[] = [, ...commonItemData];
 
-export const worldItemDataExpansions: InfoCardWorldItem[] = [
-  ...commonWorldItemData,
-  {
-    id: 'hacienda',
-    icon: icons.haciendaIcon,
-    textPre: 'Hacienda chains use New World',
-    textPost: 'buildings.',
-    worldIcon: icons.newWorldIcon
-  }
-];
+// export const worldItemDataExpansions: InfoCardWorldItem[] = [
+//   ...commonWorldItemData,
+//   {
+//     id: 'hacienda',
+//     icon: icons.haciendaIcon,
+//     textPre: 'Hacienda chains use New World',
+//     textPost: 'buildings.',
+//     worldIcon: icons.newWorldIcon
+//   }
+// ];
