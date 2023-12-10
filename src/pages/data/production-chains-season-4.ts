@@ -236,7 +236,7 @@ export const productionChainsSeason4: TieredProductionChain[] = [
         Caoutchouc1(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Saltpeter stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
         Scooter(<img src='${icons.scooterIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Scooter stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
-        Motors(<img src='${icons.motorIcon}' class='icon-size' /><span class='ratio-count'>1</span>); style Motors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Motors(<span class='icon-flex-row'><img src='${icons.motorIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>100%</span><span class='ratio-count'>1</span></span></span>); style Motors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
         Wood & Corn --> Ethanol
         Copper & Caoutchouc0 --> Cables
         Cotton & CamphorWax & Ethanol --> Celluloid
