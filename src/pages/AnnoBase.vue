@@ -5,15 +5,14 @@
         <div class="flex-break hidden item"></div>
         <div class="flex-break item"></div>
         <div class="flex-break item"></div>
-        <div class="flex-break item"></div>
         <ChainTiers
           :title="expansionInfoItem.title"
           :col-break="false"
           class="masonry-col item"
         >
           <InfoCard
-            :item-data="itemDataBase"
-            :item-world-data="worldItemDataBase"
+            :info-card-item-data="baseItemData"
+            :info-card-item-world-data="baseItemWorldData"
           >
             <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
           </InfoCard>
@@ -53,7 +52,7 @@ import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
 import { productionChainsBase } from './data/production-chains-base';
 
 // Info Card Data
-import { itemDataBase, worldItemDataBase } from 'src/pages/data/info-card';
+import { baseItemData, baseItemWorldData } from 'src/pages/data/info-card';
 
 // Icons
 import * as icons from './data/icons';
@@ -71,7 +70,7 @@ const expansionInfoItem = ref({
 
 <style lang="scss">
 // Masonry Layout - 5 cols
-$column: 4;
+$column: 3;
 
 .flex-break {
   flex: 1 0 100% !important;
@@ -89,7 +88,7 @@ $column: 4;
 }
 
 .masonry-container {
-  height: 4100px;
+  height: 4500px;
 
   .masonry-col {
     width: 1000px;
@@ -100,6 +99,6 @@ $column: 4;
 }
 
 .custom-width {
-  width: 4200px;
+  width: 3150px;
 }
 </style>

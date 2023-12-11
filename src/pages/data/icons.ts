@@ -1,3 +1,4 @@
+import absintheIcon from 'assets/annoIcons/Absinthe.webp';
 import ageOfExplorationIcon from 'assets/annoIcons/Age_of_Exploration.webp';
 import airshipIcon from 'assets/annoIcons/Airship.webp';
 import alpacaWoolIcon from 'assets/annoIcons/Alpaca_wool.webp';
@@ -51,6 +52,7 @@ import coffeeBeansIcon from 'assets/annoIcons/Coffee_beans.webp';
 import coffeeIcon from 'assets/annoIcons/Coffee.webp';
 import cognacIcon from 'assets/annoIcons/Cognac.webp';
 import concreteFactory from 'assets/annoIcons/Reinforced_concrete.webp';
+import coneocopiaIcon from 'assets/annoIcons/Cone_OCopia.webp';
 import copperIcon from 'assets/annoIcons/Copper.webp';
 import costumeIcon from 'assets/annoIcons/Costumes.webp';
 import cornIcon from 'assets/annoIcons/Corn.webp';
@@ -68,6 +70,7 @@ import electricCablesIcon from 'assets/annoIcons/Electric_Cables.webp';
 import electricityIcon from 'assets/electricityBorder.webp';
 import elevatorIcon from 'assets/annoIcons/Elevators.webp';
 import embroidererIcon from 'assets/annoIcons/Icon_traditional_clothing_0.webp';
+import empanadasIcon from 'assets/annoIcons/Empanadas.webp';
 import empireOfTheSkiesIcon from 'assets/annoIcons/Empire_of_the_Skies_DLC_icon.webp';
 import enbesaIcon from 'assets/annoIcons/Icon_session_land_of_lions_0.png';
 import enbesaSunriseIcon from 'assets/annoIcons/Enbesa_Sunrise.webp';
@@ -237,6 +240,7 @@ import writingDesksIcon from 'assets/annoIcons/Writing_Desks.webp';
 import zincIcon from 'assets/annoIcons/Zinc.webp';
 
 export {
+  absintheIcon,
   ageOfExplorationIcon,
   airshipIcon,
   alpacaWoolIcon,
@@ -290,6 +294,7 @@ export {
   coffeeIcon,
   cognacIcon,
   concreteFactory,
+  coneocopiaIcon,
   copperIcon,
   cornIcon,
   cottonIcon,
@@ -307,6 +312,7 @@ export {
   electricityIcon,
   elevatorIcon,
   embroidererIcon,
+  empanadasIcon,
   empireOfTheSkiesIcon,
   enbesaIcon,
   enbesaSunriseIcon,

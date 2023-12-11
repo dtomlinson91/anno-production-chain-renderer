@@ -1,30 +1,30 @@
 <template>
   <q-list separator class="big-font text-left">
     <slot></slot>
-    <InfoCardItemWorld
-      v-for="item in itemWorldData"
-      :key="item.icon"
-      v-bind="item"
-    ></InfoCardItemWorld>
     <InfoCardItem
-      v-for="item in itemData"
+      v-for="item in infoCardItemData"
       :key="item.icon"
       v-bind="item"
     ></InfoCardItem>
+    <InfoCardItemWorldIcon
+      v-for="item in infoCardItemWorldData"
+      :key="item.icon"
+      v-bind="item"
+    ></InfoCardItemWorldIcon>
   </q-list>
 </template>
 
 <script setup lang="ts">
 import InfoCardItem from './InfoCard/InfoCardItem.vue';
-import InfoCardItemWorld from './InfoCard/InfoCardItemWorld.vue';
+import InfoCardItemWorldIcon from './InfoCard/InfoCardItemWorldIcon.vue';
 import {
   InfoCardItem as InfoCardItemModel,
-  InfoCardWorldItem as InfoCardWorldItemModel
+  InfoCardItemWorldIcon as InfoCardItemWorldIconModel
 } from 'pages/data/models';
 
 defineProps<{
-  itemData?: InfoCardItemModel[];
-  itemWorldData?: InfoCardWorldItemModel[];
+  infoCardItemData?: InfoCardItemModel[];
+  infoCardItemWorldData?: InfoCardItemWorldIconModel[];
 }>();
 </script>
 

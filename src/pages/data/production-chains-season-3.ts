@@ -274,6 +274,20 @@ export const productionChainsSeason3: TieredProductionChain[] = [
         LobsterCheminee(<img src='${icons.lobsterChemineeIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Lobster & Citrus & Tobacco --> LobsterCheminee
         `
+      },
+      {
+        productionChain: 'empanadas',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Grain(<img src='${icons.grainIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Beef(<img src='${icons.beefIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Empanadas(<img src='${icons.empanadasIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Flour(<span class='icon-flex-row'><img src='${icons.flourIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Herbs(<span class='icon-flex-row'><img src='${icons.herbIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Grain --> Flour
+        Beef & Flour & Herbs --> Empanadas
+        `
       }
     ]
   },
@@ -356,6 +370,18 @@ export const productionChainsSeason3: TieredProductionChain[] = [
         Cinnamon(<span class='icon-flex-row'><img src='${icons.cinnamonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         BananaSurprise(<img src='${icons.bananaSurpriseIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Goat & Plantains & Cinnamon --> BananaSurprise
+        `
+      },
+      {
+        productionChain: 'coneocopia',
+        chainMultiplier: '6',
+        mermaidDefinition: endent`
+        flowchart LR
+        Jam(<span class='icon-flex-row'><img src='${icons.jamIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Orchid(<span class='icon-flex-row'><img src='${icons.orchidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Milk(<span class='icon-flex-row'><img src='${icons.milkIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>); style Milk stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Coneocopia(<img src='${icons.coneocopiaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Jam & Milk & Orchid --> Coneocopia
         `
       }
     ]
@@ -443,6 +469,23 @@ export const productionChainsSeason3: TieredProductionChain[] = [
         Hibiscus --> EnbesaSunrise
         SugarCane & Wood --> Rum --> EnbesaSunrise
         Spices --> EnbesaSunrise
+        `
+      },
+      {
+        productionChain: 'absinthe',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        SugarCane(<span class='icon-flex-row'><img src='${icons.sugarCaneIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Potato(<span class='icon-flex-row'><img src='${icons.potatoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Herbs(<span class='icon-flex-row'><img src='${icons.herbIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Sugar(<span class='icon-flex-row'><img src='${icons.sugarIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Schnapps(<span class='icon-flex-row'><img src='${icons.schnappsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Absinthe(<img src='${icons.absintheIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        SugarCane --> Sugar
+        Potato --> Schnapps
+        Herbs & Sugar & Schnapps --> Absinthe
+
         `
       }
     ]

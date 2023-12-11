@@ -17,7 +17,7 @@ export interface InfoCardItem {
   additionalText?: string;
 }
 
-export interface InfoCardWorldItem {
+export interface InfoCardItemWorldIcon {
   id: string;
   icon: string;
   textPre: string;

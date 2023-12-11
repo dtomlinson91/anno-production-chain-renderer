@@ -66,7 +66,7 @@ export const productionChainsSeason4: TieredProductionChain[] = [
         Citrus(<span class='icon-flex-row'><img src='${icons.citrusIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
         Cocoa(<img src='${icons.cocoaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         IceCream(<img src='${icons.iceCreamIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Milk(<span class='icon-flex-row'><img src='${icons.milkIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>); style Milk stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        Milk(<span class='icon-flex-row'><img src='${icons.milkIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>); style Milk stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
         SugarCane --> Sugar --> Chocolate
         Cocoa --> Chocolate
         Milk & Chocolate & Citrus --> IceCream
@@ -80,7 +80,7 @@ export const productionChainsSeason4: TieredProductionChain[] = [
         Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>4.17%</span><span class='ratio-count'>1</span></span></span>)
         Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
         Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
-        Caoutchouc(<span class='icon-flex-row'><img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
+        Caoutchouc(<span class='icon-flex-row'><img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
         FireExtinguisher(<span class='icon-flex-row'><img src='${icons.fireExtinguisher}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>12.5%</span><span class='ratio-count'>1</span></span></span>)
         FireDepartment(<img src='${icons.fireDepartment}' class='icon-size' /><span class='ratio-count'>1</span>)
         Iron & Charcoal --> Steel
@@ -128,11 +128,11 @@ export const productionChainsSeason4: TieredProductionChain[] = [
         flowchart LR;
         Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>4.17%</span><span class='ratio-count'>1</span></span></span>)
         Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
-        Cotton(<span class='icon-flex-row'><img src='${icons.cottonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
+        Cotton(<span class='icon-flex-row'><img src='${icons.cottonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
         Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>4.17%</span><span class='ratio-count'>1</span></span></span>)
         Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
         CottonMill(<span class='icon-flex-row'><img src='${icons.cottonMillIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
-        PoliceEquipment(<span class='icon-flex-row'><img src='${icons.policeEquipementIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
+        PoliceEquipment(<span class='icon-flex-row'><img src='${icons.policeEquipementIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
         PoliceHeadquarters(<img src='${icons.policeHeadquartersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Iron & Charcoal --> Steel
         Cotton --> CottonMill
@@ -185,10 +185,10 @@ export const productionChainsSeason4: TieredProductionChain[] = [
         Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
         Corn(<span class='icon-flex-row'><img src='${icons.cornIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
         Cotton(<span class='icon-flex-row'><img src='${icons.cottonIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
-        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
-        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
-        Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
-        Film(<span class='icon-flex-row'><img src='${icons.filmReelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
+        CamphorWax(<span class='icon-flex-row'><img src='${icons.camphorWaxIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
+        Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
+        Celluloid(<span class='icon-flex-row'><img src='${icons.celluloidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
+        Film(<span class='icon-flex-row'><img src='${icons.filmReelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
         Saltpeter(<span class='icon-flex-row'><img src='${icons.saltpeterIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>); style Saltpeter stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
         Cinema(<img src='${icons.cinemaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Wood & Corn --> Ethanol
@@ -203,7 +203,7 @@ export const productionChainsSeason4: TieredProductionChain[] = [
         mermaidDefinition: endent`
         flowchart LR;
         Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>4.17%</span><span class='ratio-count'>1</span></span></span>)
-        Corn(<span class='icon-flex-row'><img src='${icons.cornIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
+        Corn(<span class='icon-flex-row'><img src='${icons.cornIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
         Orchid(<span class='icon-flex-row'><img src='${icons.orchidIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
         Ethanol(<span class='icon-flex-row'><img src='${icons.ethanolIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
         Herb(<span class='icon-flex-row'><img src='${icons.herbIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>8.33%</span><span class='ratio-count'>1</span></span></span>)
