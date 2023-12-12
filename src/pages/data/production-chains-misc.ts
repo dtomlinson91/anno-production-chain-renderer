@@ -6,6 +6,81 @@ import * as icons from './icons';
 export const productionChainsMisc: TieredProductionChain[] = [
   {
     colBreak: false,
+    tierName: 'Region Ratios',
+    productionChains: [
+      {
+        productionChain: 'coalRatio',
+        mermaidDefinition: endent`
+        flowchart LR
+        Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Coal --> Charcoal
+        `
+      },
+      {
+        productionChain: 'goldRatio',
+        mermaidDefinition: endent`
+        flowchart LR
+        ArcticGold(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        NewWorldGold(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.newWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>2.5</span></span></span>)
+        ArcticGold --> NewWorldGold
+        `
+      },
+      {
+        productionChain: 'furRatio',
+        mermaidDefinition: endent`
+        flowchart LR
+        ArcticFur(<span class='icon-flex-row'><img src='${icons.fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        OldWorldFur(<span class='icon-flex-row'><img src='${icons.fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>4</span></span></span>)
+        ArcticFur --> OldWorldFur
+        `
+      },
+      {
+        productionChain: 'clayRatio',
+        mermaidDefinition: endent`
+        flowchart LR
+        EnbesaClay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.enbesaIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
+        OldWorldClay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>2</span></span></span>)
+        EnbesaClay --> OldWorldClay
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
+    tierName: 'Electricity',
+    productionChains: [
+      {
+        productionChain: 'oilPowerPlant',
+        mermaidDefinition: endent`
+        flowchart LR
+        OilWell(<img src='${icons.oilWellIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
+        OilPowerPlant(<img src='${icons.oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        OilWell --> OilPowerPlant
+        `
+      },
+      {
+        productionChain: 'oilTanker',
+        mermaidDefinition: endent`
+        flowchart LR
+        OilTanker(<img src='${icons.oilTankerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        OilPowerPlant(<img src='${icons.oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>2-3</span>)
+        OilTanker --> OilPowerPlant
+        `
+      },
+      {
+        productionChain: 'gasPowerPlant',
+        mermaidDefinition: endent`
+        flowchart LR
+        Gas(<img src='${icons.gasIcon}' class='icon-size' /><span class='ratio-count'>6</span>)
+        GasPlant(<img src='${icons.gasPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Gas --> GasPlant
+        `
+      }
+    ]
+  },
+  {
+    colBreak: false,
     tierName: 'Building Materials | Construction',
     productionChains: [
       {
@@ -32,9 +107,9 @@ export const productionChainsMisc: TieredProductionChain[] = [
         chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
-        CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
+        CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
         Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
-        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
         SteelBeams(<img src='${icons.steelBeamsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         CharcoalKiln & Iron --> Steel --> SteelBeams
         `
@@ -122,82 +197,6 @@ export const productionChainsMisc: TieredProductionChain[] = [
   },
   {
     colBreak: false,
-    tierName: 'Region Ratios',
-    productionChains: [
-      {
-        productionChain: 'coalRatio',
-        mermaidDefinition: endent`
-        flowchart LR
-        Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Charcoal(<img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Coal --> Charcoal
-        `
-      },
-      {
-        productionChain: 'goldRatio',
-        mermaidDefinition: endent`
-        flowchart LR
-        ArcticGold(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
-        NewWorldGold(<span class='icon-flex-row'><img src='${icons.goldOreIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.newWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>2.5</span></span></span>)
-        ArcticGold --> NewWorldGold
-        `
-      },
-      {
-        productionChain: 'furRatio',
-        mermaidDefinition: endent`
-        flowchart LR
-        ArcticFur(<span class='icon-flex-row'><img src='${icons.fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.arcticIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
-        OldWorldFur(<span class='icon-flex-row'><img src='${icons.fursIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>4</span></span></span>)
-        ArcticFur --> OldWorldFur
-        `
-      },
-      {
-        productionChain: 'clayRatio',
-        mermaidDefinition: endent`
-        flowchart LR
-        EnbesaClay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.enbesaIcon}' class='electricity-icon' /></span><span class='ratio-count'>1</span></span></span>)
-        OldWorldClay(<span class='icon-flex-row'><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.oldWorldIcon}' class='electricity-icon' /></span><span class='ratio-count'>2</span></span></span>)
-        EnbesaClay --> OldWorldClay
-        `
-      }
-    ]
-  },
-  {
-    colBreak: false,
-    tierName: 'Electricity',
-    productionChains: [
-      {
-        productionChain: 'oilPowerPlant',
-        mermaidDefinition: endent`
-        flowchart LR
-        OilWell(<img src='${icons.oilWellIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
-        OilPowerPlant(<img src='${icons.oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        OilWell --> OilPowerPlant
-        `
-      },
-      {
-        productionChain: 'oilTanker',
-        mermaidDefinition: endent`
-        flowchart LR
-        OilTanker(<img src='${icons.oilTankerIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        OilPowerPlant(<img src='${icons.oilPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>2-3</span>)
-        OilTanker --> OilPowerPlant
-        `
-      },
-      {
-        productionChain: 'gasPowerPlant',
-        mermaidDefinition: endent`
-        flowchart LR
-        Gas(<img src='${icons.gasIcon}' class='icon-size' /><span class='ratio-count'>6</span>)
-        GasPlant(<img src='${icons.gasPowerPlantIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Gas --> GasPlant
-        `
-      }
-    ]
-  },
-  { colBreak: true, tierName: 'skip' },
-  {
-    colBreak: false,
     tierName: 'Fuel | Silo',
     productionChains: [
       {
@@ -254,14 +253,106 @@ export const productionChainsMisc: TieredProductionChain[] = [
         productionChain: 'siloss3',
         mermaidDefinition: endent`
         flowchart LR
-        Dung(<img src='${icons.dungIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Dung(<span class='icon-flex-row'><img src='${icons.dungIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.alpacaWoolIcon}' class='electricity-icon' /></span><span class='ratio-count'>3</span></span></span>)
         Fertiliser(<img src='${icons.fertiliserIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>5</span>)
+        Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>10</span>)
         Dung --> Fertiliser --> Silo
         `
       }
     ]
   },
+  {
+    colBreak: false,
+    tierName: 'Weapons',
+    productionChains: [
+      {
+        productionChain: 'weapons',
+        chainMultiplier: '6',
+        mermaidDefinition: endent`
+        flowchart LR
+        CharcoalKiln(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Weapons(<img src='${icons.weaponsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        CharcoalKiln & Iron --> Steel --> Weapons
+        `
+      },
+      {
+        productionChain: 'heavyWeapons',
+        chainMultiplier: '2',
+        mermaidDefinition: endent`
+        flowchart LR
+        Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Dynamite(<img src='${icons.dynamiteIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        HeavyWeapons(<img src='${icons.heavyWeaponsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Pig(<img src='${icons.pigsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Tallow(<img src='${icons.tallowIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Dynamite
+        Charcoal(<span class='icon-flex-row'><img src='${icons.charcoalKilnIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>25%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        style HeavyWeapons stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Saltpeter --> Dynamite --> HeavyWeapons
+        Pig --> Tallow --> Dynamite
+        Charcoal & Iron --> Steel --> HeavyWeapons
+        `
+      }
+    ]
+  },
+  { colBreak: true, tierName: 'skip' },
+  {
+    colBreak: false,
+    tierName: 'Sails',
+    productionChains: [
+      {
+        productionChain: 'oldWorldSails',
+        mermaidDefinition: endent`
+        flowchart LR
+        Wool(<img src='${icons.woolIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sailmakers(<img src='${icons.sailmakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wool --> Sailmakers
+        `
+      },
+      {
+        productionChain: 'newWorldSails',
+        mermaidDefinition: endent`
+        flowchart LR
+        Cotton(<img src='${icons.cottonIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        CottonMill(<img src='${icons.cottonMillIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Sailmakers(<img src='${icons.sailmakersIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Cotton --> CottonMill --> Sailmakers
+        `
+      }
+    ]
+  },
+  { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
+  {
+    colBreak: false,
+    tierName: 'Machinery',
+    productionChains: [
+      {
+        productionChain: 'steamMotors',
+        chainMultiplier: '3',
+        mermaidDefinition: endent`
+        flowchart LR
+        SteamMotors(<img src='${icons.steamMotorsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
+        Brass(<span class='icon-flex-row'><img src='${icons.brassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>2</span></span></span>)
+        style SteamMotors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
+        Coal & Iron --> Steel --> SteamMotors
+        Copper & Zinc --> Brass --> SteamMotors
+        `
+      }
+    ]
+  },
+  { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Chemical Plant',

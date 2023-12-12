@@ -34,7 +34,7 @@ export const productionChainsSeason2: TieredProductionChain[] = [
         chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
-        HibiscusFarm(<span class='icon-flex-row'><img src='${icons.hibiscusFarmIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>1</span></span></span>)
+        HibiscusFarm(<span class='icon-flex-row'><img src='${icons.hibiscusFarmIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
         HibiscusTea(<img src='${icons.hibiscusTeaIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         HibiscusFarm --> HibiscusTea
         `
@@ -87,8 +87,8 @@ export const productionChainsSeason2: TieredProductionChain[] = [
         chainMultiplier: '6',
         mermaidDefinition: endent`
         flowchart LR
-        Clay(<span class='icon-flex-row icon-regional-container'><img src='${icons.enbesaIcon}' class='icon-regional' /><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.66%</span><span class='ratio-count'>1</span></span></span>)
-        Tobacco(<span class='icon-flex-row'><img src='${icons.tobaccoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>2</span></span></span>)
+        Clay(<span class='icon-flex-row icon-regional-container'><img src='${icons.enbesaIcon}' class='icon-regional' /><img src='${icons.clayIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>16.67%</span><span class='ratio-count'>1</span></span></span>)
+        Tobacco(<span class='icon-flex-row'><img src='${icons.tobaccoIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>2</span></span></span>)
         Pipes(<img src='${icons.pipesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Clay & Tobacco --> Pipes
         `
@@ -156,10 +156,10 @@ export const productionChainsSeason2: TieredProductionChain[] = [
         mermaidDefinition: endent`
         flowchart LR
         Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
-        Filament(<span class='icon-flex-row'><img src='${icons.filamentIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>2</span></span></span>)
+        Filament(<span class='icon-flex-row'><img src='${icons.filamentIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>2</span></span></span>)
         Telephones(<img src='${icons.telephonesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
         Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
-        Marquetry(<span class='icon-flex-row'><img src='${icons.marquetryIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.66%</span><span class='ratio-count'>2</span></span></span>)
+        Marquetry(<span class='icon-flex-row'><img src='${icons.marquetryIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>2</span></span></span>)
         style Telephones stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
         Coal --> Filament --> Telephones
         Wood --> Marquetry --> Telephones
@@ -167,6 +167,7 @@ export const productionChainsSeason2: TieredProductionChain[] = [
       }
     ]
   },
+  { colBreak: true, tierName: 'skip' },
   { colBreak: true, tierName: 'skip' },
   { colBreak: true, tierName: 'skip' },
   {

@@ -10,7 +10,10 @@
           :col-break="false"
           class="masonry-col item"
         >
-          <InfoCard>
+          <InfoCard
+            :info-card-item-data="season2ItemData"
+            :info-card-item-world-data="season2ItemWorldData"
+          >
             <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
           </InfoCard>
         </ChainTiers>
@@ -47,6 +50,12 @@ import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
 
 // Production Chain Data
 import { productionChainsSeason2 } from './data/production-chains-season-2';
+
+// Info Card Data
+import {
+  season2ItemData,
+  season2ItemWorldData
+} from 'src/pages/data/info-card';
 
 // Icons
 import * as icons from './data/icons';

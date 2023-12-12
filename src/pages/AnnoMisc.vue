@@ -10,7 +10,10 @@
           :col-break="false"
           class="masonry-col item"
         >
-          <InfoCard>
+          <InfoCard
+            :info-card-item-data="miscItemData"
+            :info-card-item-world-data="miscItemWorldData"
+          >
             <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
           </InfoCard>
         </ChainTiers>
@@ -48,6 +51,9 @@ import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
 // Production Chain Data
 import { productionChainsMisc } from './data/production-chains-misc';
 
+// Info Card Data
+import { miscItemData, miscItemWorldData } from 'src/pages/data/info-card';
+
 // Icons
 import * as icons from './data/icons';
 
@@ -82,7 +88,7 @@ $column: 3;
 }
 
 .masonry-container {
-  height: 3900px;
+  height: 4510px;
 
   .masonry-col {
     width: 1000px;
@@ -93,6 +99,6 @@ $column: 3;
 }
 
 .custom-width {
-  width: 3200px;
+  width: 3150px;
 }
 </style>
