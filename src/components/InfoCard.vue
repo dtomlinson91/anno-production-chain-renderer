@@ -1,16 +1,16 @@
 <template>
   <q-list separator class="big-font text-left">
     <slot></slot>
-    <InfoCardItem
-      v-for="item in infoCardItemData"
-      :key="item.icon"
-      v-bind="item"
-    ></InfoCardItem>
     <InfoCardItemWorldIcon
       v-for="item in infoCardItemWorldData"
       :key="item.icon"
       v-bind="item"
     ></InfoCardItemWorldIcon>
+    <InfoCardItem
+      v-for="item in infoCardItemData"
+      :key="item.icon"
+      v-bind="item"
+    ></InfoCardItem>
   </q-list>
 </template>
 

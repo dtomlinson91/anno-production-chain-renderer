@@ -9,7 +9,10 @@
           :col-break="false"
           class="masonry-col item"
         >
-          <InfoCard>
+          <InfoCard
+            :info-card-item-data="season1ItemData"
+            :info-card-item-world-data="season1ItemWorldData"
+          >
             <InfoCardItem v-bind="expansionInfoItem"></InfoCardItem>
           </InfoCard>
         </ChainTiers>
@@ -47,6 +50,12 @@ import InfoCardItem from 'components/InfoCard/InfoCardItem.vue';
 // Production Chain Data
 import { productionChainsSeason1 } from './data/production-chains-season-1';
 
+// Info Card Data
+import {
+  season1ItemData,
+  season1ItemWorldData
+} from 'src/pages/data/info-card';
+
 // Icons
 import * as icons from './data/icons';
 
@@ -81,7 +90,7 @@ $column: 2;
 }
 
 .masonry-container {
-  height: 1430px;
+  height: 1450px;
 
   .masonry-col {
     width: 1000px;

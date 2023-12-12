@@ -200,13 +200,14 @@ export const productionChainsBase: TieredProductionChain[] = [
       },
       {
         productionChain: 'steamCarriages',
+        chainMultiplier: '2',
         mermaidDefinition: endent`
         flowchart LR
-        SteamMotors(<img src='${icons.steamMotorsIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
-        SteamCarriages(<img src='${icons.steamCarriagesIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Wood(<img src='${icons.woodIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Caoutchouc(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
-        Coaches(<img src='${icons.coachMakersIcon}' class='icon-size' /><span class='ratio-count'>8</span>)
+        SteamMotors(<span class='icon-flex-row'><img src='${icons.steamMotorsIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>150%</span><span class='ratio-count'>2</span></span></span>); style SteamMotors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7;
+        SteamCarriages(<img src='${icons.steamCarriagesIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Wood(<span class='icon-flex-row'><img src='${icons.woodIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>50%</span><span class='ratio-count'>1</span></span></span>)
+        Caoutchouc(<img src='${icons.caoutchoucIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
+        Coaches(<img src='${icons.coachMakersIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
         SteamCarriages
         style SteamMotors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         style SteamCarriages stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7

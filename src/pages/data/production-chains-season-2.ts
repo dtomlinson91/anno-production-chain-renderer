@@ -169,6 +169,7 @@ export const productionChainsSeason2: TieredProductionChain[] = [
   },
   { colBreak: true, tierName: 'skip' },
   { colBreak: true, tierName: 'skip' },
+  { colBreak: true, tierName: 'skip' },
   {
     colBreak: false,
     tierName: 'Advanced Chains (Scholars)',

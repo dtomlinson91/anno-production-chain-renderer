@@ -253,9 +253,9 @@ export const productionChainsMisc: TieredProductionChain[] = [
         productionChain: 'siloss3',
         mermaidDefinition: endent`
         flowchart LR
-        Dung(<img src='${icons.dungIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Dung(<span class='icon-flex-row'><img src='${icons.dungIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span><img src='${icons.alpacaWoolIcon}' class='electricity-icon' /></span><span class='ratio-count'>3</span></span></span>)
         Fertiliser(<img src='${icons.fertiliserIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>5</span>)
+        Silo(<img src='${icons.siloIcon}' class='icon-size' /><span class='ratio-count'>10</span>)
         Dung --> Fertiliser --> Silo
         `
       }
@@ -333,15 +333,16 @@ export const productionChainsMisc: TieredProductionChain[] = [
     productionChains: [
       {
         productionChain: 'steamMotors',
+        chainMultiplier: '3',
         mermaidDefinition: endent`
         flowchart LR
-        Coal(<img src='${icons.coalIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Iron(<img src='${icons.ironIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
-        Steel(<img src='${icons.steelIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        SteamMotors(<img src='${icons.steamMotorsIcon}' class='icon-size' /><span class='ratio-count'>3</span>)
-        Copper(<img src='${icons.copperIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Zinc(<img src='${icons.zincIcon}' class='icon-size' /><span class='ratio-count'>2</span>)
-        Brass(<img src='${icons.brassIcon}' class='icon-size' /><span class='ratio-count'>4</span>)
+        SteamMotors(<img src='${icons.steamMotorsIcon}' class='icon-size' /><span class='ratio-count'>1</span>)
+        Coal(<span class='icon-flex-row'><img src='${icons.coalIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Iron(<span class='icon-flex-row'><img src='${icons.ironIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>33.33%</span><span class='ratio-count'>1</span></span></span>)
+        Steel(<span class='icon-flex-row'><img src='${icons.steelIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
+        Copper(<span class='icon-flex-row'><img src='${icons.copperIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
+        Zinc(<span class='icon-flex-row'><img src='${icons.zincIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>1</span></span></span>)
+        Brass(<span class='icon-flex-row'><img src='${icons.brassIcon}' class='icon-size' /><span class='icon-flex-col q-pl-sm'><span class='efficiency-perc'>66.67%</span><span class='ratio-count'>2</span></span></span>)
         style SteamMotors stroke:#0675BD,stroke-width:5px,stroke-dasharray: 7 7
         Coal & Iron --> Steel --> SteamMotors
         Copper & Zinc --> Brass --> SteamMotors
