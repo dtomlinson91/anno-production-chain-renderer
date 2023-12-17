@@ -68,7 +68,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 3',
   icon: icons.highLifeIcon,
-  text: 'All chains for Season 3 (Docklands, Tourist Season & The High Life).'
+  text: 'All chains for Season 3 (Docklands, Tourist Season & The High Life) consumer goods.'
 });
 </script>
 
@@ -92,7 +92,7 @@ $column: 4;
 }
 
 .masonry-container {
-  height: 8250px;
+  height: 8240px;
 
   .masonry-col {
     width: 1000px;

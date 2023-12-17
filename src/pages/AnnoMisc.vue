@@ -64,7 +64,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'ratios | fuel | materials',
   icon: icons.siteLogoIcon,
-  text: 'All chains for Base Game (including ratios, fuel, electricity and building materials)'
+  text: 'All chains for building materials, electricity, field and ratios.'
 });
 </script>
 
@@ -88,7 +88,7 @@ $column: 3;
 }
 
 .masonry-container {
-  height: 4510px;
+  height: 4610px;
 
   .masonry-col {
     width: 1000px;

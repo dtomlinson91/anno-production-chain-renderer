@@ -67,7 +67,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 4',
   icon: icons.newWorldRisingIcon,
-  text: 'All chains for Season 4 (Seeds of Change, Empire of the Skies & New World Rising).'
+  text: 'All chains for Season 4 (Seeds of Change, Empire of the Skies & New World Rising) consumer goods.'
 });
 </script>
 

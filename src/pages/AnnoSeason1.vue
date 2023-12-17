@@ -66,7 +66,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 1',
   icon: icons.passageIcon,
-  text: 'All chains for Season 1 (Sunken Treasures, Botanica & The Passage).'
+  text: 'All chains for Season 1 (Sunken Treasures, Botanica & The Passage) consumer goods.'
 });
 </script>
 

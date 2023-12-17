@@ -279,7 +279,7 @@ export const productionChainsMisc: TieredProductionChain[] = [
       },
       {
         productionChain: 'heavyWeapons',
-        chainMultiplier: '2',
+        chainMultiplier: '4',
         mermaidDefinition: endent`
         flowchart LR
         Saltpeter(<img src='${icons.saltpeterIcon}' class='icon-size' /><span class='ratio-count'>2</span>)

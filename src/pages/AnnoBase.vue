@@ -64,7 +64,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Base Game',
   icon: icons.siteLogoIcon,
-  text: 'All chains for Base Game (including ratios, fuel, electricity and building materials)'
+  text: 'All chains for Base Game consumer goods.'
 });
 </script>
 
@@ -88,7 +88,7 @@ $column: 3;
 }
 
 .masonry-container {
-  height: 4400px;
+  height: 3790px;
 
   .masonry-col {
     width: 1000px;

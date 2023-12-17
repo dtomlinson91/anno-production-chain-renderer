@@ -67,7 +67,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 2',
   icon: icons.landOfLionsIcon,
-  text: 'All chains for Season 2 (Seat of Power, Bright Harvest & Land of Lions).'
+  text: 'All chains for Season 2 (Seat of Power, Bright Harvest & Land of Lions) consumer goods.'
 });
 </script>
 
