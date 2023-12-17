@@ -90,7 +90,7 @@ $column: 2;
 }
 
 .masonry-container {
-  height: 1450px;
+  height: 1430px;
 
   .masonry-col {
     width: 1000px;

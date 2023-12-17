@@ -91,7 +91,7 @@ $column: 3;
 }
 
 .masonry-container {
-  height: 2790px;
+  height: 2780px;
 
   .masonry-col {
     width: 1000px;
