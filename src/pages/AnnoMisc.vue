@@ -64,7 +64,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'ratios | fuel | materials',
   icon: icons.siteLogoIcon,
-  text: 'All chains for building materials, electricity, field and ratios.'
+  text: 'All chains for building materials, electricity, fuel and ratios.'
 });
 </script>
 
