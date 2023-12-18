@@ -9,6 +9,7 @@
         <ChainTiers
           :title="expansionInfoItem.title"
           :col-break="false"
+          :leading-separator="false"
           class="masonry-col item"
         >
           <InfoCard
@@ -23,6 +24,7 @@
           :key="tier.tierName"
           :title="tier.tierName"
           :col-break="tier.colBreak"
+          :leading-separator="true"
           class="masonry-col item"
         >
           <div v-if="!tier.colBreak">
@@ -55,7 +57,7 @@ import { productionChainsSeason3 } from './data/production-chains-season-3';
 // Info Card Data
 import {
   season3ItemData,
-  season3ItemWorldData
+  season3ItemWorldData,
 } from 'src/pages/data/info-card';
 
 // Icons
@@ -68,7 +70,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 3',
   icon: icons.highLifeIcon,
-  text: 'All chains for Season 3 (Docklands, Tourist Season & The High Life) consumer goods.'
+  text: 'All chains for Season 3 (Docklands, Tourist Season & The High Life) consumer goods.',
 });
 </script>
 
@@ -92,7 +94,7 @@ $column: 4;
 }
 
 .masonry-container {
-  height: 8220px;
+  height: 8190px;
 
   .masonry-col {
     width: 1000px;

@@ -7,6 +7,7 @@
         <ChainTiers
           :title="expansionInfoItem.title"
           :col-break="false"
+          :leading-separator="false"
           class="masonry-col item"
         >
           <InfoCard
@@ -21,6 +22,7 @@
           :key="tier.tierName"
           :title="tier.tierName"
           :col-break="tier.colBreak"
+          :leading-separator="true"
           class="masonry-col item"
         >
           <div v-if="!tier.colBreak">
@@ -53,7 +55,7 @@ import { productionChainsSeason1 } from './data/production-chains-season-1';
 // Info Card Data
 import {
   season1ItemData,
-  season1ItemWorldData
+  season1ItemWorldData,
 } from 'src/pages/data/info-card';
 
 // Icons
@@ -66,7 +68,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 1',
   icon: icons.passageIcon,
-  text: 'All chains for Season 1 (Sunken Treasures, Botanica & The Passage) consumer goods.'
+  text: 'All chains for Season 1 (Sunken Treasures, Botanica & The Passage) consumer goods.',
 });
 </script>
 
@@ -90,7 +92,7 @@ $column: 2;
 }
 
 .masonry-container {
-  height: 1430px;
+  height: 1420px;
 
   .masonry-col {
     width: 1000px;

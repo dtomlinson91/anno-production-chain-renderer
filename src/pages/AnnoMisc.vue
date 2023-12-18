@@ -8,6 +8,7 @@
         <ChainTiers
           :title="expansionInfoItem.title"
           :col-break="false"
+          :leading-separator="false"
           class="masonry-col item"
         >
           <InfoCard
@@ -22,6 +23,7 @@
           :key="tier.tierName"
           :title="tier.tierName"
           :col-break="tier.colBreak"
+          :leading-separator="true"
           class="masonry-col item"
         >
           <div v-if="!tier.colBreak">
@@ -64,7 +66,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'ratios | fuel | materials',
   icon: icons.siteLogoIcon,
-  text: 'All chains for building materials, electricity, fuel and ratios.'
+  text: 'All chains for building materials, electricity, fuel and ratios.',
 });
 </script>
 
@@ -88,7 +90,7 @@ $column: 3;
 }
 
 .masonry-container {
-  height: 4600px;
+  height: 4595px;
 
   .masonry-col {
     width: 1000px;

@@ -8,6 +8,7 @@
         <ChainTiers
           :title="expansionInfoItem.title"
           :col-break="false"
+          :leading-separator="false"
           class="masonry-col item"
         >
           <InfoCard
@@ -22,6 +23,7 @@
           :key="tier.tierName"
           :title="tier.tierName"
           :col-break="tier.colBreak"
+          :leading-separator="true"
           class="masonry-col item"
         >
           <div v-if="!tier.colBreak">
@@ -54,7 +56,7 @@ import { productionChainsSeason2 } from './data/production-chains-season-2';
 // Info Card Data
 import {
   season2ItemData,
-  season2ItemWorldData
+  season2ItemWorldData,
 } from 'src/pages/data/info-card';
 
 // Icons
@@ -67,7 +69,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 2',
   icon: icons.landOfLionsIcon,
-  text: 'All chains for Season 2 (Seat of Power, Bright Harvest & Land of Lions) consumer goods.'
+  text: 'All chains for Season 2 (Seat of Power, Bright Harvest & Land of Lions) consumer goods.',
 });
 </script>
 
@@ -91,7 +93,7 @@ $column: 3;
 }
 
 .masonry-container {
-  height: 2780px;
+  height: 2765px;
 
   .masonry-col {
     width: 1000px;

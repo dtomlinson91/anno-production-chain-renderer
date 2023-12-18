@@ -8,6 +8,7 @@
         <ChainTiers
           :title="expansionInfoItem.title"
           :col-break="false"
+          :leading-separator="false"
           class="masonry-col item"
         >
           <InfoCard
@@ -22,6 +23,7 @@
           :key="tier.tierName"
           :title="tier.tierName"
           :col-break="tier.colBreak"
+          :leading-separator="true"
           class="masonry-col item"
         >
           <div v-if="!tier.colBreak">
@@ -54,7 +56,7 @@ import { productionChainsSeason4 } from './data/production-chains-season-4';
 // Info Card Data
 import {
   season4ItemData,
-  season4ItemWorldData
+  season4ItemWorldData,
 } from 'src/pages/data/info-card';
 
 // Icons
@@ -67,7 +69,7 @@ initialiseMermaid();
 const expansionInfoItem = ref({
   title: 'Season 4',
   icon: icons.newWorldRisingIcon,
-  text: 'All chains for Season 4 (Seeds of Change, Empire of the Skies & New World Rising) consumer goods.'
+  text: 'All chains for Season 4 (Seeds of Change, Empire of the Skies & New World Rising) consumer goods.',
 });
 </script>
 
@@ -91,7 +93,7 @@ $column: 3;
 }
 
 .masonry-container {
-  height: 5860px;
+  height: 5855px;
 
   .masonry-col {
     width: 1000px;

@@ -30,7 +30,6 @@
           Navigation
         </q-item-label>
         <q-separator inset class="q-mb-sm" />
-
         <EssentialLink
           v-for="link in linksList"
           :key="link.title"

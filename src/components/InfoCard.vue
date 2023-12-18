@@ -1,5 +1,5 @@
 <template>
-  <q-list separator class="big-font text-left">
+  <q-list class="big-font text-left">
     <slot></slot>
     <InfoCardItemWorldIcon
       v-for="item in infoCardItemWorldData"
@@ -19,7 +19,7 @@ import InfoCardItem from './InfoCard/InfoCardItem.vue';
 import InfoCardItemWorldIcon from './InfoCard/InfoCardItemWorldIcon.vue';
 import {
   InfoCardItem as InfoCardItemModel,
-  InfoCardItemWorldIcon as InfoCardItemWorldIconModel
+  InfoCardItemWorldIcon as InfoCardItemWorldIconModel,
 } from 'pages/data/models';
 
 defineProps<{

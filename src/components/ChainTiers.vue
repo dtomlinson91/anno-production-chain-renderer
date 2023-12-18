@@ -8,7 +8,7 @@
       'q-ma-sm',
       'border',
       'text-center',
-      calculateColBreak()
+      calculateColBreak(),
     ]"
   >
     <div v-if="!colBreak">
@@ -19,8 +19,11 @@
           {{ title }}
         </div>
       </q-card-section>
-
-      <q-separator inset class="q-mb-lg" />
+      <q-separator
+        v-if="leadingSeparator"
+        inset
+        class="q-mb-lg toolbar-background"
+      />
     </div>
 
     <slot></slot>
@@ -31,6 +34,7 @@
 const props = defineProps<{
   title: string;
   colBreak: boolean;
+  leadingSeparator: { type: boolean; required: false; default: true };
 }>();
 
 const calculateColBreak = () => (props.colBreak ? 'hide-item' : '');

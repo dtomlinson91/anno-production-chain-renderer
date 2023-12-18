@@ -1,4 +1,5 @@
 <template>
+  <q-separator inset class="q-mb-sm toolbar-background" />
   <q-item>
     <q-item-section avatar>
       <q-img :src="icon" class="info-icon"></q-img>
