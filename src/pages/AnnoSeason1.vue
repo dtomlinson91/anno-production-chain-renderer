@@ -92,7 +92,7 @@ $column: 2;
 }
 
 .masonry-container {
-  height: 1420px;
+  height: 1440px;
 
   .masonry-col {
     width: 1000px;
@@ -103,6 +103,6 @@ $column: 2;
 }
 
 .custom-width {
-  width: 2150px;
+  width: 2115px;
 }
 </style>
